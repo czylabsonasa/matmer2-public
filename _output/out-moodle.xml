@@ -9,10 +9,10 @@
  
 <question type="multichoice">
   <name>
-    <text>circle</text>
+    <text>trigorder</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Válassza ki a lentiek közül egy \(K\left [6, 5\right ]\) középpontú kör egyenletét. </p>]]></text>
+    <text><![CDATA[<p>Legyen \(S,C,T=\sin (107^\circ ),\cos (107^\circ ),\tan (107^\circ )\). Ekkor: </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -22,16 +22,70 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(+52-10y+y^{2}-12x+x^{2}\)</p>]]></text>
+    <text><![CDATA[<p>\(T&lt;C&lt;S\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(+45-10y+y^{2}+12x+x^{2}\)</p>]]></text>
+    <text><![CDATA[<p>\(C&lt;T&lt;S\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(+57+10y+y^{2}-12x+x^{2}\)</p>]]></text>
+    <text><![CDATA[<p>\(C&lt;S&lt;T\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(+52+10y+y^{2}+12x+x^{2}\)</p>]]></text>
+    <text><![CDATA[<p>\(S&lt;C&lt;T\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>circle</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Válassza ki a lentiek közül egy \(K\left [2, 5\right ]\) középpontú kör egyenletét. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(+13-10y+y^{2}-4x+x^{2}=0\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(+4-10y+y^{2}+4x+x^{2}=0\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(+20+10y+y^{2}-4x+x^{2}=0\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(+13+10y+y^{2}+4x+x^{2}=0\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>linearis</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy elsőfokú \(f\) függvényről tudjuk, hogy \(f(1)=0, f(2)=-5\). Mennyi \(f(-2)\) ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(10\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(11\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(12\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(8\)</p>]]></text>
   </answer>
 </question>
  

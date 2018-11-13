@@ -1,3 +1,3 @@
 _db=Dict(
-"masodik"=>["circle"]
+"masodik"=>["trigorder","circle","linearis"]
 )
