@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$module$/gyakorló feladatok</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name>
+    <text>pMul</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A [0,1] intervallumon kiválasztunk két számot. Mennyi a valószínűsége, hogy az egyik szám több mint 4x akkora mint a másik? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(\frac {1}{4}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {7}{8}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {1}{8}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {1}{12}\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>selejt</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Két gépen azonos típusú alkatrészeket gyártanak. Az első gép a termelés 43\%-át adja, melynek selejtaránya 3\%. A második 3\% selejtet ad. Kiválasztunk véletlenszerűen egy terméket. Mennyi a valsége hogy selejtes? Ha tudjuk hogy ez a termék selejtes, mennyi az esélye hogy a 2. gép gyártotta? (A megadott válaszok a kérdéseknek megfelelő sorrendben vannak.) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(\frac {3}{100}, \frac {57}{100}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {3}{200}, \frac {43}{100}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {197}{200}, \frac {43}{300}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {197}{600}, \frac {257}{300}\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>ital</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Van \(9\) különböző italod, 1-1 üvegnyi. Eldöntötted, hogy óránként megiszol egyet, összesen \(3\)-t. Hányféleképpen ihatsz? </P><P></p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(504\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(6\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(84\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(27\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>golyo1</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy dobozban van \(5\) kék, \(4\) piros és \(2\) sárga golyó. Visszatevéssel húzunk \(4\) golyót. Mi a valsége, hogy sorban: kék, kék, sárga, sárga golyót kapunk? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(\frac {100}{14641}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {101}{14642}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {50}{7321}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {9}{1331}\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>null</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(P(A)=1\) akkor </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(A\) bekövetkezhet</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(A\) sosem következik be</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(A\) mindig bekövetkezik</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(A\) a biztos esemény</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>null</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(P(A)=0\) akkor </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(A\) bekövetkezhet</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(A\) sosem következik be</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(A\) mindig bekövetkezik</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(A\) a lehetetlen esemény</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>valelo</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Azt mondjuk, hogy a \(p_1,p_2,\ldots,p_k,\ldots\) számsorozat valószínűségeloszlás, ha: </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(p_k\ge 0\) és \(\sum _k p_k=1\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(p_k\ge p_{k+1}\) és \(\sum _k p_k&lt;\infty \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(p_k=\frac {1}{2^k}\ k\ge 1\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(p\) binomiális vagy geometriai</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>

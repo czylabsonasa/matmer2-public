@@ -1,0 +1,17 @@
+print(_out,raw"""
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{t1enc}
+%\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+
+\usepackage{moodle}
+
+\begin{document}
+
+""")
