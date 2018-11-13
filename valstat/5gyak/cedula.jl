@@ -47,7 +47,7 @@ let
    rv2=idJ*raw" és $cov(X,Y)="*toS(co+1)*"\$"
    rv3=idR*raw" és $cov(X,Y)="*toS(co-1)*"\$"
 
-qText=raw"""
+qText=bRep(raw"""
 \begin{multi}{__QNAME}
 Egy dobozban $__DB$ cédula van, rajtuk a $__CED$ számok. Egy véletlenszerűen 
 kihúzott cédula esetén jelentse $X$ az első, $Y$ a második számjegyét.
@@ -57,15 +57,15 @@ Ekkor $X$ és $Y$
 \item __RV2
 \item __RV3
 \end{multi}
-"""
-
-   qText=replace(qText,"__QNAME"=>qname)
-   qText=replace(qText,"__DB"=>string(db))
-   qText=replace(qText,"__CED"=>toS(ced//1,brac=false))
-   qText=replace(qText,"__JV"=>jv)
-   qText=replace(qText,"__RV1"=>rv1)
-   qText=replace(qText,"__RV2"=>rv2)
-   qText=replace(qText,"__RV3"=>rv3)
+""",[
+   "__QNAME",qname,
+   "__DB",string(db),
+   "__CED",toS(ced//1,brac=false),
+   "__JV",jv,
+   "__RV1",rv1,
+   "__RV2",rv2,
+   "__RV3",rv3
+   ])
 
    print(_out,qText)
 
