@@ -29,6 +29,12 @@ let
 
    n=8
    p=rand(2:6)
+   while 1==1
+      if p!=n-p
+         break
+      end
+      p=rand(2:6)
+   end
    q=n-p
 
    #ezt mar a main-ban inkludaltam
@@ -41,7 +47,12 @@ let
    jv=p
    rv1=q
    rv2=max(p,q)-1
-   rv3=min(p,q)+2
+   rv3=min(p,q)+1
+
+   if rv2==rv3
+      rv2=max(p,q)+1
+   end
+   
 
 
 qText=bRep(raw"""

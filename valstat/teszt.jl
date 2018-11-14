@@ -1,3 +1,3 @@
 _db=Dict(
-"5gyak"=>[-2,"suruseg"]
+"5gyak"=>["suruseg","cedula","bot","kozep"]
 )

@@ -42,4 +42,4 @@ include("_include/post.jl")
 close(_out)
 
 # shell
-run(`pdflatex -output-directory _output/ out.tex`)
+run(`pdflatex -output-directory _output out.tex`)
