@@ -43,12 +43,12 @@ let
    end
 
 
-   jv=sM(y)
-   rv1=sM(-y)
-   rv2=sM(y.+p)
-   rv3=sM(p*y)
+   jv=toS(y)
+   rv1=toS(-y)
+   rv2=toS(y.+p)
+   rv3=toS(p*y)
 
-   qText=raw"""
+   qText=bRep(raw"""
    \begin{multi}{__QNAME}
    Mi lesz az $y$ vektor az utasítások végrehajtása után? \newline
    $x=__X;$ \newline
@@ -59,13 +59,15 @@ let
    \item  $__RV2$
    \item  $__RV3$
    \end{multi}
-   """
-   qText=replace(qText,"__QNAME"=>qname)
-   qText=replace(qText,"__X"=>sM(x))
-   qText=replace(qText,"__EXPR"=>expr)
-   qText=replace(qText,"__JV"=>jv)
-   qText=replace(qText,"__RV1"=>rv1)
-   qText=replace(qText,"__RV2"=>rv2)
-   qText=replace(qText,"__RV3"=>rv3)
+   """,[
+   "__QNAME",qname,
+   "__X",toS(x),
+   "__EXPR",expr,
+   "__JV",jv,
+   "__RV1",rv1,
+   "__RV2",rv2,
+   "__RV3",rv3
+      ]
+   )
    print(_out,qText)
 end

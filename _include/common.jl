@@ -59,36 +59,63 @@ function toS(v::Array{Rational{Int},1};delim::String=", ",brac::Bool=true)
    return ret
 end
 
-function toS(A::Array{Rational{Int},2})
+function toS(A::Array{Rational{Int},2};delim::String="",brac::Bool=true)
    r,c=size(A)
-   ret="\\left[ {\\begin{array}{"*repeat('c',c)*"}"
+   ret="{\\begin{array}{"*repeat('c',c)*"}"
    for i in 1:r
       if i>1
          ret=ret*"\\\\ "
       end
       for j in 1:c
          if j>1
-            ret=ret*"& "
+            ret=ret*delim*"& "
          end
          ret=ret*toS(A[i,j])
       end
    end
-   ret=ret*"\\end{array}} \\right]"
+   ret=ret*"\\end{array}}"
+   if brac==true
+      ret="\\left["*ret*"\\right]"
+   end
+   return ret
 end
 
-function toS(v::Array{String,1};delim::String=", ",brac::Bool=false)
-   ret=""
-   if brac==true
-      ret="\\left["
-   end
-   for i in 1:length(v)
+
+
+function toS(A::Array{String,2}; delim::String="",brac::Bool=true)
+   r,c=size(A)
+   ret="{\\begin{array}{"*repeat('c',c)*"}"
+   for i in 1:r
       if i>1
-         ret=ret*", "
+         ret=ret*"\\\\ "
       end
+      for j in 1:c
+         if j>1
+            ret=ret*delim*"& "
+         end
+         ret=ret*A[i,j]
+      end
+   end
+   ret=ret*"\\end{array}}"
+   if brac==true
+      ret="\\left["*ret*"\\right]"
+   end
+   return ret
+end
+
+
+function toS(v::Array{String,1}; delim::String="",brac::Bool=true)
+   c=length(v)
+   ret="{\\begin{array}{"*repeat('c',c)*"}"
+   for i in 1:c
+      if i>1
+            ret=ret*delim*"& "
+     end
       ret=ret*v[i]
    end
+
    if brac==true
-      ret=ret*"\\right]"
+      ret="\\left["*ret*"\\right]"
    end
    return ret
 end

@@ -13,12 +13,12 @@ let
    end
 
 
-   jv=sC(conj(v)*w)*",\\ "*sC(v*conj(w)//h2(w))*",\\ "*sC(v-conj(w))
-   rv1=sC(conj(w)*v)*",\\ "*sC(v*conj(w)//h2(w))*",\\ "*sC(v-conj(w))
-   rv2=sC(conj(v)*v)*",\\ "*sC(v*conj(w)//h2(w))*",\\ "*sC(v+conj(w))
-   rv3=sC(conj(v)*w)*",\\ "*sC(w*conj(v)//h2(v))*",\\ "*sC(v+conj(w))
+   jv=toS(conj(v)*w)*",\\ "*toS(v*conj(w)//h2(w))*",\\ "*toS(v-conj(w))
+   rv1=toS(conj(w)*v)*",\\ "*toS(v*conj(w)//h2(w))*",\\ "*toS(v-conj(w))
+   rv2=toS(conj(v)*v)*",\\ "*toS(v*conj(w)//h2(w))*",\\ "*toS(v+conj(w))
+   rv3=toS(conj(v)*w)*",\\ "*toS(w*conj(v)//h2(v))*",\\ "*toS(v+conj(w))
 
-   qText=raw"""
+   qText=bRep(raw"""
    \begin{multi}{__QNAME}
    Adott $v=__V$ és $w=__W$ komplex számok esetén számolja ki a
    $\overline{v}w,\ \frac{v}{w}, \ v-\overline{w}$ mennyiségeket!
@@ -27,13 +27,15 @@ let
    \item  $__RV2$
    \item  $__RV3$
    \end{multi}
-   """
-   qText=replace(qText,"__QNAME"=>qname)
-   qText=replace(qText,"__V"=>sC(v))
-   qText=replace(qText,"__W"=>sC(w))
-   qText=replace(qText,"__JV"=>jv)
-   qText=replace(qText,"__RV1"=>rv1)
-   qText=replace(qText,"__RV2"=>rv2)
-   qText=replace(qText,"__RV3"=>rv3)
+   """,
+   [
+      "__QNAME",qname,
+      "__V",toS(v),
+      "__W",toS(w),
+      "__JV",jv,
+      "__RV1",rv1,
+      "__RV2",rv2,
+      "__RV3",rv3
+   ])
    print(_out,qText)
 end

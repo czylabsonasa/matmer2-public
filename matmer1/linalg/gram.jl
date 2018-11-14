@@ -4,23 +4,32 @@ let
    qname="gram"
 
    # zerovector....!
-   b1=(rand(1:5,2).-2)//1
-   b2=(rand(1:5,2).-2)//1
+   b1=[0,0]
+   b2=[0,0]
+   while 1==1
+      b1=(rand(1:5,2).-2)//1
+      b2=(rand(1:5,2).-2)//1
+      if b1[1]*b2[2]!=b1[2]*b2[1]
+         break
+      end
+   end
 
    q1=copy(b1)
    q2=copy(b2)
    q2=q2-sum(q1.*q2)*q1//sum(q1.*q1)
 
-   jv=Tfr(sM(q1),"\\sqrt{"*sR(sum(q1.*q1))*"}")*", "*Tfr(sM(q2),"\\sqrt{"*sR(sum(q2.*q2))*"}")
+   # ez itt az elejen kitalalt modon van megcsinalva, at kell irni toS-ra, 
+   # nem nyulok hozza, mert muxik
+   jv=Tfr(toS(q1),"\\sqrt{"*toS(sum(q1.*q1))*"}")*", "*Tfr(toS(q2),"\\sqrt{"*toS(sum(q2.*q2))*"}")
    q1=q1+q2
-   rv1=Tfr(sM(q1),"\\sqrt{"*sR(sum(q1.*q1))*"}")*", "*Tfr(sM(q2),"\\sqrt{"*sR(sum(q2.*q2))*"}")
+   rv1=Tfr(toS(q1),"\\sqrt{"*toS(sum(q1.*q1))*"}")*", "*Tfr(toS(q2),"\\sqrt{"*toS(sum(q2.*q2))*"}")
    q1=q1-2*q2
-   rv2=Tfr(sM(q1),"\\sqrt{"*sR(sum(q1.*q1))*"}")*", "*Tfr(sM(q2),"\\sqrt{"*sR(sum(q2.*q2))*"}")
+   rv2=Tfr(toS(q1),"\\sqrt{"*toS(sum(q1.*q1))*"}")*", "*Tfr(toS(q2),"\\sqrt{"*toS(sum(q2.*q2))*"}")
    q2=q2+q1
-   rv3=Tfr(sM(q1),"\\sqrt{"*sR(sum(q1.*q1))*"}")*", "*Tfr(sM(q2),"\\sqrt{"*sR(sum(q2.*q2))*"}")
+   rv3=Tfr(toS(q1),"\\sqrt{"*toS(sum(q1.*q1))*"}")*", "*Tfr(toS(q2),"\\sqrt{"*toS(sum(q2.*q2))*"}")
 
 
-   qText=raw"""
+   qText=bRep(raw"""
    \begin{multi}{__QNAME}
    Ortonormálja a $b_1=__B1$, $b_2=__B2$ vektorrendszert!
    \item* $__JV$
@@ -28,13 +37,16 @@ let
    \item  $__RV2$
    \item  $__RV3$
    \end{multi}
-   """
-   qText=replace(qText,"__QNAME"=>qname)
-   qText=replace(qText,"__B1"=>sM(b1))
-   qText=replace(qText,"__B2"=>sM(b2))
-   qText=replace(qText,"__JV"=>jv)
-   qText=replace(qText,"__RV1"=>rv1)
-   qText=replace(qText,"__RV2"=>rv2)
-   qText=replace(qText,"__RV3"=>rv3)
+   """,
+   [
+      "__QNAME",qname,
+      "__B1",toS(b1),
+      "__B2",toS(b2),
+      "__JV",jv,
+      "__RV1",rv1,
+      "__RV2",rv2,
+      "__RV3",rv3
+   ])
+
    print(_out,qText)
 end

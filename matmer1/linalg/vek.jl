@@ -7,12 +7,12 @@ let
    r=rand(2:3)
    alfa=r//(rand(2:3)*r+1)
 
-   jv=sV(v+alfa*w)*",\\ "*sR(sum(v.*w))
-   rv1=sV(v-alfa*w)*",\\ "*sR(sum(v.*w))
-   rv2=sV(alfa*v-w)*",\\ "*sR(2*sum(v.*w))
-   rv3=sV(alfa*v+w)*",\\ "*sR(sum(v.*w))
+   jv=toS(v+alfa*w)*",\\ "*toS(sum(v.*w))
+   rv1=toS(v-alfa*w)*",\\ "*toS(sum(v.*w))
+   rv2=toS(alfa*v-w)*",\\ "*toS(2*sum(v.*w))
+   rv3=toS(alfa*v+w)*",\\ "*toS(sum(v.*w))
 
-   qText=raw"""
+   qText=bRep(raw"""
    \begin{multi}{__QNAME}
    Legyen $v=__V$ és $w=__W$. Végezze el a következő vektorműveleteket:
    $v+__ALFA w, \ vw^{T}$!
@@ -21,14 +21,17 @@ let
    \item  $__RV2$
    \item  $__RV3$
    \end{multi}
-   """
-   qText=replace(qText,"__QNAME"=>qname)
-   qText=replace(qText,"__V"=>sV(v))
-   qText=replace(qText,"__W"=>sV(w))
-   qText=replace(qText,"__ALFA"=>sR(alfa))
-   qText=replace(qText,"__JV"=>jv)
-   qText=replace(qText,"__RV1"=>rv1)
-   qText=replace(qText,"__RV2"=>rv2)
-   qText=replace(qText,"__RV3"=>rv3)
+   """,
+   [
+   "__QNAME",qname,
+   "__V",toS(v),
+   "__W",toS(w),
+   "__ALFA",toS(alfa),
+   "__JV",jv,
+   "__RV1",rv1,
+   "__RV2",rv2,
+   "__RV3",rv3
+   ])
+
    print(_out,qText)
 end

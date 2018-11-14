@@ -14,26 +14,53 @@
 \begin{document}
 
 \begin{quiz}{gyakorló feladatok}
-\begin{multi}{trigorder}
-Legyen $S,C,T=\sin(107^\circ),\cos(107^\circ),\tan(107^\circ)$. Ekkor:
-\item* $T<C<S$
-\item  $C<T<S$
-\item  $C<S<T$
-\item  $S<C<T$
+\begin{multi}{ml1}
+Mi lesz az $y$ vektor az utasítások végrehajtása után? \newline
+$x=\left[0, -1, 2, -1\right];$ \newline
+$y=$2*x+(x-(1:length(x))).\string^2;
+
+\item* $\left[1, 7, 5, 23\right]$
+\item  $\left[-1, -7, -5, -23\right]$
+\item  $\left[3, 9, 7, 25\right]$
+\item  $\left[2, 14, 10, 46\right]$
 \end{multi}
-\begin{multi}{circle}
-Válassza ki a lentiek közül egy $K\left[2, 5\right]$ középpontú kör egyenletét.
-\item* $+13-10y+y^{2}-4x+x^{2}=0$
-\item  $+4-10y+y^{2}+4x+x^{2}=0$
-\item  $+20+10y+y^{2}-4x+x^{2}=0$
-\item  $+13+10y+y^{2}+4x+x^{2}=0$
+\begin{multi}{vek}
+Legyen $v=\left[3, -1, 2\right]$ és $w=\left[1, 2, 3\right]$. Végezze el a következő vektorműveleteket:
+$v+\frac{2}{7} w, \ vw^{T}$!
+\item* $\left[\frac{23}{7}, -\frac{3}{7}, \frac{20}{7}\right],\ 7$
+\item  $\left[\frac{19}{7}, -\frac{11}{7}, \frac{8}{7}\right],\ 7$
+\item  $\left[-\frac{1}{7}, -\frac{16}{7}, -\frac{17}{7}\right],\ 14$
+\item  $\left[\frac{13}{7}, \frac{12}{7}, \frac{25}{7}\right],\ 7$
 \end{multi}
-\begin{multi}{linearis}
-Egy elsőfokú $f$ függvényről tudjuk, hogy $f(1)=0, f(2)=-5$. Mennyi $f(-2)$ ?
-\item* $10$
-\item  $11$
-\item  $12$
-\item  $8$
+\begin{multi}{mtx}
+Legyen $A=\left[{\begin{array}{ccc}1& 0& 1\\ 0& 2& 2\end{array}}\right]$ és $B=\left[{\begin{array}{ccc}-1& 0& 2\\ 3& 2& 3\end{array}}\right]$. Végezze el a következő mátrix-műveleteket:
+$(A+B)A^{T}$!
+\item* $\left[{\begin{array}{cc}3& 6\\ 8& 18\end{array}}\right]$
+\item  $\left[{\begin{array}{cc}6& 9\\ 7& 32\end{array}}\right]$
+\item  $\left[{\begin{array}{cc}1& -2\\ -4& -2\end{array}}\right]$
+\item  $\left[{\begin{array}{cc}-4& 3\\ 1& -12\end{array}}\right]$
+\end{multi}
+\begin{multi}{gram}
+Ortonormálja a $b_1=\left[1, 0\right]$, $b_2=\left[1, 1\right]$ vektorrendszert!
+\item* $\frac{\left[1, 0\right]}{\sqrt{1}}, \frac{\left[0, 1\right]}{\sqrt{1}}$
+\item  $\frac{\left[1, 1\right]}{\sqrt{2}}, \frac{\left[0, 1\right]}{\sqrt{1}}$
+\item  $\frac{\left[1, -1\right]}{\sqrt{2}}, \frac{\left[0, 1\right]}{\sqrt{1}}$
+\item  $\frac{\left[1, -1\right]}{\sqrt{2}}, \frac{\left[1, 0\right]}{\sqrt{1}}$
+\end{multi}
+\begin{multi}{algal}
+Adott $v=3-1i$ és $w=3-1i$ komplex számok esetén számolja ki a
+$\overline{v}w,\ \frac{v}{w}, \ v-\overline{w}$ mennyiségeket!
+\item* $10,\ 1,\ -2i$
+\item  $10,\ 1,\ -2i$
+\item  $10,\ 1,\ 6$
+\item  $10,\ 1,\ 6$
+\end{multi}
+\begin{multi}{gyok}
+Jelölje meg azt amely nem harmadik gyöke a $z=27\left(\cos(\frac{3}{7}\pi)+\sin(\frac{3}{7}\pi)i\right)$ komplex számnak.
+\item* $3\left(\cos(\frac{1}{14}\pi)+\sin(\frac{1}{14}\pi)i\right)$
+\item  $3\left(\cos(\frac{1}{7}\pi)+\sin(\frac{1}{7}\pi)i\right)$
+\item  $3\left(\cos(\frac{17}{21}\pi)+\sin(\frac{17}{21}\pi)i\right)$
+\item  $3\left(\cos(\frac{31}{21}\pi)+\sin(\frac{31}{21}\pi)i\right)$
 \end{multi}
 \end{quiz}
 \end{document}

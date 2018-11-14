@@ -77,6 +77,9 @@ let
             ret=ret*tag(xy[xi,yi],xi-1,yi-1)
          end
       end
+      if ret[1]=='+'
+         ret=ret[2:end]
+      end
       return ret
    end
 
