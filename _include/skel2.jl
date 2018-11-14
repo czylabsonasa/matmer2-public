@@ -17,7 +17,7 @@ let
    szam=[Minf,eps0,egybal,egyjobb,eps1]
    alak=[raw"M_{\infty}",raw"\varepsilon_{0}",raw"1_{-}",raw"1_{+}",raw"\varepsilon_{1}"]
 
-   using StatsBase
+#   using StatsBase
    m=sample(1:5,3,replace=false)
 
    mAlak=toS(alak[m],brac=false)

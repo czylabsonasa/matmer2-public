@@ -1,7 +1,7 @@
 let
    qname="tarsasag"
    n=rand(9:13)
-   using StatsBase
+#   using StatsBase
    k=rand(2:4)
    kedv=sample(1:n,k,replace=false,ordered=true)
    tipus=rand(["nem",""])

@@ -9,10 +9,10 @@
  
 <question type="multichoice">
   <name>
-    <text>ml1</text>
+    <text>trigorder</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Mi lesz az \(y\) vektor az utasítások végrehajtása után? \newline \(x=\left [0, -1, 2, -1\right ];\) \newline \(y=\)2*x+(x-(1:length(x))).\string ^2; </P><P></p>]]></text>
+    <text><![CDATA[<p>Legyen \(S,C,T=\sin (81^\circ ),\cos (81^\circ ),\tan (81^\circ )\). Ekkor: </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -22,24 +22,24 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(\left [1, 7, 5, 23\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(C&lt;S&lt;T\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [-1, -7, -5, -23\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(S&lt;C&lt;T\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [3, 9, 7, 25\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(S&lt;T&lt;C\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [2, 14, 10, 46\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(T&lt;S&lt;C\)</p>]]></text>
   </answer>
 </question>
 <question type="multichoice">
   <name>
-    <text>vek</text>
+    <text>circle</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Legyen \(v=\left [3, -1, 2\right ]\) és \(w=\left [1, 2, 3\right ]\). Végezze el a következő vektorműveleteket: \(v+\frac {2}{7} w, \ vw^{T}\)! </p>]]></text>
+    <text><![CDATA[<p>Válassza ki a lentiek közül egy \(K\left [6, 3\right ]\) középpontú kör egyenletét. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -49,24 +49,24 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(\left [\frac {23}{7}, -\frac {3}{7}, \frac {20}{7}\right ],\ 7\)</p>]]></text>
+    <text><![CDATA[<p>\(20-6y+y^{2}-12x+x^{2}=0\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [\frac {19}{7}, -\frac {11}{7}, \frac {8}{7}\right ],\ 7\)</p>]]></text>
+    <text><![CDATA[<p>\(9-6y+y^{2}+12x+x^{2}=0\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [-\frac {1}{7}, -\frac {16}{7}, -\frac {17}{7}\right ],\ 14\)</p>]]></text>
+    <text><![CDATA[<p>\(29+6y+y^{2}-12x+x^{2}=0\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [\frac {13}{7}, \frac {12}{7}, \frac {25}{7}\right ],\ 7\)</p>]]></text>
+    <text><![CDATA[<p>\(20+6y+y^{2}+12x+x^{2}=0\)</p>]]></text>
   </answer>
 </question>
 <question type="multichoice">
   <name>
-    <text>mtx</text>
+    <text>linearis</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Legyen \(A=\left [{\begin {array}{ccc}1& 0& 1\\ 0& 2& 2\end {array}}\right ]\) és \(B=\left [{\begin {array}{ccc}-1& 0& 2\\ 3& 2& 3\end {array}}\right ]\). Végezze el a következő mátrix-műveleteket: \((A+B)A^{T}\)! </p>]]></text>
+    <text><![CDATA[<p>Egy elsőfokú \(f\) függvényről tudjuk, hogy \(f(-6)=-1, f(3)=-4\). Mennyi \(f(-24)\) ? </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -76,24 +76,24 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(\left [{\begin {array}{cc}3& 6\\ 8& 18\end {array}}\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(2\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [{\begin {array}{cc}6& 9\\ 7& 32\end {array}}\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(3\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [{\begin {array}{cc}1& -2\\ -4& -2\end {array}}\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(4\)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\left [{\begin {array}{cc}-4& 3\\ 1& -12\end {array}}\right ]\)</p>]]></text>
+    <text><![CDATA[<p>\(0\)</p>]]></text>
   </answer>
 </question>
 <question type="multichoice">
   <name>
-    <text>gram</text>
+    <text>tarsasag</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ortonormálja a \(b_1=\left [1, 0\right ]\), \(b_2=\left [1, 1\right ]\) vektorrendszert! </p>]]></text>
+    <text><![CDATA[<p>Egy \( 11 \) tagú társaság tagjai egymás után lépnek be egy ajtón. Panna kedvenc számai: \( K=\left [6, 11\right ] \). Mi a valsége, hogy Panna \( K \)-beli helyen lép be az ajtón? </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -103,24 +103,24 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(\frac {\left [1, 0\right ]}{\sqrt {1}}, \frac {\left [0, 1\right ]}{\sqrt {1}}\)</p>]]></text>
+    <text><![CDATA[<p>\( \frac {2}{11} \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\frac {\left [1, 1\right ]}{\sqrt {2}}, \frac {\left [0, 1\right ]}{\sqrt {1}}\)</p>]]></text>
+    <text><![CDATA[<p>\( \frac {9}{11} \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\frac {\left [1, -1\right ]}{\sqrt {2}}, \frac {\left [0, 1\right ]}{\sqrt {1}}\)</p>]]></text>
+    <text><![CDATA[<p>\( \frac {1}{11} \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(\frac {\left [1, -1\right ]}{\sqrt {2}}, \frac {\left [1, 0\right ]}{\sqrt {1}}\)</p>]]></text>
+    <text><![CDATA[<p>\( \frac {10}{11} \)</p>]]></text>
   </answer>
 </question>
 <question type="multichoice">
   <name>
-    <text>algal</text>
+    <text>logeq</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Adott \(v=3-1i\) és \(w=3-1i\) komplex számok esetén számolja ki a \(\overline {v}w,\ \frac {v}{w}, \ v-\overline {w}\) mennyiségeket! </p>]]></text>
+    <text><![CDATA[<p>A \( \log (x-12)+\log (x+12)=2\log (16) \) egyenlet megoldása: </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -130,24 +130,24 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(10,\ 1,\ -2i\)</p>]]></text>
+    <text><![CDATA[<p>\( x=20 \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(10,\ 1,\ -2i\)</p>]]></text>
+    <text><![CDATA[<p>\( x=20, -20 \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(10,\ 1,\ 6\)</p>]]></text>
+    <text><![CDATA[<p>\( x=20, 16 \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(10,\ 1,\ 6\)</p>]]></text>
+    <text><![CDATA[<p>\( x=12, 16 \)</p>]]></text>
   </answer>
 </question>
 <question type="multichoice">
   <name>
-    <text>gyok</text>
+    <text>parity</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Jelölje meg azt amely nem harmadik gyöke a \(z=27\left (\cos (\frac {3}{7}\pi )+\sin (\frac {3}{7}\pi )i\right )\) komplex számnak. </p>]]></text>
+    <text><![CDATA[<p><CENTER>\[ {\begin {array}{cccc}-6x& -3\sin (-2x)& \sin (x)& -\cos (-7x)\\ e^{x}-e^{-x}& \log (|x|+1)& 2\sin (3x)& -\sin (x+\pi )\end {array}} \]</CENTER> A fentiek közül a páros függvények száma: </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html"><text/></generalfeedback>
@@ -157,16 +157,16 @@
   <shuffleanswers>1</shuffleanswers>
   <answernumbering>abc</answernumbering>
   <answer fraction="100" format="html">
-    <text><![CDATA[<p>\(3\left (\cos (\frac {1}{14}\pi )+\sin (\frac {1}{14}\pi )i\right )\)</p>]]></text>
+    <text><![CDATA[<p>\( 2 \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(3\left (\cos (\frac {1}{7}\pi )+\sin (\frac {1}{7}\pi )i\right )\)</p>]]></text>
+    <text><![CDATA[<p>\( 6 \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(3\left (\cos (\frac {17}{21}\pi )+\sin (\frac {17}{21}\pi )i\right )\)</p>]]></text>
+    <text><![CDATA[<p>\( 5 \)</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
-    <text><![CDATA[<p>\(3\left (\cos (\frac {31}{21}\pi )+\sin (\frac {31}{21}\pi )i\right )\)</p>]]></text>
+    <text><![CDATA[<p>\( 4 \)</p>]]></text>
   </answer>
 </question>
  

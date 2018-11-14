@@ -31,7 +31,8 @@ let
    p=rand(2:6)
    q=n-p
 
-   using StatsBase
+   #ezt mar a main-ban inkludaltam
+   #using StatsBase
    ps=sample(paros,p,replace=false)
    qs=sample(paratlan,q,replace=false)
    pq=[ps;qs]

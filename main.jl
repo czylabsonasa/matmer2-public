@@ -1,6 +1,6 @@
 using StatsBase
 include("_include/common.jl")
-include("config.jl")
+# include("config.jl")
 
 
 _out=open("_output/out.tex","w")
@@ -11,7 +11,14 @@ print(_out, raw"""
 """)
 
 
-include(_target*"/"*_sel*".jl")
+v=split(ARGS[1],'/')
+_target=v[1]
+_sel=v[2]
+
+#include(_target*"/"*_sel*".jl")
+include(_target*"/"*_sel)
+
+
 
 for (_key,_val) in _db
    _smp=[] # tha sample

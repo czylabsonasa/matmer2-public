@@ -11,7 +11,7 @@ let
    hsz=rand(2:4)
 
    # ezek a húzások
-   using StatsBase
+#   using StatsBase
    most=sample(urna,hsz,replace=false) 
    huz=szinek[most]
 
