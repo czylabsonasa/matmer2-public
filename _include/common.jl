@@ -1,3 +1,5 @@
+using StatsBase
+
 Tfr(a::Int,b::Int)="\\frac{$(a)}{$(b)}"
 Tfr(a::String,b::String)="\\frac{"*a*"}{"*b*"}"
 Tmm(a)="\$"*string(a)*"\$"
