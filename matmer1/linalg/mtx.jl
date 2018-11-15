@@ -12,12 +12,12 @@ let
 
    qText=bRep(raw"""
    \begin{multi}{__QNAME}
-   Legyen $A=__A$ és $B=__B$. Végezze el a következő mátrix-műveleteket:
-   $(A+B)A^{T}$!
-   \item* $__JV$
-   \item  $__RV1$
-   \item  $__RV2$
-   \item  $__RV3$
+   Legyen $ A=__A$ és $ B=__B $. Végezze el a következő mátrix-műveleteket:
+   $ (A+B)A^{T} $!
+   \item* $ __JV  $
+   \item  $ __RV1 $
+   \item  $ __RV2 $
+   \item  $ __RV3 $
    \end{multi}
    """,
    [

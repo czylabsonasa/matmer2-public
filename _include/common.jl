@@ -115,6 +115,7 @@ function toS(v::Array{String,1}; delim::String="",brac::Bool=true)
      end
       ret=ret*v[i]
    end
+   ret=ret*"\\end{array}}"
 
    if brac==true
       ret="\\left["*ret*"\\right]"

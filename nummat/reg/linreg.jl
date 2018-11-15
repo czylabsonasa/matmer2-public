@@ -45,8 +45,7 @@ let
    qText=bRep(
       raw"""
       \begin{multi}{__QNAME}
-      $__TBL$
-      asd...asd
+      $ __TBL $
       \item* $__JV$
       \item $__RV1$
       \item $__RV2$

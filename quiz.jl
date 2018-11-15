@@ -1,9 +1,8 @@
 include("_include/common.jl")
-# include("config.jl")
 
 
 _out=open("_output/out.tex","w")
-include("_include/pre.jl")
+include("_include/quiz/pre.tex")
 
 print(_out, raw"""
 \begin{quiz}{gyakorló feladatok}
@@ -37,7 +36,7 @@ for (_key,_val) in _db
    end
 end
 
-include("_include/post.jl")
+include("_include/quiz/post.tex")
 close(_out)
 
 # shell
