@@ -38,10 +38,14 @@ let
       ret=ret*raw"\end{array}"
    end
 
-   jv=toS(b[1])*"+"*toS(b[2])*"t"
-   rv1=jv
-   rv2=jv
-   rv3=jv
+   jv=polyS(b,x="t")
+   b[1]*=(-1);
+   rv1=polyS(b,x="t")   
+   b[2]*=(-1);
+   rv2=polyS(b,x="t")
+   b[1]*=(-1);
+   rv3=polyS(b,x="t")
+
    qText=bRep(
       raw"""
       \begin{multi}{__QNAME}

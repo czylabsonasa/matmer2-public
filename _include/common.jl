@@ -194,3 +194,36 @@ function ranPoly(x::Int, y::Int)
 
    return ertek,alak
 end
+
+function polyS(p::Array{Rational{Int},1};x="x")
+   deg=length(p)-1
+   alak=""
+   for pw in 0:deg
+      eh=p[pw+1]
+      if eh!=0
+         if eh>0
+            alak*="+"
+            if eh!=1
+               alak*=toS(eh)
+            end
+         end
+         if eh<0
+            alak*="-"
+            if eh!=-1
+               alak*=toS(abs(eh))
+            end
+         end
+         if pw>0
+            alak*=x
+            if pw>1
+               alak*=x*"^$(pw)"
+            end
+         end
+      end
+   end
+   if '+'==alak[1]
+      alak=alak[2:end]
+   end
+
+   alak
+end
