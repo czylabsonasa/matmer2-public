@@ -124,8 +124,10 @@ function toS(v::Array{String,1}; delim::String="",brac::Bool=true)
 end
 
 
+
 # bulk replace
-function bRep(s::String,h::Array{String,1})
+import Base.replace
+function replace(s::String,h::Array{String,1})
    for i in 1:2:length(h)
       s=replace(s,h[i]=>h[i+1])
    end
