@@ -12,7 +12,7 @@ let
 
    qText=replace(raw"""
    \begin{multi}{__QNAME}
-   Legyen $$A=__A$$. Ekkor $det(A)=$
+   Legyen $$A=__A$$ Ekkor $det(A)=$
    \item* $ __JV  $
    \item  $ __RV1 $
    \item  $ __RV2 $

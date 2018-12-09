@@ -2,22 +2,15 @@ let
    qname="lagrange"
 
    d=rand(2:3)
-   p=(rand(1:4,1,d+1).-2)//1
-   p[1]=1//1
-   t=sample(-3:4,d+2,replace=false)//1
+   p=(rand(1:4,1,d+1).-2)
+   p[1]=1
+   t=sample(-3:4,d+2,replace=false)
+   f=horner(p).(t)
 
-   function horner(p,x)
-     px=p[1]
-     d=length(p)
-     for i=2:d
-       px=px*x+p[i]
-     end
-     px       
-   end
-   
    jv=toS(p)
    rv1=toS(t)
-   rv2=toS(horner.(p,t))
+   h=horner(p)
+   rv2=toS(f)
    rv3=jv
 
    qText=replace(raw"""
