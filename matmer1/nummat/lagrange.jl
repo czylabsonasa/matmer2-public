@@ -7,6 +7,9 @@ let
    t=sample(-3:4,d+2,replace=false)
    f=horner(p).(t)
 
+   tf=permutedims(hcat(vcat("t",t),vcat("f",f)),(2,1))
+   tab=toTable(map(toS,tf))
+
    jv=toS(p)
    rv1=toS(t)
    h=horner(p)
@@ -15,6 +18,9 @@ let
 
    qText=replace(raw"""
    \begin{multi}{__QNAME}
+   Illesszünk minimális fokszámú polinomot a 
+   $$__TAB$$
+   adatokra.
    \item* $ __JV $
    \item  $ __RV1 $
    \item  $ __RV2 $
@@ -23,6 +29,7 @@ let
    """,
    [
       "__QNAME",qname,
+      "__TAB",tab,
       "__JV",jv,
       "__RV1",rv1,
       "__RV2",rv2,

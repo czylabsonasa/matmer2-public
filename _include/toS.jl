@@ -89,18 +89,20 @@ end
 
 function toTable(A::Array{String,2})
    r,c=size(A)
-   ret=raw"{\begin{array}{"
-   ret*="c|"*repeat("|c",c-1)*"}"
+   ret=raw"{\begin{array}{c|"*repeat("|c",c-1)*"}"
    for i in 1:r
       for j in 1:c
          if j>1
             ret=ret*"& "
          end
-         ret=ret*A[i,j]
+         ret*=A[i,j]
       end
-      ret=ret*raw"\hline"
+      ret*=raw"\\ "
+      if i<r
+         ret*=raw"\hline "
+      end
    end
-   ret=ret*"\\end{array}}"
+   ret=ret*raw"\end{array}}"
 
    ret
 end
