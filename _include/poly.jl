@@ -10,6 +10,18 @@ function horner(p)
    end
 end
 
+function polyDer(pol)
+   n=length(pol)
+   dpol=[];
+   if n==1
+      dpol=[0]
+   else
+      dpol=pol[1:n-1].*(n-1:-1:1)
+   end
+   dpol
+end
+
+
 
 # veletlen ketvaltozos polinom
 # latex alak + ertek a megadott helyen

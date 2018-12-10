@@ -1,17 +1,6 @@
 let
    qname="hermite"
 
-   function polyDer(pol)
-      n=length(pol)
-      dpol=[];
-      if n==1
-         dpol=[0]
-      else
-         dpol=pol[1:n-1].*(n-1:-1:1)
-      end
-      dpol
-   end
-
    nt=3 # pontok száma
    ndat=5 # adatok 3 + 1 + 2
    pol=(rand(-2:3,1,ndat))
