@@ -1,4 +1,4 @@
 _db=Dict(
 "linalg"=>["det"],
-"nummat"=>["lagrange"]
+"nummat"=>["lagrange","hermite"]
 )
