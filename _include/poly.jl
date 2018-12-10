@@ -64,35 +64,86 @@ function ranPoly(x::Int, y::Int)
    return ertek,alak
 end
 
-function polyToS(p::Array{Rational{Int},1};x="x")
+
+# ez rossz
+function _polyToS(p::Array{T,1};x="x") where {T}
+   n=length(p)
+   function coeff(k)
+      a=p[k]
+      ret= a>0 ? "+" : "-"
+      a=abs(a)
+      if a!=1
+         ret*=toS(a)
+      else
+         if a==1 && k==n
+            ret*="1"
+         end
+      end      
+      ret
+   end
+   function vari(k)
+      ret=""
+      if k>0
+         ret=x
+      end
+      if k>1
+         ret*="^{$(k)}"
+      end
+      ret
+   end
+
+   ret=""
+   for k in 1:n
+      if p[k]!=0
+         ret*=coeff(k)*vari(n-k)
+      end
+   end
+
+   if '+'==ret[1]
+      ret=ret[2:end]
+   end
+   ret
+end
+
+function polyToS(p::Array{T,1};x="x") where {T}
    deg=length(p)-1
-   alak=""
+   if deg==0
+      return toS(p[1])
+   end
+   ret=""
    for pw in 0:deg
       eh=p[pw+1]
       if eh!=0
          if eh>0
-            alak*="+"
+            ret*="+"
             if eh!=1
-               alak*=toS(eh)
+               ret*=toS(eh)
             end
          end
          if eh<0
-            alak*="-"
+            ret*="-"
             if eh!=-1
-               alak*=toS(abs(eh))
+               ret*=toS(abs(eh))
             end
          end
          if pw>0
-            alak*=x
+            ret*=x
             if pw>1
-               alak*=x*"^$(pw)"
+               ret*="^$(pw)"
             end
+         else
+            ret*=toS(eh)
          end
+
       end
    end
-   if '+'==alak[1]
-      alak=alak[2:end]
+   if length(ret)==0
+      return "0"
+   end
+   if '+'==ret[1]
+      ret=ret[2:end]
    end
 
-   alak
+   ret
 end
+
