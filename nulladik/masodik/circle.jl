@@ -89,7 +89,7 @@ rv2=poly(table(kx,-ky,r-1))*"=0"
 rv3=poly(table(-kx,-ky,r))*"=0"
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Válassza ki a lentiek közül egy $__K$ középpontú kör egyenletét.
 \item* $__JV$

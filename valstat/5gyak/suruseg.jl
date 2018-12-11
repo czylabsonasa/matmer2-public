@@ -15,7 +15,7 @@ let
    rv2=toS(a+2)
    rv3=toS(a*2+1)
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Egy $X$ valségi változó sűrűségfüggvénye: 
 $$ __ALAK $$ alakú valamely $A$ számra. Ekkor $A=$

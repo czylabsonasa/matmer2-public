@@ -16,7 +16,7 @@ let
    end
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Egy $ __N $ tagú társaság tagjai egymás után lépnek be egy ajtón. Panna kedvenc számai: $ K=__KEDV $.
 Mi a valsége, hogy Panna __TIP $ K $-beli helyen lép be az ajtón?

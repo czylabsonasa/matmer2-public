@@ -25,7 +25,7 @@ jo[1],jo[2]=jo[2],jo[1]
 rv3=jo[1]*"<"*jo[2]*"<"*jo[3]
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Legyen $__ALAK$. Ekkor:
 \item* $__JV$

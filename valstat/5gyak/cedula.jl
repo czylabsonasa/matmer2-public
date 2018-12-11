@@ -47,7 +47,7 @@ let
    rv2=idJ*raw" és $cov(X,Y)="*toS(co+1)*"\$"
    rv3=idR*raw" és $cov(X,Y)="*toS(co-1)*"\$"
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Egy dobozban $__DB$ cédula van, rajtuk a $__CED$ számok. Egy véletlenszerűen 
 kihúzott cédula esetén jelentse $X$ az első, $Y$ a második számjegyét.

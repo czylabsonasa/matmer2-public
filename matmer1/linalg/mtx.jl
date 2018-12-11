@@ -10,7 +10,7 @@ let
    rv2=toS((A-B)*transpose(A))
    rv3=toS((A-B)*transpose(B))
 
-   qText=bRep(raw"""
+   qText=replace(raw"""
    \begin{multi}{__QNAME}
    Legyen $ A=__A$ és $ B=__B $. Végezze el a következő mátrix-műveleteket:
    $ (A+B)A^{T} $!

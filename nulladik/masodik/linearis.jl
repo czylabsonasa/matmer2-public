@@ -25,7 +25,7 @@ rv1=string(fq+1)
 rv2=string(fq+2)
 rv3=string(fq-2)
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Egy elsőfokú $f$ függvényről tudjuk, hogy $__ALAK$. Mennyi $__Q$ ?
 \item* $__JV$

@@ -14,7 +14,7 @@ let
    rv2=toS(mx+2)*", "*toS(ev(i,n))*"^{T}"
    i=mod(i,n)+1
    rv3=toS(abs(mx-1))*", "*toS(ev(i,n))*"^{T}"
-   qText=bRep(
+   qText=replace(
       raw"""
       \begin{multi}{__QNAME}
       Az $A=__A$ mátrix 1-normája és egy $x$ vektor melyre $\frac{||Ax||}{||x||}$ maximális: 

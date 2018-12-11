@@ -12,7 +12,7 @@ let
    rv2=toS(alfa*v-w)*",\\ "*toS(2*sum(v.*w))
    rv3=toS(alfa*v+w)*",\\ "*toS(sum(v.*w))
 
-   qText=bRep(raw"""
+   qText=replace(raw"""
    \begin{multi}{__QNAME}
    Legyen $v=__V$ és $w=__W$. Végezze el a következő vektorműveleteket:
    $v+__ALFA w, \ vw^{T}$!

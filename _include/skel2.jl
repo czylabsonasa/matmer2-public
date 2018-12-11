@@ -36,7 +36,7 @@ let
    d=[1,a,1//a]
    r3=r3.//d
 
-   Fs=bRep(
+   Fs=replace(
       raw"F=\left[ a(__a), k_{-}(__k1), k_{+}(__k2), t(__t) \right]",
       [
          "__a",string(a),
@@ -45,7 +45,7 @@ let
          "__t",string(t)])
 
 
-   qText=bRep(
+   qText=replace(
       raw"""
       \begin{multi}{__QNAME}
       Az $__F$ rendszerben az $__MALAK$ mennyiségek 

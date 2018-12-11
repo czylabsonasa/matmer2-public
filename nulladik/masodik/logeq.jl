@@ -5,7 +5,7 @@ let
    A=p^2-q^2
    B=2*p*q
    C=p^2+q^2
-   eq=bRep(raw"\log(x-__A)+\log(x+__A)=2\log(__B)",["__A",string(A),"__B",string(B)])
+   eq=replace(raw"\log(x-__A)+\log(x+__A)=2\log(__B)",["__A",string(A),"__B",string(B)])
 
    jv=C
    rv1=[C,-C]
@@ -13,7 +13,7 @@ let
    rv3=[A,B]
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 A $ __EQ $ egyenlet megoldása:
 \item* $ __JV $

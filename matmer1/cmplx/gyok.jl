@@ -15,7 +15,7 @@ let
    alfa=alfa+2//3
    rv3="$(h)\\left($(trig(alfa))\\right)"
 
-   qText=bRep(raw"""
+   qText=replace(raw"""
    \begin{multi}{__QNAME}
    Jelölje meg azt amely nem harmadik gyöke a $z=__Z$ komplex számnak.
    \item* $__JV$

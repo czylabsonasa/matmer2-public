@@ -55,7 +55,7 @@ let
    
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 $$ __SEL $$
 A fentiek közül a páros függvények száma:

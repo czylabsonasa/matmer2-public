@@ -29,7 +29,7 @@ let
    rv3=Tfr(toS(q1),"\\sqrt{"*toS(sum(q1.*q1))*"}")*", "*Tfr(toS(q2),"\\sqrt{"*toS(sum(q2.*q2))*"}")
 
 
-   qText=bRep(raw"""
+   qText=replace(raw"""
    \begin{multi}{__QNAME}
    Ortonormálja a $ b_1=__B1 $, $ b_2=__B2 $ vektorrendszert!
    \item* $ __JV $

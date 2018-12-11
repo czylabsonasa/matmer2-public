@@ -89,7 +89,7 @@ end
 
 function toTable(A::Array{String,2})
    r,c=size(A)
-   ret=raw"{\begin{array}{c|"*repeat("|c",c-1)*"}"
+   ret=raw"{\begin{array}{l|"*repeat("|c",c-1)*"}"
    for i in 1:r
       for j in 1:c
          if j>1
@@ -105,5 +105,28 @@ function toTable(A::Array{String,2})
    ret=ret*raw"\end{array}}"
 
    ret
+end
+
+
+function toTable(x::Array{Rational{Int},1},sx::String,y::Array{Rational{Int},1},sy::String)
+   n=length(x)
+   ret=raw"\begin{array}{l ||"*repeat("c|",n-1)*"c}"
+   ret=ret*sx*"&"
+   for i in 1:n
+      if i>1
+         ret=ret*"&"
+      end
+      ret=ret*toS(x[i])
+   end
+   ret=ret*raw"\\ \hline "
+   ret=ret*sy*"&"
+   for i in 1:n
+      if i>1
+         ret=ret*"&"
+      end
+      ret=ret*toS(y[i])
+   end
+   ret=ret*raw" \\ "
+   ret=ret*raw"\end{array}"
 end
 

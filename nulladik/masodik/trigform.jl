@@ -27,7 +27,7 @@ let
 
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Tudjuk, hogy $ \sin(\alpha) =__A$ és $ \cos(\alpha) = __B $. Ekkor $__QUEST$:
 \item* $ __JV $

@@ -1,5 +1,5 @@
 let
-   qname="linreg"
+   qname="reg1"
 
    m=rand(5:7)
    t=rand(-4:4,m)//1

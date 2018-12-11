@@ -32,7 +32,7 @@ rv2=helper(a,b,c+1,d+1)
 rv3=helper(a,b,c,d+1)
 
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Ha $ __ADAT $, akkor $ __Q$=?
 \item* $ __JV $

@@ -19,7 +19,7 @@ let
    rv2=2*A//h
    rv3=(B-A)//h
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 Egy $ __H $ méter hosszú botot  egy csapással véletlenszerűen kettétörünk. Legyen $ Y $ 
 a keletkezet részek hosszának minimuma. Mennyi $ P(__A<Y<__B) $?

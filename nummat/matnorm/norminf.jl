@@ -16,7 +16,7 @@ let
    rv2=toS(mx+2)*", "*toS(x)*"^{T}"
    i=mod(i,n)+1
    rv3=toS(abs(mx-1))*", "*toS(-x)*"^{T}"
-   qText=bRep(
+   qText=replace(
       raw"""
       \begin{multi}{__QNAME}
       Az $A=__A$ mátrix $\infty$-normája és egy $x$ vektor melyre $\frac{||Ax||_{\infty}}{||x||_{\infty}}$ maximális: 

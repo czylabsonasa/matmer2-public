@@ -48,7 +48,7 @@ let
    rv2=toS(y.+p)
    rv3=toS(p*y)
 
-   qText=bRep(raw"""
+   qText=replace(raw"""
    \begin{multi}{__QNAME}
    Mi lesz az $y$ vektor az utasítások végrehajtása után? \newline
    $x=__X;$ \newline

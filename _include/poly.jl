@@ -106,39 +106,34 @@ function _polyToS(p::Array{T,1};x="x") where {T}
 end
 
 function polyToS(p::Array{T,1};x="x") where {T}
-   deg=length(p)-1
-   if deg==0
+   n=length(p)-1
+   if n==0 # nulladfokú (egyelemű tömb)
       return toS(p[1])
    end
    ret=""
-   for pw in 0:deg
-      eh=p[pw+1]
-      if eh!=0
-         if eh>0
-            ret*="+"
-            if eh!=1
-               ret*=toS(eh)
-            end
-         end
-         if eh<0
-            ret*="-"
-            if eh!=-1
-               ret*=toS(abs(eh))
-            end
-         end
-         if pw>0
-            ret*=x
-            if pw>1
-               ret*="^$(pw)"
-            end
-         else
-            ret*=toS(eh)
-         end
+   for k in 0:n
+      c=p[k+1]
+      if c==0 continue end
 
+      if c>0
+         ret*="+"
+      else
+         ret*="-"
       end
-   end
-   if length(ret)==0
-      return "0"
+      ac=abs(c)
+      if ac!=1
+         ret*=toS(ac)
+      end
+      if k>0
+         ret*=x
+         if k>1
+            ret*="^$(k)"
+         end
+      else
+         if ac==1
+            ret*="1"
+         end
+      end
    end
    if '+'==ret[1]
       ret=ret[2:end]

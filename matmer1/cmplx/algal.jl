@@ -18,7 +18,7 @@ let
    rv2=toS(conj(v)*v)*",\\ "*toS(v*conj(w)//h2(w))*",\\ "*toS(v+conj(w))
    rv3=toS(conj(v)*w)*",\\ "*toS(w*conj(v)//h2(v))*",\\ "*toS(v+conj(w))
 
-   qText=bRep(raw"""
+   qText=replace(raw"""
    \begin{multi}{__QNAME}
    Adott $v=__V$ és $w=__W$ komplex számok esetén számolja ki a
    $\overline{v}w,\ \frac{v}{w}, \ v-\overline{w}$ mennyiségeket!

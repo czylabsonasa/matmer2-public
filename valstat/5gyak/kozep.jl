@@ -19,7 +19,7 @@ let
    rv2=2*A//h
    rv3=(B-A)//h
 
-qText=bRep(raw"""
+qText=replace(raw"""
 \begin{multi}{__QNAME}
 A $ (0,__H) $ intervallumon választunk egy pontot. 
 Legyen $ Y $ a pontunk távolsága az intervallum közepétől.
