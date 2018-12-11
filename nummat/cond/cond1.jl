@@ -24,7 +24,7 @@ let
    rv1=toS(c[t]+1)
    rv2=toS(c[3-t]+1)
    rv3=toS(c[3-t])
-   qText=bRep(
+   qText=replace(
       raw"""
       \begin{multi}{__QNAME}
       Ha $A=__A$, akkor $cond_{__T}(A)=$

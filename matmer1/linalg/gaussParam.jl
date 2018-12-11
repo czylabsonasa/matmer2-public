@@ -1,5 +1,6 @@
+# befejezetlen!!
 let
-   qname="mtx"
+   qname="gaussParam"
 
 
    A=(rand(-3:4,3,5))//1
