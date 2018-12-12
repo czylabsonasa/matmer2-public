@@ -108,7 +108,7 @@ function toTable(A::Array{String,2})
 end
 
 
-function toTable(x::Array{Rational{Int},1},sx::String,y::Array{Rational{Int},1},sy::String)
+function _toTable(x::Array{Rational{Int},1},sx::String,y::Array{Rational{Int},1},sy::String)
    n=length(x)
    ret=raw"\begin{array}{l ||"*repeat("c|",n-1)*"c}"
    ret=ret*sx*"&"
@@ -130,3 +130,24 @@ function toTable(x::Array{Rational{Int},1},sx::String,y::Array{Rational{Int},1},
    ret=ret*raw"\end{array}"
 end
 
+function toTable(x::Array{T,1},sx::String,y::Array{S,1},sy::String) where {T,S}
+   n=length(x)
+   ret=raw"\begin{array}{l ||"*repeat("c|",n-1)*"c}"
+   ret=ret*sx*"&"
+   for i in 1:n
+      if i>1
+         ret=ret*"&"
+      end
+      ret=ret*toS(x[i])
+   end
+   ret=ret*raw"\\ \hline "
+   ret=ret*sy*"&"
+   for i in 1:n
+      if i>1
+         ret=ret*"&"
+      end
+      ret=ret*toS(y[i])
+   end
+   ret=ret*raw" \\ "
+   ret=ret*raw"\end{array}"
+end

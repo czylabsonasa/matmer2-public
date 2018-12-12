@@ -1,5 +1,8 @@
 using StatsBase
 using LinearAlgebra
+using Statistics
+using Distributions
+using Random
 
 include("../_include/toS.jl")
 include("../_include/poly.jl")
