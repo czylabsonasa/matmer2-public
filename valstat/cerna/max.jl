@@ -49,15 +49,15 @@ balra pedig 0 értéket vesz fel)
 
 
 
-a,b=rand(-h:h,2)
+a,b=rand(0:h,2)
 if a>b
    a,b=b,a
 end
-ra=max(0,a)
-rb=min(h2,b)
+ra=max(h2,a)
+rb=min(h,b)
 
 sol=0//1
-if rb>ra && ra<h && rb>h2
+if rb>ra
    sol=(rb-ra)//h2
 end
 
