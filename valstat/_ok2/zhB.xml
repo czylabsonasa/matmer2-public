@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$module$/2. zh</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name>
+    <text>boltExp</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy forgalmas benzinkútnál a tapasztalatok szerint a sorbanállás pillanatától a tankolás megkezdéséig eltelt percek száma exponenciális eloszlású. Tudjuk, hogy átlagosan \( 3 \) percet kell várni. Egy barátom felhív a sorbaállás kezdetekor, és azt mondja \( 4 \) perc múlva odajön. Mennyi a valsége, hogy még sorbanállok, amikor megérkezik. (tegyük fel, hogy valóban megérkezik a mondott időben.) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( e^{-\frac {4}{3}} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( e^{-\frac {2}{3}} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( e^{-\frac {4}{9}} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( e^{-4} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>abs2sfv</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \( X \) valségi változó sűrűségfüggvénye: <CENTER>\[ f(x)= \begin {cases} A(\frac {7}{3}-|x|) & \text {ha } |x|&lt;1 \\ 0 & \text { máskor } \end {cases} \]</CENTER> alakú valamely \( A \) számra. Ekkor \( A= \) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( \frac {3}{11} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {17}{22} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {20}{33} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {23}{44} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>abs2varhato</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \( X \) valségi változó sűrűségfüggvénye: <CENTER>\[ f(x)= \begin {cases} \frac {3}{11}(\frac {7}{3}-|x|) & \text {ha } |x|&lt;1 \\ 0 & \text { máskor } \end {cases} \]</CENTER> alakú. Ekkor \( E(X)= \) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( 0 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {1}{2} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( -\frac {1}{3} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {1}{4} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>absszoras</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(X\) valségi változó sűrűségfüggvénye: <CENTER>\[ f(x)= \begin {cases} \frac {3}{11}(\frac {7}{3}-|x|) & \text {ha } |x|&lt;1 \\ 0 & \text { máskor } \end {cases} \]</CENTER> alakú. Ekkor \( D^{2}(X)= \) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(\frac {19}{66}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {26}{33}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {41}{66}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {71}{132}\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>minEo</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \( 10 \) méter hosszú cérnát egy ollóval véletlenszerűen elvágunk. Legyen \( Y \) a keletkezett részek hosszának minimuma. Ekkor \( Y \) eloszlásfüggvénye: (ami a jelzett intervallumtól jobbra 1, balra pedig 0 értéket vesz fel) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( F(x)=\frac {x}{5},\:\: 0&lt;x&lt;5 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( F(x)=\frac {x-10}{5},\:\: 5&lt;x&lt;10 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( F(x)=\frac {x}{10},\:\: 0&lt;x&lt;10 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( F(x)=\frac {x-10}{10},\:\: 0&lt;x&lt;10 \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>minVal</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \( 10 \) méter hosszú cérnát egy ollóval véletlenszerűen elvágunk. Legyen \( Y \) a keletkezett részek hosszának minimuma. Ekkor \( P(6&lt;Y&lt;10) \)= </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( 0 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 1 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {1}{2} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {1}{3} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>minE</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \( 10 \) méter hosszú cérnát egy ollóval véletlenszerűen elvágunk. Legyen \( Y \) a keletkezett részek hosszának minimuma. Ekkor az \( Y \) várható értéke: </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( \frac {5}{2} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 5 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 10 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {5}{4} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>std</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \( 5 \) elemű \( X \) mintáról a következőket tudjuk: <CENTER>\[ \sum _{k=1}^{ 5 } X_{k}= 9 \hspace {1cm} \sum _{k=1}^{ 5 } X^{2}_{k}= 33 \]</CENTER> Ekkor a korrigált tapasztalati szórásnégyzet: </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( \frac {21}{5} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {84}{25} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {84}{5} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {42}{5} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>eloszlas</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy zacskós cukorka névleges (átlagos) tömege \( 150 \) gramm \( 4\) gramm szórással. Normálisnak tételezve és \( X \)-el jelölve a töltőtömeget, számoljuk ki \( P( 148&lt;X&lt;152) \) valséget! <CENTER>\[ \begin {array}{l ||c|c|c|c|c|c|c}x&-\frac {3}{4}&-\frac {1}{2}&-\frac {1}{4}&0&\frac {1}{4}&\frac {1}{2}&\frac {3}{4}\\ \hline \Phi (x)&0.2266&0.3085&0.4013&0.5&0.5987&0.6915&0.7734 \\ \end {array} \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( 0.3829 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 0.4648 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 0.2902 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 0.3721 \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>u</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy zacskós tea-féle névleges (átlagos) tömege a gyártó állítása szerint \( 170 \) gramm, \( 4 \) gramm szórással. A fogyasztóvédelem emberei véletlenszerűen megvizsgáltak néhány terméket ( \( X_{1},\ldots,X_{10}\) ) és a következő eredményeket kapták: <CENTER>\[ \sum _{k=1}^{ 10 } X_{k}= 1713.9128 \hspace {1cm} \sum _{k=1}^{ 10 } X^{2}_{k}= 295095.2612 \]</CENTER> <CENTER>\[ \begin {array}{l ||c|c|c|c|c|c|c}x&0.6745&1.2816&1.6449&1.96&2.0537&2.3263&2.5758\\ \hline \Phi (x)&0.75&0.9&0.95&0.975&0.98&0.99&0.995 \\ \end {array} \]</CENTER> A töltőtömeg normalitását feltételezve a minta alapján a gyártó állítását \( \alpha =0.01 \) szinten </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>elfogadjuk, mivel \( |u|=1.0999 &lt; 2.5758 \), ahol \( \Phi (2.5758)=0.995 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>elfogadjuk, mivel \( |u|=2.0937 &lt; 2.3263 \), ahol \( \Phi (2.3263)=0.99 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>elvetjük, mivel \( |u|=1.0999 &gt; -1.6449 \), ahol \( \Phi (1.6449)=0.95 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>elvetjük, mivel \( |u|=1.8094 &gt; 1.6449 \), ahol \( \Phi (1.6449)=0.95 \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>t</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy zacskós tea-féle névleges (átlagos) tömege a gyártó állítása szerint \( 200 \) gramm. A fogyasztóvédelem emberei véletlenszerűen megvizsgáltak néhány terméket ( \( X_{1},\ldots,X_{9}\) ) és a következő eredményeket kapták: <CENTER>\[ \sum _{k=1}^{ 9 } X_{k}= 1783.0584 \hspace {1cm} \sum _{k=1}^{ 9 } X^{2}_{k}= 354429.7556 \]</CENTER> <CENTER>\[ \begin {array}{l ||c|c|c|c|c|c|c}p&0.75&0.9&0.95&0.975&0.98&0.99&0.995\\ \hline t_{8}(p)&0.7064&1.3968&1.8595&2.306&2.449&2.8965&3.3554 \\ \end {array} \]</CENTER> A töltőtömeg normalitását feltételezve a minta alapján a gyártó állítását \( \alpha =0.1 \) szinten </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>elfogadjuk, mivel \( |t|=0.4661 &lt; 1.8595 \), ahol \( t_{8}(0.95)=1.8595 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>elfogadjuk, mivel \( |t|=3.0199 &lt; 3.3554 \), ahol \( t_{8}(0.995)=3.3554 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>elvetjük, mivel \( |t|=0.4661 &gt; -2.8965 \), ahol \( t_{8}(0.99)=2.8965 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>elvetjük, mivel \( |t|=3.1862 &gt; 2.8965 \), ahol \( t_{8}(0.99)=2.8965 \)</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>
