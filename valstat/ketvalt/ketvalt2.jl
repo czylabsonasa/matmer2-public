@@ -1,5 +1,5 @@
 # f(x,y)=2a(1-ax)2b(1-by), 0<x<1/a,  0<y<1/b
-# ez random, független
+# random, független X,Y
 let
    qname="ketvalt2"
    pool=[1//3,1//2,1,2,3]#az együtthatókat ebből húzza
