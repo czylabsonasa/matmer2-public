@@ -1,9 +1,11 @@
+# a polinomok tombkent alapertelmezetten novekvo hatvany szerint!!!
+
 # horner
 function horner(p)
    function f(x)
-      px=p[1]
-      d=length(p)
-      for i=2:d
+      n=length(p)
+      px=p[n]
+      for i=(n-1):-1:1
          px=px*x+p[i]
       end
       px       
@@ -16,7 +18,7 @@ function polyDer(pol)
    if n==1
       dpol=[0]
    else
-      dpol=pol[1:n-1].*(n-1:-1:1)
+      dpol=pol[2:n].*(1:(n-1))
    end
    dpol
 end
@@ -105,13 +107,17 @@ function _polyToS(p::Array{T,1};x="x") where {T}
    ret
 end
 
-function polyToS(p::Array{T,1};x="x") where {T}
+function polyToS(p::Array{T,1};x="x",order="dec") where {T}
    n=length(p)-1
    if n==0 # nulladfokú (egyelemű tömb)
       return toS(p[1])
    end
+   tagok=0:n
+   if order=="dec"
+      tagok=n:-1:0
+   end
    ret=""
-   for k in 0:n
+   for k in tagok
       c=p[k+1]
       if c==0 continue end
 

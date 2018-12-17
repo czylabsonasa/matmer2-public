@@ -4,6 +4,8 @@ using Statistics
 using Distributions
 using Random
 using DelimitedFiles
+using Printf
+
 
 include("../_include/toS.jl")
 include("../_include/poly.jl")
