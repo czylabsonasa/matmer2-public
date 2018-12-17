@@ -4,8 +4,9 @@ _out=open("_output/out.tex","w")
 include("_include/algo/pre.tex")
 
 _target=ARGS[1]
-println("dbg:",_target)
+println("arg1:",_target)
 _input=_target*"/"*ARGS[2]
+println("input:",_target)
 
 include(_target*"/main.jl")
 
