@@ -1,81 +1,103 @@
-# f(x,y)=2(1-x)4(1-2y), 0<x<1,  0<y<1/2
+# f(x,y)=2a(1-ax)2b(1-by), 0<x<1/a,  0<y<1/b
+# ez random, független
 let
    qname="ketvalt2"
-   pool=[1//3,1//2,1,2,3]
-   a=rand(pool)
-   b=rand(pool)
-   fxy=replace("f_{X,Y}(x,y)=__C(1-__ax-__by+__ab)",[
+   pool=[1//3,1//2,1,2,3]#az együtthatókat ebből húzza
+   a,b=sample(pool,2,replace=false)
+
+   fxy=replace("f_{X,Y}(x,y)=__C(1-__ax-__by+__abxy)",[
       "__C",toS(4*a*b),
       "__ab",toS(a*b),
       "__a",toS(a),
       "__b",toS(b)
    ])
 
-   alak=replace(raw"""
+   fxyTeljes=replace(raw"""
    f_{X,Y}(x,y)=
    \begin{cases}
-   __fxy  & \text{ha } 0<x<__x,\: 0<y<__y \\
+   __fxy  & \text{ha } 0<x<__aa,\: 0<y<__bb \\
    0             & \text{ máskor }
    \end{cases}
    """,[
       "__fxy",fxy,
-      "__x",toS(1//a),
-      "__y",toS(1//b)
+      "__aa",toS(1//a),
+      "__bb",toS(1//b)
    ])
 
-   jv,rv1,rv2,rv3="","","",""
 
-   jv=raw"4(1-2y),\: 0<y<\frac{1}{2}"
-   rv1=raw"4(1-2y),\: 0<y<1"
-   rv2=raw"(1-2y),\: 0<y<\frac{1}{2}"
-   rv3=raw"2(1-2y),\: 0<y<1"
+   quest=raw"""Ekkor az $ Y $ egyedi (marginális) sűrűségfüggvénye, $ f_{Y}(y)= $"""
+   
+   jv=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(b),
+      "__b",toS(b),
+      "__c",toS(b)
+   ])
+   rv1=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(a),
+      "__b",toS(a),
+      "__c",toS(a)
+   ])
+   rv2=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(a),
+      "__b",toS(b),
+      "__c",toS(a)
+   ])
+   rv3=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(a),
+      "__b",toS(b),
+      "__c",toS(b)
+   ])
 
 
 qText=replace(raw"""
-\begin{multi}{marg}
+\begin{multi}{egyedi}
 Az $X$ és $Y$ valségi változók együttes sűrűségfüggvénye:
-$$ __alak $$
-Ekkor az $ Y $ egyedi (marginális) sűrűsegfüggvénye, $ f_{Y}(y)= $
-\item* $ __JV $
-\item $ __RV1 $
-\item $ __RV2 $
-\item $ __RV3 $
+$$ __fxyTeljes $$
+__quest
+\item* $ __jv $
+\item $ __rv1 $
+\item $ __rv2 $
+\item $ __rv3 $
 \end{multi}
 """,[
-   "__alak",alak,
-   "__JV",jv,
-   "__RV1",rv1,
-   "__RV2",rv2,
-   "__RV3",rv3
+   "__fxyTeljes",fxyTeljes,
+   "__quest",quest,
+   "__jv",jv,
+   "__rv1",rv1,
+   "__rv2",rv2,
+   "__rv3",rv3
 ])
    print(_out,qText)
 
 
-
-   jv=toS(1)
-   rv1=toS(1//2)
-   rv2=toS(2)
-   rv3=toS(1//3)
+   quest=raw"Ekkor az $ X $ várható értéke, $ E(X)= $"
+   jv=toS(1//(3*a))
+   rv1=toS(1//(3*b))
+   rv2=toS(1//a)
+   rv3=toS(1//b)
 
 
    qText=replace(raw"""
-   \begin{multi}{varhato}
+   \begin{multi}{várható érték}
    Az $X$ és $Y$ valségi változók együttes sűrűségfüggvénye:
-   $$ __ALAK $$
-   Ekkor az $ X $ várható értéke, $ E(X)= $
-   \item* $ __JV $
-   \item $ __RV1 $
-   \item $ __RV2 $
-   \item $ __RV3 $
+   $$ __fxyTeljes $$
+   __quest
+   \item* $ __jv $
+   \item $ __rv1 $
+   \item $ __rv2 $
+   \item $ __rv3 $
    \end{multi}
    """,[
-      "__ALAK",alak,
-      "__JV",jv,
-      "__RV1",rv1,
-      "__RV2",rv2,
-      "__RV3",rv3
+      "__fxyTeljes",fxyTeljes,
+      "__quest",quest,
+      "__jv",jv,
+      "__rv1",rv1,
+      "__rv2",rv2,
+      "__rv3",rv3
    ])
       print(_out,qText)
+
+      quest=raw"Ekkor az $ X $ és $ Y $ valségi változókra igaz, hogy:"
 
       jv=raw"\text{függetlenek}"
       rv1=raw"\text{nem függetlenek}"
@@ -84,24 +106,23 @@ Ekkor az $ Y $ egyedi (marginális) sűrűsegfüggvénye, $ f_{Y}(y)= $
 
 
       qText=replace(raw"""
-      \begin{multi}{tulajdon}
+      \begin{multi}{függetlenség}
       Az $X$ és $Y$ valségi változók együttes sűrűségfüggvénye:
-      $$ __ALAK $$
-      Ekkor az $ X $ és $ Y $ valségi változókra igaz, hogy:
-      \item* $ __JV $
-      \item $ __RV1 $
-      \item $ __RV2 $
-      \item $ __RV3 $
+      $$ __fxyTeljes $$
+      \item* $ __jv $
+      \item $ __rv1 $
+      \item $ __rv2 $
+      \item $ __rv3 $
       \end{multi}
       """,[
-         "__ALAK",alak,
-         "__JV",jv,
-         "__RV1",rv1,
-         "__RV2",rv2,
-         "__RV3",rv3
+         "__fxyTeljes",fxyTeljes,
+         "__jv",jv,
+         "__rv1",rv1,
+         "__rv2",rv2,
+         "__rv3",rv3
       ])
-         print(_out,qText)
-
+      
+      print(_out,qText)
 
 
 end
