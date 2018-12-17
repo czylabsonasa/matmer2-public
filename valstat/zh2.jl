@@ -5,5 +5,5 @@ _db=Dict(
 "normalis"=>["eloszlas"],
 "proba"=>["u","t"],
 "surusegfv"=>["abs"] ,#"abs2"]
-"ketvalt"=>["ketvalt1"]
+"ketvalt"=>["ketvalt2"]
 )
