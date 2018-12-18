@@ -1,3 +1,4 @@
+# LAGRANGE megkezdve
 let
    
    function padIt(v::Array{String,1},pre::Int,post::Int)

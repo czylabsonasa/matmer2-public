@@ -3,7 +3,7 @@
 let
    qname="ketvalt2"
    pool=[1//3,1//2,1,2,3]#az együtthatókat ebből húzza
-   a,b=sample(pool,2,replace=false)
+   a,b=sample(pool,2,replace=false)//1
 
    fxy=replace("f_{X,Y}(x,y)=__C(1-__ax-__by+__abxy)",[
       "__C",toS(4*a*b),
@@ -27,24 +27,24 @@ let
 
    quest=raw"""Ekkor az $ Y $ egyedi (marginális) sűrűségfüggvénye, $ f_{Y}(y)= $"""
    
-   jv=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
-      "__a",toS(b),
+   jv=replace(raw"__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(2*b),
       "__b",toS(b),
       "__c",toS(b)
    ])
-   rv1=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
-      "__a",toS(a),
+   rv1=replace(raw"__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(2*b),
       "__b",toS(a),
       "__c",toS(a)
    ])
-   rv2=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
-      "__a",toS(a),
+   rv2=replace(raw"__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(2*b),
       "__b",toS(b),
       "__c",toS(a)
    ])
-   rv3=replace(raw"2__a(1-__by),\: 0<y<\frac{1}{__c}",[
-      "__a",toS(a),
-      "__b",toS(b),
+   rv3=replace(raw"__a(1-__by),\: 0<y<\frac{1}{__c}",[
+      "__a",toS(2*b),
+      "__b",toS(a),
       "__c",toS(b)
    ])
 
