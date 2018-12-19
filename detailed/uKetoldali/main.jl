@@ -22,8 +22,6 @@ let
    al=rand([0.10,0.05,0.02,0.01],3)
    c=quantile.(FI,1 .-0.5*al); c=r(c)
 
-   jv,rv1,rv2,rv3=["" for it in 1:4]
-
    if abs(u)<c[1]
       jv=replace(raw"\text{{\it elfogadjuk}, mivel } |u|=__U < __C ",
       [
@@ -47,7 +45,7 @@ terméket ( $ X_{1},\ldots,X_{__N}$ ) és a következő eredményeket kapták:
 $$
 \sum_{k=1}^{ __N } X_{k}= __SUM \hspace{1cm} \sum_{k=1}^{ __N } X^{2}_{k}= __SUM2
 $$
-A töltőtömeg normalitását feltételezve a minta alapján a gyártó állítását
+A töltőtömeg normalitását feltételezve vizsgálja meg a gyártó állítását
 $ \alpha=__ALPHA $ szinten!
 
 \szak{Megoldás: } Tudjuk hogy normális a sokaság, ismerjük a szórást, a várható értékre
