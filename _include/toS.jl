@@ -1,4 +1,7 @@
 # racionalis latex alakja, hagyomanyos egy /-es jelolessel + 2//1->2 stb.
+#!!!TODO!!!
+# elég sok felesleges dolog van itt, elsősorban a map(broadcast) használatával
+# egyszerüsíthető...
 
 function toS(r::Int64)
     string(r)

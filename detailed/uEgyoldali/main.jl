@@ -36,7 +36,7 @@ let
 
 
 qText=replace(raw"""
-Egy zacskós tea-féle névleges (átlagos) tömege a gyártó állítása szerint $ __MU $ gramm,
+\szak{Feladat: } Egy zacskós tea-féle névleges (átlagos) tömege a gyártó állítása szerint $ __MU $ gramm,
 $ __SIGMA $ gramm szórással. A vásárlók véleménye szerint a zacskók (átlagosan) kevesebb mint
 $ __MU $-gram teát tartalmaznak. Az ellenőrzés céljából véletlenszerűen megvizsgáltak  néhány
 terméket ( $ X_{1},\ldots,X_{__N}$ ) és a következőket kapták:
@@ -45,8 +45,8 @@ $$
 $$
 A töltőtömeg normalitását feltételezve a tesztelje a fogyasztók véleményét
 $ \alpha=__ALPHA $ szinten!
-\newline
-{\bf Megoldás: } Tudjuk hogy normális a sokaság, ismerjük a szórást, a várható értékre
+
+\szak{Megoldás: } Tudjuk hogy normális a sokaság, ismerjük a szórást, a várható értékre
 vonatkozó kérdésről akarunk dönteni, ezért $ u $-próbát használunk.
 A hipotéziseink:
 \begin{gather*}
@@ -56,7 +56,7 @@ H_{1}: \mu < __MU\\
 (Itt a $ H_{1} $ felel meg a vásárlók állításának.)
 A próbastatisztika
 $$
-u=\frac{\overline{X}-__MU}{__SIGMA}\sqrt{__N}
+u=\frac{\overline{X}-__MU}{__SIGMA}\sqrt{__N} \hspace{0.5cm}\overset{H_{0}}{\sim}\hspace{0.5cm}{{\cal N}(0,1)}
 $$
 Ha $H_{0}$ igaz, akkor $ u $ sztenderd-normális eloszlású.
 Számolások:
@@ -64,21 +64,18 @@ Számolások:
 \overline{X}=\frac{__SUM}{__N}=__MEAN\\
 u=\frac{__MEAN-__MU}{__SIGMA}\sqrt{__N}=__u\\
 \end{gather*}
-$ __ALPHA $-szinten kell elvégezni a próbát, vagyis keresni kell olyan egy $ C $ számot a
+$\alpha= __ALPHA $-szinten kell elvégezni a próbát, ezért keresünk egy $ C $ számot a
 $$
 __TABLE
 $$
 táblázat segítségével, melyre:
 \begin{gather*}
-P(u \ge C)=1-__ALPHA=__AL1\\
-\text{azaz:}\\
-P(u < C)=__ALPHA\\
-\text{azaz:}\\
-\phi(C)=__ALPHA\\
-\text{azaz:}\\
-\phi(-C)=1-__ALPHA=__AL1\\
+P(u \ge C)=1-__ALPHA=__AL1\hspace{0.5cm}\text{(ez a null-hipotézisnek felel meg)}\Leftrightarrow\\
+P(u < C)=__ALPHA \hspace{0.5cm}\text{(ez az alternatívának felel meg)}\Leftrightarrow\\
+\Phi(C)=__ALPHA\hspace{0.5cm} \text{(normalitás)}\Leftrightarrow\\
+\Phi(-C)=1-__ALPHA=__AL1\\
 \end{gather*}
-A táblázat alapján: $ C=__C $. Mindezek alapján $ H_0 $-t $ __ALPHA $-szinten
+$\Rightarrow\hspace{1cm} C=__C $, ezért $ H_0 $-t $ __ALPHA $-szinten
 $$
 __jv.
 $$

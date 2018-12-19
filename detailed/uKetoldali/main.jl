@@ -41,7 +41,7 @@ let
    end
 
 qText=replace(raw"""
-Egy zacskós tea-féle névleges (átlagos) tömege a gyártó állítása szerint $ __MU $ gramm,
+\szak{Feladat: } Egy zacskós tea-féle névleges (átlagos) tömege a gyártó állítása szerint $ __MU $ gramm,
 $ __SIGMA $ gramm szórással. A fogyasztóvédelem emberei véletlenszerűen megvizsgáltak  néhány
 terméket ( $ X_{1},\ldots,X_{__N}$ ) és a következő eredményeket kapták:
 $$
@@ -49,8 +49,8 @@ $$
 $$
 A töltőtömeg normalitását feltételezve a minta alapján a gyártó állítását
 $ \alpha=__ALPHA $ szinten!
-\newline
-{\bf Megoldás: } Tudjuk hogy normális a sokaság, ismerjük a szórást, a várható értékre
+
+\szak{Megoldás: } Tudjuk hogy normális a sokaság, ismerjük a szórást, a várható értékre
 vonatkozó kérdésről akarunk dönteni, ezért $ u $-próbát használunk.
 A hipotéziseink:
 \begin{gather*}
@@ -59,27 +59,25 @@ H_{1}: \mu \neq __MU\\
 \end{gather*}
 A próbastatisztika
 $$
-u=\frac{\overline{X}-__MU}{__SIGMA}\sqrt{__N}
+u=\frac{\overline{X}-__MU}{__SIGMA}\sqrt{__N} \hspace{0.5cm}\overset{H_{0}}{\sim}\hspace{0.5cm}{{\cal N}(0,1)}
 $$
 Ha $H_{0}$ igaz, akkor $ u $ sztenderd-normális eloszlású.
 Számolások:
 \begin{gather*}
 \overline{X}=\frac{__SUM}{__N}=__MEAN\\
-u=\frac{__MEAN-__MU}{__SIGMA}\sqrt{__N}=__u\\
+u=\frac{__MEAN-__MU}{__SIGMA}\sqrt{__N}=__u \\
 \end{gather*}
-$ __ALPHA $-szinten kell elvégezni a próbát, vagyis keresni kell olyan egy $ C $ számot a
+$\alpha= __ALPHA $-szinten kell elvégezni a próbát, ezért keresünk egy $ C $ számot a
 $$
 __TABLE
 $$
 táblázat segítségével, melyre:
 \begin{gather*}
-P(|u|<C)=1-__ALPHA=__AL1\\
-\text{azaz:}\\
-P(|u|\ge C)=__ALPHA\\
-\text{azaz:}\\
-\phi(C)=1-\frac{__ALPHA}{2}=__AL2
+P(|u|<C)=1-__ALPHA=__AL1 \Leftrightarrow\\
+P(|u|\ge C)=__ALPHA \Leftrightarrow\\
+\Phi(C)=1-\frac{__ALPHA}{2}=__AL2
 \end{gather*}
-A táblázat alapján: $ C=__C $. Mindezek alapján $ H_0 $-t $ __ALPHA $-szinten
+$\Rightarrow\hspace{0.5cm} C=__C $, ezért $ H_0 $-t $ __ALPHA $-szinten
 $$
 __jv.
 $$

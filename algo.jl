@@ -4,6 +4,9 @@ _out=open("_output/out.tex","w")
 include("_include/algo/pre.tex")
 
 println("1: ",ARGS[1])
+# ezt pl. input-file-ként a gauss eliminacios hasznalja, 
+#!!!TODO!!! 
+# most kiszedtem, de vissza kell epiteni
 #println("2: ",ARGS[2])
 
 
