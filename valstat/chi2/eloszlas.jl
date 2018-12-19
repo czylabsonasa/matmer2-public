@@ -2,6 +2,7 @@ let
    qname="chieo"
 
    N=100
+   nC=4
    X=rand(N)
    C=zeros(Int,4)
    for x in X
@@ -15,13 +16,18 @@ let
    table=toTable(table)
 
    p=[0.75,0.90,0.95,0.975,0.98,0.99,0.995]
-   student=Chi2Dist(N-1)
-   q=quantile.(student,p)
-   Qtable=toTable(p,"p",q,"t_{$(N-1)}(p)")
+   ν=N-1
+   mchi2=Chisq(ν)
+   q=quantile.(mchi2,p)
+   mround(x)=round(x,digits=2)
+   q=mround.(q)
+   qFej=replace(raw"\chi^{2}_{__NU}(p)","__NU"=>toS(ν))
+   Qtable=toTable(p,"p",q,qFej)
 
+   P=0.25*ones(nC)
+   ⁠chi2stat=sum((C .- P).^2 ./P)
 
-
-   jv=toS(0)
+   jv=toS(chi2stat)
    rv1=toS(1//2)
    rv2=toS(-1//3)
    rv3=toS(1//4)
@@ -34,7 +40,10 @@ let
    $$
       __TABLE
    $$
-   Egy alkalmas próba segítségével $$
+   Egy alkalmas próba segítségével seg...
+   $$
+      __QTABLE
+   $$
    \item* $ __JV $
    \item $ __RV1 $
    \item $ __RV2 $
@@ -43,6 +52,7 @@ let
    """,[
       "__QNAME",qname,
       "__TABLE",table,
+      "__QTABLE",Qtable,
       "__JV",jv,
       "__RV1",rv1,
       "__RV2",rv2,
