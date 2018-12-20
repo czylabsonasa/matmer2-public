@@ -14,13 +14,20 @@ let
    table=toTable(p,"p",q,"t_{$(N-1)}(p)")
    
 
-   F=Normal(MU,2*SIGMA)
+   F=Normal(MU+rand(0:4)-2,SIGMA)
    X=rand(F,N); X=r(X)
 
    SUM=sum(X); SUM=r(SUM)
    SUM2=sum(X.*X) ; SUM2=r(SUM2)
    MEAN=mean(X)
    S=std(X)
+   
+   if abs(S-(SUM2-N*MEAN^2)/(N-1))>1e-12
+      println("ok")
+   else
+      println("ballyy")
+   end
+   
    t=(MEAN-MU)/(S/sqrt(N)) ; t=r(t)
    al=rand([0.10,0.05,0.02,0.01],3)
    c=quantile.(student,1 .-0.5*al); c=r(c)
@@ -29,7 +36,7 @@ let
    if abs(t)<c[1]
       jv=raw"\text{{\it elfogadjuk}, mivel } |t|=__T < __C=t_{__DF}(__P)"
    else
-      jv=raw"\text{{\it elfogadjuk}, mivel } |t|=__T \ge __C=t_{__DF}(__P)"
+      jv=raw"\text{{\it elvetjük}, mivel } |t|=__T \ge __C=t_{__DF}(__P)"
    end
    jv=replace(jv,[
          "__T",toS(abs(t)),
