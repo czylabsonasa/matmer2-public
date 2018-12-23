@@ -5,7 +5,7 @@ let
    pool=[1//3,1//2,1,2,3]#az együtthatókat ebből húzza
    a,b=sample(pool,2,replace=false)//1
 
-   fxy=replace("f_{X,Y}(x,y)=__C(1-__ax-__by+__abxy)",[
+   fxy=replace("__C(1-__ax-__by+__abxy)",[
       "__C",toS(4*a*b),
       "__ab",toS(a*b),
       "__a",toS(a),

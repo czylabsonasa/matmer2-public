@@ -1,3 +1,3 @@
 _db=Dict(
-"ketvalt"=>["ketvalt1"]
+"eloszlas"=>[3,"exp","normalis","unif"]
 )

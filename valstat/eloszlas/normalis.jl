@@ -1,5 +1,5 @@
 let
-   qname="eloszlas"
+   qname="normalis"
   
    MU=rand(150:10:200)
    SIGMA=rand(1:5)
@@ -21,8 +21,8 @@ let
 
 qText=replace(raw""" 
 \begin{multi}{__QNAME}
-Egy zacskós cukorka névleges (átlagos) tömege $ __MU $ gramm $ __SIGMA$ gramm szórással. 
-Normálisnak tételezve és $ X $-el jelölve a töltőtömeget, számoljuk ki $ P( __A<X<__B) $ valséget!
+Egy boltban a sorbanállással töltött $ X $ idő normális eloszlású valségi változó, 
+$ __MU $ óra várható értékkel és $ __SIGMA $ óra szórással. Számoljuk ki a $ P( __A < X < __B) $ valséget!
 $$
 __TABLE
 $$
