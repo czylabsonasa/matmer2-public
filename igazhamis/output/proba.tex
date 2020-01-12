@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{t1enc}
+%\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+
+\usepackage{moodle}
+
+\DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Norm}{{\cal N}}
+\DeclareMathOperator{\Binom}{Binom}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\D}{D}
+\renewcommand{\P}{\operatorname{P}}
+%\DeclareMathOperator{\Pr}{P}
+\DeclareMathOperator{\F}{F}
+\DeclareMathOperator{\R}{\mathbb{R}}
+%\DeclareMathOperator{\Norm}{{\cal N}}
+\DeclareMathOperator{\Unif}{{\cal U}}
+
+
+\DeclareMathOperator{\cov}{cov}
+
+
+
+
+
+\begin{document}
+
+\begin{quiz}{gyakorló}
+
+\begin{multi}{val7}
+Bármely $C$-re $\P(C)=\sum_{\omega_k\in C} \P( \{\omega_k \})$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{dvv8}
+Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
+Ekkor a második momentuma:
+$$
+\E(\xi^2)=\sum_{k=1}^n x_k^2 p_k
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{felt2}
+$A$-nak a $B$-re vonatkozó feltételes valsége $\P(A|B)=\frac{\P(A)}{\P(B)}$, ha $A$ maga után vonja $B$-t.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{impfvv3}
+Egy $\xi\sim \Unif(a,b)$ szórásnégyzete: $\frac{(b-a)^2}{12}$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{impdvv2}
+Egy $\xi\sim \Binom(n,p)$ várható értéke: $n+p$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{felt8}
+Ha $A_1,\ldots,A_n$ teljes eseményrendszer és $\P(B)>0$ akkor:
+$$
+\P(B)=\sum_{k=1}^n \P(A_k|B)\P(B)
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{impfvv7}
+Ha $\xi\sim \Norm(\mu,\sigma^2)$ akkor $\frac{\xi-\mu}{\sigma}\sim \Norm(0,1)$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{esem7}
+Az $A$ és $B$ események pontosan akkor függetlenek, ha $\P(AB)=\P(A)\P(B)$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{eofv2}
+Egy $\F:\R\to [0,1]$ pontosan akkor eloszlásfüggvény, ha monoton nemcsökkenő, 
+$\lim_{x\to+\infty}\F(x)=1$ és $\lim_{x\to-\infty}\F(x)=0$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{val1}
+A valószínűség additív, azaz $\P(A+B)=\P(A)+\P(B)$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{dvv16}
+$\xi$ és $\eta$ véges értékkészletű valségi változókra:
+$$
+\D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{eofv10}
+Bármely $\xi$-re és $a$-ra $\P(\xi= a)=0$, feltéve hogy $\F_{\xi}$ folytonos.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{esem8}
+Az $A$ és $B$ események pont akkor függetlenek, ha $\P(A+B)=\P(A)+\P(B)$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{dvv17}
+$\xi$ és $\eta$ $\xi$ és $\eta$ véges értékkészletű valségi változókra:
+$$
+\D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)+2\cov(\xi,\eta)
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{esem5}
+Ha $\P(A)=1$ akkor $A$ bekövetkezhet.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{impdvv4}
+Egy $\xi\sim \Binom(n,p)$ szórásnégyzete: $\frac{n+1}{2}$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{felt10}
+A teljes függetlenségből következik a páronkénti.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{dvv14}
+$\xi$ és $\eta$ független, véges értékkészletű valségi változókra:
+$$
+\D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{eofv8}
+Bármely $\xi$-re és $a$-ra $\F_{\xi}(a)+\P(\xi\ge a)=1$.
+\item* igaz
+\item hamis
+\end{multi}
+\end{quiz}
+
+\end{document}
+
