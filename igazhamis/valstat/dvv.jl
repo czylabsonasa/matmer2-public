@@ -10,21 +10,21 @@ Egy nemnegatív tagú $p_1,\ldots, p_n$ vektor pont akkor valségeloszlás, ha $
 ,
 
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. Ekkor a várható értéke:
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a várható értéke:
 $$
 \E(\xi)=\sum_{k=1}^n \P(\xi=x_k)x_k
 $$
 """,true)
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. Ekkor a várható értéke:
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a várható értéke:
 $$
 \E(\xi)=\frac{\sum_{k=1}^n x_k}{n}
 $$
 """,false)
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. Ekkor:
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor:
 $$
 \min_k(x_k)\le \E(\xi) \le \max_k(x_k)
 $$
@@ -33,21 +33,21 @@ $$
 ,
 
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. Ekkor a szórása:
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a szórása:
 $$
-\D^2(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
+\D(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
 $$
 """,false)
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. Ekkor a szórásnégyzete:
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a szórásnégyzete:
 $$
 \D^2(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
 $$
 """,true)
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
 Ekkor a második momentuma:
 $$
 \E(\xi^2)=\sum_{k=1}^n x_k^2 p_k
@@ -55,7 +55,7 @@ $$
 """,true)
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
 Ekkor a második momentuma:
 $$
 \E(\xi^2)=\sum_{k=1}^n x_k p_k^2
@@ -64,7 +64,7 @@ $$
 
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. 
+Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. 
 Ekkor a szórásnégyzete:
 $$
 \D^2(\xi)=\E(\xi^2)-\E(\xi)^2
@@ -72,7 +72,7 @@ $$
 """,true)
 ,
 (raw"""
-Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. 
+Egy $\xi$ valségi változó az $x_1,\ldots ,x_n$ értékeket veheti fel. 
 Ekkor a szórásnégyzete:
 $$
 \D^2(\xi)=\E(\xi^2)-\E(\xi)
@@ -95,10 +95,11 @@ $$
 """,true)
 ,
 (raw"""
-$\xi$ és $\eta$ valségi változókra:
+A $\xi$ és $\eta$ valségi változókra:
 $$
 \D(\xi+\eta)=\D(\xi)+\D(\eta)
 $$
+feltéve, hogy létezik a szórásuk.
 """,false)
 
 ,

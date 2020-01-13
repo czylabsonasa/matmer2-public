@@ -1,0 +1,205 @@
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{t1enc}
+%\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+
+\usepackage{moodle}
+
+\DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Norm}{{\cal N}}
+\DeclareMathOperator{\Binom}{Binom}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\D}{D}
+\renewcommand{\P}{\operatorname{P}}
+%\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\corr}{corr}
+
+\DeclareMathOperator{\F}{F} 
+\renewcommand{\d}{\operatorname{d\! }} %integral \! a nyero
+
+
+\DeclareMathOperator{\R}{\mathbb{R}}
+%\DeclareMathOperator{\Norm}{{\cal N}}
+\DeclareMathOperator{\Unif}{{\cal U}}
+\DeclareMathOperator{\Poi}{{Poisson}}
+
+
+\DeclareMathOperator{\cov}{cov}
+
+
+
+
+
+\begin{document}
+
+\begin{quiz}{gyakorló}
+
+\begin{multi}{esem10}
+Ha $\P(A)=0$ akkor $A$ sosem következik be.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{impdvv2}
+Egy $\xi\sim \Binom(n,p)$ várható értéke: $n+p$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{impfvv4}
+Egy $\xi\sim \Unif(a,b)$ szórásnégyzete: $\frac{(a+b)^2}{2}$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{flenvv7}
+Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
+kovarianciájuk
+$$
+\cov(\xi,\eta)=\E((\xi-\E(\xi))(\eta-\E(\eta)))
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{felt4}
+$A$-nak a $B$-re vonatkozó feltételes valségét $\P(A|B)=\frac{\P(A\cdot B)}{\P(B)}$ módon értelmezzük, feltéve hogy $\P(B)>0$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{eofv3}
+Egy $F:\R\to [0,1]$ pontosan akkor eloszlásfüggvény, ha monoton nemcsökkenő, 
+$\lim_{x\to+\infty}F(x)=1$ és $\lim_{x\to-\infty}F(x)=0$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{sfv9}
+Ha $\xi$-nek $f$ a sűrűségfüggvénye és $F$ az eloszlásfüggvénye, akkor bármely $b$-re:
+$$
+F(b)=\int_{\infty}^{b}f(x)\d x
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{val1}
+A valószínűség additív, azaz $\P(A+B)=\P(A)+\P(B)$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{felt3}
+$A$-nak a $B$-re vonatkozó feltételes valsége $\P(A|B)=\frac{\P(A\cdot B)}{\P(B)}$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{eofv7}
+Bármely $\xi$-re és $a<b$-re $\P(a\le \xi <b)=F_{\xi}(b)-F_{\xi}(a)$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{dvv2}
+Egy nemnegatív tagú $p_1,\ldots, p_n$ vektor pont akkor valségeloszlás, ha $\sum_{k=1}^n p_k=1$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{dvv16}
+$\xi$ és $\eta$ véges értékkészletű valségi változókra:
+$$
+\D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{flenvv9}
+Ha a $\xi$ és $\eta$ valségi változóknak létezik a korrelációja, akkor $-1\le \corr(\xi,\eta)\le 1$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{val5}
+Bármely esemény valsége kiszámolható a $\frac{\text{kedvező}}{\text{összes}}$ képlettel.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{felt8}
+Ha $A_1,\ldots,A_n$ teljes eseményrendszer és $\P(B)>0$ akkor:
+$$
+\P(B)=\sum_{k=1}^n \P(A_k|B)\P(B)
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{impfvv6}
+Ha $\xi\sim \Unif(0,1)$ akkor  minden $a,b$-re $b\xi+a\sim \Unif(a,b)$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{sfv8}
+Ha van $\xi$-nek sűrűségfüggvénye, akkor bármely $b$-re:
+$$
+\P(\xi<b)=f(b)
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{impfvv10}
+Ha $\xi\sim \Exp(\lambda)$ akkor a sűrűségfüggvénye 
+$$
+f_{\xi}(x)=
+\begin{cases}
+1-e^{-\lambda x}& \ \ x>0\\
+0 & \text{máskor} 
+\end{cases}
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{sfv7}
+Ha $\xi$-nek $f$ asűrűségfüggvénye, akkor bármely $a<b$-re:
+$$
+\P(a<\xi<b)=f(b)-f(a)
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{esem8}
+Az $A$ és $B$ események pont akkor függetlenek, ha $\P(A+B)=\P(A)+\P(B)$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{esem4}
+Az $\overline{A} + \overline{B}$ maga után vonja az $\overline{A\cdot B}$ eseményt.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{impdvv4}
+Egy $\xi\sim \Binom(n,p)$ szórásnégyzete: $\frac{n+1}{2}$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{dvv8}
+Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
+Ekkor a második momentuma:
+$$
+\E(\xi^2)=\sum_{k=1}^n x_k^2 p_k
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}{dvv6}
+Egy $\xi$ valségi változó az $x_1,\ldots x_n$ értékeket veheti fel. Ekkor a szórása:
+$$
+\D(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}{eofv11}
+Bármely $\xi$-re és $a$-ra $\P(\xi= a)=0$, feltéve hogy $F_{\xi}$ folytonos.
+\item* igaz
+\item hamis
+\end{multi}
+\end{quiz}
+
+\end{document}
+

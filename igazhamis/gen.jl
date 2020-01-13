@@ -5,7 +5,7 @@ include(mdir*"/filter.jl")
 fname=strip(ARGS[2])
 
 include("include/tex.jl")
-fout=open("output/"*fname*".tex","w")
+fout=open("output/"*"_"*fname*".tex","w")
 print(fout,docpre)
 print(fout,replace(quizpre,"mquizname"=>mquizname))
 
@@ -32,6 +32,12 @@ end
 
 print(fout,quizpost)
 print(fout,docpost)
+close(fout)
+
+fout=open("output/"*fname*".tex","w")
+for s=eachline("output/"*"_"*fname*".tex")
+   println(fout,csere(s))
+end
 close(fout)
 
 
