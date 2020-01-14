@@ -1,39 +1,74 @@
 # 1 U,exp,N
 impfvv=(
-(raw"""
+(
+body=raw"""
 Egy $\xi\sim \Unif(a,b)$ várható értéke: $\frac{a+b}{2}$
-""",true)
+""",
+answer=true,
+fb=raw"{wiki}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi\sim \Unif(a,b)$ várható értéke: $\frac{b-a}{2}$
-""",false)
+""",
+answer=false,
+fb=raw"{wiki}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi\sim \Unif(a,b)$ szórásnégyzete: $\frac{(b-a)^2}{12}$
-""",true)
+""",
+answer=true,
+fb=raw"{wiki}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi\sim \Unif(a,b)$ szórásnégyzete: $\frac{(a+b)^2}{2}$
-""",false),
-
-(raw"""
-Ha $\xi\sim \Unif(0,1)$ akkor minden $a,b$-re $(b-a)\xi+a\sim \Unif(a,b)$.
-""",true),
-
-(raw"""
-Ha $\xi\sim \Unif(0,1)$ akkor  minden $a,b$-re $b\xi+a\sim \Unif(a,b)$.
-""",false)
+""",
+answer=false,
+fb=raw"{wiki}"
+)
 ,
-(raw"""
+
+(
+body=raw"""
+Ha $\xi\sim \Unif(0,1)$ akkor minden $a<b$-re $(b-a)\xi+a\sim \Unif(a,b)$.
+""",
+answer=true,
+fb=raw"{Egyenletes lineáris transzformáltja is egyenletes (a konstans elfajult esettől eltekintve)}"
+)
+,
+
+(
+body=raw"""
+Ha $\xi\sim \Unif(0,1)$ akkor  minden $a<b$-re $b\xi+a\sim \Unif(a,b)$.
+""",
+answer=false,
+fb=raw"{$b\xi+a \sim \Unif(a,a+b)$}"
+)
+,
+(
+body=raw"""
 Ha $\xi\sim \Norm(\mu,\sigma^2)$ akkor $\frac{\xi-\mu}{\sigma}\sim \Norm(0,1)$.
-""",true)
+""",
+answer=true,
+fb=raw"{Egy normális lineáris transzformáltja is normális marad. (nem minden elszlásra igaz)}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\xi\sim \Norm(0,1)$ akkor a sűrűségfüggvénye $f(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$.
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 
 ,
-(raw"""
+(
+body=raw"""
 Ha $\xi\sim \Exp(\lambda)$ akkor a sűrűségfüggvénye 
 $$
 f(x)=
@@ -42,9 +77,13 @@ f(x)=
 0 & \text{máskor} 
 \end{cases}
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\xi\sim \Exp(\lambda)$ akkor a sűrűségfüggvénye 
 $$
 f(x)=
@@ -53,9 +92,13 @@ f(x)=
 0 & \text{máskor} 
 \end{cases}
 $$
-""",false)
+""",
+answer=false,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\xi\sim \Unif(a,b)$ akkor a sűrűségfüggvénye 
 $$
 f(x)=
@@ -64,9 +107,13 @@ f(x)=
 0 & \text{máskor} 
 \end{cases}
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\xi\sim \Unif(a,b)$ akkor a sűrűségfüggvénye 
 $$
 f(x)=
@@ -75,7 +122,9 @@ f(x)=
 0 & \text{máskor} 
 \end{cases}
 $$
-""",false)
-
+""",
+answer=false,
+fb=raw"{Def.}"
+)
 
 )

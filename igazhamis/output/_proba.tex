@@ -59,53 +59,77 @@
 
 \begin{quiz}{gyakorló}
 
-\begin{multi}[feedback={de-Morgan azonosság}]{esem1}
-Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események megegyeznek.
+\begin{multi}[feedback={Def.}]{flenvv4}
+Ha $\xi$ és $\eta$ diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a 
+korrelációjuk
+$$
+\corr(\xi,\eta)=\frac{\cov(\xi,\eta)}{\D(\xi)\D(\eta)}
+$$
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={Nókoment.}]{esem5}
-Ha $\P(A)=1$ akkor $A$ bekövetkezhet.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}[feedback={Definíció.}]{esem8}
-Az $A$ és $B$ események pont akkor függetlenek, ha $\P(A+B)=\P(A)+\P(B)$.
+\begin{multi}[feedback={Ilyesmi a $\corr$-ra igaz.}]{flenvv8}
+Ha a $\xi$ és $\eta$ valségi változóknak létezik a kovarianciája, akkor $-1\le \cov(\xi,\eta)\le 1$.
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}[feedback={de-Morgan azonosság}]{esem2}
-Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események kizárják egymást.
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}[feedback={Definíció.}]{esem7}
-Az $A$ és $B$ események pontosan akkor függetlenek, ha $\P(AB)=\P(A)\P(B)$.
+\begin{multi}[feedback={Def.}]{flenvv1}
+Azt mondjuk, hogy $\xi$ és $\eta$ diszkrét valségi változók függetlenek, ha
+$$
+\P(\xi=x,\eta=y)=\P(\xi=x)\P(\eta=y)
+$$
+bármely $x,y\in \R$-re teljesül.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={de-Morgan azonosság}]{esem4}
-Az $\overline{A} + \overline{B}$ maga után vonja az $\overline{A\cdot B}$ eseményt.
+\begin{multi}[feedback={Tétel.}]{flenvv3}
+Ha $\xi$ és $\eta$ valségi változók függetlenek, akkor
+$$
+\E(\xi \eta)=\E(\xi)\E(\eta)
+$$
+feltéve, hogy létezik a szórásuk.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{x\in [0,1]:x\neq \frac{1}{2}\}$}]{esem6}
-Ha $\P(A)=1$ akkor $A$ mindig bekövetkezik.
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}[feedback={de-Morgan azonosság}]{esem3}
-Az $\overline{A\cdot B}$ maga után vonja az $\overline{A} + \overline{B}$ eseményt.
+\begin{multi}[feedback={Tulajdonság,tétel.}]{flenvv9}
+Ha a $\xi$ és $\eta$ valségi változóknak létezik a korrelációja, akkor $-1\le \corr(\xi,\eta)\le 1$.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}]{esem10}
-Ha $\P(A)=0$ akkor $A$ sosem következik be.
+\begin{multi}[feedback={Def.}]{flenvv5}
+Ha $\xi$ és $\eta$ diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a 
+korrelációjuk
+$$
+\corr(\xi,\eta)=\E(\xi\eta)-\E(\xi)\E(\eta)
+$$
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}]{esem9}
-Ha $\P(A)=0$ akkor $A$ bekövetkezhet.
+\begin{multi}[feedback={Def.}]{flenvv7}
+Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
+kovarianciájuk
+$$
+\cov(\xi,\eta)=\E((\xi-\E(\xi))(\eta-\E(\eta)))
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Fordítva igaz. Ezek a korrelálatlan (merőleges) változók. }]{flenvv2}
+Ha
+$$
+\E(\xi \eta)=\E(\xi)\E(\eta)
+$$
+akkor$\xi$ és $\eta$ valségi változók függetlenek.
+
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Tulajdonság.}]{flenvv6}
+Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
+kovarianciájuk
+$$
+\cov(\xi,\eta)=\E(\xi\eta)-\E(\xi)\E(\eta)
+$$
 \item* igaz
 \item hamis
 \end{multi}

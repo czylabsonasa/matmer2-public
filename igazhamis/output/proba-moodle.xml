@@ -9,14 +9,14 @@
  
 <question type="multichoice">
   <name>
-    <text>esem1</text>
+    <text>flenvv4</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Az \(\overline {A+B}\) és \(\overline {A} \cdot \overline {B}\) események megegyeznek. </p>]]></text>
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a korrelációjuk <CENTER>\[ \mathrm {corr}(\xi ,\eta )=\frac {\mathrm {cov}(\xi ,\eta )}{\mathrm {D}(\xi )\mathrm {D}(\eta )} \]</CENTER> </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>de-Morgan azonosság</p>]]></text>
+    <text><![CDATA[<p>Def.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -32,37 +32,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>esem5</text>
+    <text>flenvv8</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\mathrm {P}(A)=1\) akkor \(A\) bekövetkezhet. </p>]]></text>
+    <text><![CDATA[<p>Ha a \(\xi \) és \(\eta \) valségi változóknak létezik a kovarianciája, akkor \(-1\le \mathrm {cov}(\xi ,\eta )\le 1\). </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Nókoment.</p>]]></text>
-  </generalfeedback>
-  <penalty>0.1000000</penalty>
-  <hidden>0</hidden>
-  <single>true</single>
-  <shuffleanswers>1</shuffleanswers>
-  <answernumbering>abc</answernumbering>
-  <answer fraction="100" format="html">
-    <text><![CDATA[<p>igaz</p>]]></text>
-  </answer>
-  <answer fraction="0" format="html">
-    <text><![CDATA[<p>hamis</p>]]></text>
-  </answer>
-</question>
-<question type="multichoice">
-  <name>
-    <text>esem8</text>
-  </name>
-  <questiontext format="html">
-    <text><![CDATA[<p>Az \(A\) és \(B\) események pont akkor függetlenek, ha \(\mathrm {P}(A+B)=\mathrm {P}(A)+\mathrm {P}(B)\). </p>]]></text>
-  </questiontext>
-  <defaultgrade>1.0</defaultgrade>
-  <generalfeedback format="html">
-    <text><![CDATA[<p>Definíció.</p>]]></text>
+    <text><![CDATA[<p>Ilyesmi a \(\mathrm {corr}\)-ra igaz.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -78,37 +55,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>esem2</text>
+    <text>flenvv1</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Az \(\overline {A+B}\) és \(\overline {A} \cdot \overline {B}\) események kizárják egymást. </p>]]></text>
+    <text><![CDATA[<p>Azt mondjuk, hogy \(\xi \) és \(\eta \) diszkrét valségi változók függetlenek, ha <CENTER>\[ \mathrm {P}(\xi =x,\eta =y)=\mathrm {P}(\xi =x)\mathrm {P}(\eta =y) \]</CENTER> bármely \(x,y\in \mathbb {R}\)-re teljesül. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>de-Morgan azonosság</p>]]></text>
-  </generalfeedback>
-  <penalty>0.1000000</penalty>
-  <hidden>0</hidden>
-  <single>true</single>
-  <shuffleanswers>1</shuffleanswers>
-  <answernumbering>abc</answernumbering>
-  <answer fraction="0" format="html">
-    <text><![CDATA[<p>igaz</p>]]></text>
-  </answer>
-  <answer fraction="100" format="html">
-    <text><![CDATA[<p>hamis</p>]]></text>
-  </answer>
-</question>
-<question type="multichoice">
-  <name>
-    <text>esem7</text>
-  </name>
-  <questiontext format="html">
-    <text><![CDATA[<p>Az \(A\) és \(B\) események pontosan akkor függetlenek, ha \(\mathrm {P}(AB)=\mathrm {P}(A)\mathrm {P}(B)\). </p>]]></text>
-  </questiontext>
-  <defaultgrade>1.0</defaultgrade>
-  <generalfeedback format="html">
-    <text><![CDATA[<p>Definíció.</p>]]></text>
+    <text><![CDATA[<p>Def.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -124,14 +78,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>esem4</text>
+    <text>flenvv3</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Az \(\overline {A} + \overline {B}\) maga után vonja az \(\overline {A\cdot B}\) eseményt. </p>]]></text>
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változók függetlenek, akkor <CENTER>\[ \mathrm {E}(\xi \eta )=\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> feltéve, hogy létezik a szórásuk. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>de-Morgan azonosság</p>]]></text>
+    <text><![CDATA[<p>Tétel.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -147,37 +101,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>esem6</text>
+    <text>flenvv9</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\mathrm {P}(A)=1\) akkor \(A\) mindig bekövetkezik. </p>]]></text>
+    <text><![CDATA[<p>Ha a \(\xi \) és \(\eta \) valségi változóknak létezik a korrelációja, akkor \(-1\le \mathrm {corr}(\xi ,\eta )\le 1\). </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Például: legyen a kísérlet random húzás a \([0,1]\)-ből és \(A=\{x\in [0,1]:x\neq \frac {1}{2}\}\)</p>]]></text>
-  </generalfeedback>
-  <penalty>0.1000000</penalty>
-  <hidden>0</hidden>
-  <single>true</single>
-  <shuffleanswers>1</shuffleanswers>
-  <answernumbering>abc</answernumbering>
-  <answer fraction="0" format="html">
-    <text><![CDATA[<p>igaz</p>]]></text>
-  </answer>
-  <answer fraction="100" format="html">
-    <text><![CDATA[<p>hamis</p>]]></text>
-  </answer>
-</question>
-<question type="multichoice">
-  <name>
-    <text>esem3</text>
-  </name>
-  <questiontext format="html">
-    <text><![CDATA[<p>Az \(\overline {A\cdot B}\) maga után vonja az \(\overline {A} + \overline {B}\) eseményt. </p>]]></text>
-  </questiontext>
-  <defaultgrade>1.0</defaultgrade>
-  <generalfeedback format="html">
-    <text><![CDATA[<p>de-Morgan azonosság</p>]]></text>
+    <text><![CDATA[<p>Tulajdonság,tétel.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -193,14 +124,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>esem10</text>
+    <text>flenvv5</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\mathrm {P}(A)=0\) akkor \(A\) sosem következik be. </p>]]></text>
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a korrelációjuk <CENTER>\[ \mathrm {corr}(\xi ,\eta )=\mathrm {E}(\xi \eta )-\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Például: legyen a kísérlet random húzás a \([0,1]\)-ből és \(A=\{\frac {1}{2}\}\)</p>]]></text>
+    <text><![CDATA[<p>Def.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -216,14 +147,60 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>esem9</text>
+    <text>flenvv7</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\mathrm {P}(A)=0\) akkor \(A\) bekövetkezhet. </p>]]></text>
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változóknak létezik a szórása, akkor a kovarianciájuk <CENTER>\[ \mathrm {cov}(\xi ,\eta )=\mathrm {E}((\xi -\mathrm {E}(\xi ))(\eta -\mathrm {E}(\eta ))) \]</CENTER> </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Például: legyen a kísérlet random húzás a \([0,1]\)-ből és \(A=\{\frac {1}{2}\}\)</p>]]></text>
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>flenvv2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha <CENTER>\[ \mathrm {E}(\xi \eta )=\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> akkor\(\xi \) és \(\eta \) valségi változók függetlenek. </P><P></p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Fordítva igaz. Ezek a korrelálatlan (merőleges) változók.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>flenvv6</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változóknak létezik a szórása, akkor a kovarianciájuk <CENTER>\[ \mathrm {cov}(\xi ,\eta )=\mathrm {E}(\xi \eta )-\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Tulajdonság.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>

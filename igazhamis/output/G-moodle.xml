@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$module$/gyakorló</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name>
+    <text>impfvv4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \sim {\cal U}(a,b)\) szórásnégyzete: \(\frac {(a+b)^2}{2}\) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>wiki</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>sfv4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Diszkrét valségi változók sűrűségfüggvénye lépcsős függvény. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Diszkrét vv-nak nincs sfv-e</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>dvv11</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \) valségi változó az \(x_1,{...\:} ,x_n\) értékeket veheti fel. Ekkor a szórásnégyzete: <CENTER>\[ \mathrm {D}^2(\xi )=\mathrm {E}(\xi ^2)-\mathrm {E}(\xi ) \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def./tulajdonság</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>eofv11</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Bármely \(\xi \)-re és \(a\)-ra \(\mathrm {P}(\xi = a)=0\), feltéve hogy \(\xi \) eloszlásfüggvénye folytonos. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>\(\mathrm {P}(\xi =a)\le \mathrm {P}(a\le \xi &lt;a+\frac {1}{n})=F(a+\frac {1}{n})-F(a) \overset {n\to \infty }{\to } 0\)</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>val7</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha véges sok elemi esemény van, akkor bármely \(C\)-re \(\mathrm {P}(C)=\sum _{\omega _k\in C} \mathrm {P}( \{\omega _k \})\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Additívitás.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>esem2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(\overline {A+B}\) és \(\overline {A} \cdot \overline {B}\) események kizárják egymást. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>de-Morgan azonosság</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>felt2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>\(A\)-nak a \(B\)-re vonatkozó feltételes valségét \(\mathrm {P}(A|B)=\frac {\mathrm {P}(A\cdot B)}{\mathrm {P}(B)}\) módon értelmezzük, feltéve hogy \(\mathrm {P}(B)&gt;0\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impdvv6</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Azt mondjuk, hogy \(\xi \sim \mathrm {Binom}(n,p)\), ha <CENTER>\[ \mathrm {P}(\xi =k)=\binom {n}{k}p^k(1-p)\ \ \ (k=0,1{...\:} n) \]</CENTER> valamilyen \(n&gt;0\) és \(p\in [0,1]\) esetén. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>dvv8</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \) valségi változó az \(x_1,{...\:}, x_n\) értékeket veheti fel és \(p_k=\mathrm {P}(\xi =x_k)\). Ekkor a második momentuma: <CENTER>\[ \mathrm {E}(\xi ^2)=\sum _{k=1}^n x_k^2 p_k \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>val4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A valószínűség monoton, azaz \(\mathrm {P}(A)\le \mathrm {P}(B)\), ha \(A\subseteq B\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>\(B=A\cup (B\setminus A)\)+additívitás</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>eofv1</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(F:\mathbb {R}\to \mathbb {R}\) pontosan akkor eloszlásfüggvény, ha monoton nemcsökkenő, balról folytonos, \(\lim _{x\to +\infty }F(x)=1\) és \(\lim _{x\to -\infty }F(x)=0\) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>val3</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A valószínűség monoton, azaz \(\mathrm {P}(A)&lt;\mathrm {P}(B)\), ha \(A\subseteq B\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>\(A=B\)?</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>felt5</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(A_1,{...\:},A_n\) teljes eseményrendszer és \(\mathrm {P}(A_k)&gt;0,\ k=1{...\:} n\), akkor minden \(B\)-re: <CENTER>\[ \mathrm {P}(B)=\sum _{k=1}^n \mathrm {P}(B|A_k)\mathrm {P}(A_k) \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Teljes valség tétele.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>dvv5</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \) valségi változó az \(x_1,{...\:}, x_n\) értékeket veheti fel. Ekkor: <CENTER>\[ \min _k(x_k)\le \mathrm {E}(\xi ) \le \max _k(x_k) \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Az adott feltételek mellet a várható érték egy súlyozott közép.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impfvv8</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \sim {\cal N}(0,1)\) akkor a sűrűségfüggvénye \(f(x)=\frac {e^{-\frac {x^2}{2}}}{\sqrt {2\pi }}\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impdvv2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \sim \mathrm {Binom}(n,p)\) várható értéke: \(n+p\) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>\(\xi =\xi _1+{...\:}+\xi _n\), ahol \(\xi _k\) Bernoulli és \(\mathrm {E}(\xi _k)=p\)+\(\mathrm {E}\)-additívitása</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>sfv11</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \)-nek \(F\) illetve \(f\) az eloszlásfüggvény illetve sűrűségfüggvénye, akkor bármely \(a&lt;b\)-re: <CENTER>\[ F(b)-F(a)=\int _{a}^{b}f(x)\mathrm {d } x \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>flenvv5</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a korrelációjuk <CENTER>\[ \mathrm {corr}(\xi ,\eta )=\mathrm {E}(\xi \eta )-\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>esem5</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\mathrm {P}(A)=1\) akkor \(A\) bekövetkezhet. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Nókoment.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>sfv6</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \) sűrűségfüggvénye \(f\), akkor bármely \(a&lt;b\)-re: <CENTER>\[ \mathrm {P}(a&lt;\xi &lt;b)=\int _{a}^{b}f(x)\mathrm {d } x \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>flenvv3</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változók függetlenek, akkor <CENTER>\[ \mathrm {E}(\xi \eta )=\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> feltéve, hogy létezik a szórásuk. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Tétel.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>sfv8</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha van \(\xi \)-nek \(f\) sűrűségfüggvénye, akkor bármely \(b\)-re: <CENTER>\[ \mathrm {P}(\xi &lt;b)=f(b) \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>flenvv9</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha a \(\xi \) és \(\eta \) valségi változóknak létezik a korrelációja, akkor \(-1\le \mathrm {corr}(\xi ,\eta )\le 1\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Tulajdonság,tétel.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impfvv9</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \sim \mathrm {Exp}(\lambda )\) akkor a sűrűségfüggvénye <CENTER>\[ f(x)= \begin {cases} \lambda e^{-\lambda x}& \ \ x&gt;0\\ 0 & \text {máskor} \end {cases} \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>felt4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>\(A_1,{...\:},A_n\) teljes eseményrendszer, ha \(\sum A_k=\Omega \) és a tagok páronként függetlenek. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impfvv11</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(\xi \sim {\cal U}(a,b)\) akkor a sűrűségfüggvénye <CENTER>\[ f(x)= \begin {cases} \frac {1}{b-a} & \ \ a&lt;x&lt;b \\ 0 & \text {máskor} \end {cases} \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>eofv3</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(F:\mathbb {R}\to [0,1]\) pontosan akkor eloszlásfüggvény, ha monoton nemcsökkenő, \(\lim _{x\to +\infty }F(x)=1\) és \(\lim _{x\to -\infty }F(x)=0\) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>A balról folytonosság kell.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>esem4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(\overline {A} + \overline {B}\) maga után vonja az \(\overline {A\cdot B}\) eseményt. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>de-Morgan azonosság</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>eofv8</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Bármely \(\xi \)-re és \(a&lt;b\)-re \(\mathrm {P}(a&lt; \xi &lt;b)=F_{\xi }(b)-F_{\xi }(a)\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Diszkrét v.v.-ra ez nem feltétlen igaz, ha \(a\)-t pozitív valséggel felveszi.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impfvv2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \sim {\cal U}(a,b)\) várható értéke: \(\frac {b-a}{2}\) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>wiki</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>impdvv7</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Azt mondjuk, hogy \(\xi \sim \mathrm {Poisson}(\lambda )\), ha <CENTER>\[ \mathrm {P}(\xi =k)=e^{-\lambda }\frac {\lambda ^k}{k!}\ \ \ (k=0,1,2{...\:} ) \]</CENTER> valamilyen \(\lambda &gt;0\) esetén. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>dvv4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \) valségi változó az \(x_1,{...\:}, x_n\) értékeket veheti fel. Ekkor a várható értéke: <CENTER>\[ \mathrm {E}(\xi )=\frac {\sum _{k=1}^n x_k}{n} \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Ez csak egyenletesre igaz.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>esem7</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(A\) és \(B\) események pontosan akkor függetlenek, ha \(\mathrm {P}(AB)=\mathrm {P}(A)\mathrm {P}(B)\). </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Definíció.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>dvv9</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \) valségi változó az \(x_1,{...\:}, x_n\) értékeket veheti fel és \(p_k=\mathrm {P}(\xi =x_k)\). Ekkor a második momentuma: <CENTER>\[ \mathrm {E}(\xi ^2)=\sum _{k=1}^n x_k p_k^2 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>flenvv1</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Azt mondjuk, hogy \(\xi \) és \(\eta \) diszkrét valségi változók függetlenek, ha <CENTER>\[ \mathrm {P}(\xi =x,\eta =y)=\mathrm {P}(\xi =x)\mathrm {P}(\eta =y) \]</CENTER> bármely \(x,y\in \mathbb {R}\)-re teljesül. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>dvv6</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy \(\xi \) valségi változó az \(x_1,{...\:}, x_n\) értékeket veheti fel. Ekkor a szórása: <CENTER>\[ \mathrm {D}(\xi )=\sum _{k=1}^n \mathrm {P}(\xi =x_k)(x_k-\mathrm {E}(\xi ))^2 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Def.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>

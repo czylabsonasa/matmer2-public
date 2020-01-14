@@ -12,7 +12,7 @@ fb=raw"{Fontos a $p_k\ge 0$ is.}"
 body=raw"""
 Egy nemnegatív tagú $p_1,\ldots, p_n$ vektor pont akkor valségeloszlás, ha $\sum_{k=1}^n p_k=1$.
 """,
-answer=true
+answer=true,
 fb=raw"{Pedig de.}"
 )
 ,
@@ -69,78 +69,115 @@ Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor 
 $$
 \D^2(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
 Ekkor a második momentuma:
 $$
 \E(\xi^2)=\sum_{k=1}^n x_k^2 p_k
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel és $p_k=\P(\xi=x_k)$. 
 Ekkor a második momentuma:
 $$
 \E(\xi^2)=\sum_{k=1}^n x_k p_k^2
 $$
-""",false)
+""",
+answer=false,
+fb=raw"{Def.}"
+)
 
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. 
 Ekkor a szórásnégyzete:
 $$
 \D^2(\xi)=\E(\xi^2)-\E(\xi)^2
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Def./tulajdonság}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots ,x_n$ értékeket veheti fel. 
 Ekkor a szórásnégyzete:
 $$
 \D^2(\xi)=\E(\xi^2)-\E(\xi)
 $$
-""",false)
+""",
+answer=false,
+fb=raw"{Def./tulajdonság}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó szórása mindig pozitív.
-""",false)
+""",
+answer=false,
+fb=raw"{Egy konstans v.v-nak 0 a szórása.}"
+)
 ,
-(raw"""
-Egy $\xi$ valségi változó szórása mindig nemnegatív és csak akkor nulla, ha $\xi$ (lényegében) konstans.
-""",true)
-,
-(raw"""
+# (
+# body=raw"""
+# Egy $\xi$ valségi változó szórása mindig nemnegatív és csak akkor nulla, ha $\xi$ (lényegében) konstans.
+# """,
+# answer=true,
+# )
+# ,
+(
+body=raw"""
 $\xi$ és $\eta$ független, véges értékkészletű valségi változókra:
 $$
 \D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Páronként független valségi változókra a szórásnégyzet additív.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 A $\xi$ és $\eta$ valségi változókra:
-$$
-\D(\xi+\eta)=\D(\xi)+\D(\eta)
-$$
-feltéve, hogy létezik a szórásuk.
-""",false)
-
-,
-(raw"""
-$\xi$ és $\eta$ véges értékkészletű valségi változókra:
 $$
 \D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)
 $$
-""",false)
+feltéve, hogy létezik a szórásuk.
+""",
+answer=false,
+fb=raw"{Páronként független valségi változókra a szórásnégyzet additív, általában nem.}"
+)
+
 ,
-(raw"""
+# (raw"""
+# $\xi$ és $\eta$ véges értékkészletű valségi változókra:
+# $$
+# \D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)
+# $$
+# """,false)
+# ,
+(
+body=raw"""
 $\xi$ és $\eta$ $\xi$ és $\eta$ véges értékkészletű valségi változókra:
 $$
 \D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)+2\cov(\xi,\eta)
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Tétel. Ez tetszőleges v.v-kre is igaz.}")
 
 
 )

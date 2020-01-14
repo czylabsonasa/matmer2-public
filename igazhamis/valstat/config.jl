@@ -11,28 +11,28 @@ include("sfv.jl") # sűrűségfv
 include("flenvv.jl") # függetlenség, kovarianci, korreláció 
 
 
-f(x)=1+Int(floor(0.2*length(x)))
+f(x)=1+Int(floor(0.35*length(x)))
 mdict=Dict(
-  "esem"=>(-1,esem),#-1 mind, 0 semmi, n>0 annyi
+  # "esem"=>(0,esem),#-1 mind, 0 semmi, n>0 annyi
   # "val"=>(0,val),
   # "felt"=>(0,felt),
-  # "dvv"=>(-1,dvv),
+  # "dvv"=>(0,dvv),
   # "eofv"=>(0,eofv),
-  # "impfvv"=>(-1,impfvv),
+  # "impfvv"=>(0,impfvv),
   # "impdvv"=>(0,impdvv),
   # "sfv"=>(0,sfv),
   # "flenvv"=>(-1,flenvv),
 
 
-  # "esem"=>(f(esem),esem),#-1 mind, 0 semmi, n>0 annyi
-  # "val"=>(f(val),val),
-  # "felt"=>(f(felt),felt),
-  # "dvv"=>(f(dvv),dvv),
-  # "eofv"=>(f(eofv),eofv),
-  # "impfvv"=>(f(impfvv),impfvv),
-  # "impdvv"=>(f(impdvv),impdvv),
-  # "sfv"=>(f(sfv),sfv),
-  # "flenvv"=>(f(flenvv),flenvv),
+  "esem"=>(f(esem),esem),#-1 mind, 0 semmi, n>0 annyi
+  "val"=>(f(val),val),
+  "felt"=>(f(felt),felt),
+  "dvv"=>(f(dvv),dvv),
+  "eofv"=>(f(eofv),eofv),
+  "impfvv"=>(f(impfvv),impfvv),
+  "impdvv"=>(f(impdvv),impdvv),
+  "sfv"=>(f(sfv),sfv),
+  "flenvv"=>(f(flenvv),flenvv),
 
 
 

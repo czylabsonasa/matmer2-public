@@ -1,35 +1,60 @@
 val=(
-(raw"""
+(
+body=raw"""
 A valószínűség additív, azaz $\P(A+B)=\P(A)+\P(B)$.
-""",false)
+""",
+answer=false,
+fb=raw"{Csak ha kizáróak (diszjunktak).}"
+)
 ,
-(raw"""
+(
+body=raw"""
 A valószínűség additív, azaz $\P(A+B)=\P(A)+\P(B)$, ha $A$ és $B$ kizáróak.
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 A valószínűség monoton, azaz $\P(A)<\P(B)$, ha $A\subseteq B$.
-""",false)
+""",
+answer=false,
+fb=raw"{$A=B$?}"
+)
 ,
-(raw"""
+(
+body=raw"""
 A valószínűség monoton, azaz $\P(A)\le \P(B)$, ha $A\subseteq B$.
-""",true)
+""",
+answer=true,
+fb=raw"{$B=A\cup (B\setminus A)$+additívitás}"
+)
 ,
 
-(raw"""
+(
+body=raw"""
 Bármely esemény valsége kiszámolható a $\frac{\text{kedvező}}{\text{összes}}$ képlettel.
-""",false)
+""",
+answer=false,
+fb=raw"{Csak ha az elemi események egyforma valségűek.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Bármely esemény valsége kiszámolható a $\frac{\text{kedvező}}{\text{összes}}$ képlettel, ha az elemi események 
 egyforma valségűek.
-""",true)
+""",
+answer=true,
+fb=raw"{Additívitás.}"
+)
 
 ,
-(raw"""
+(
+body=raw"""
 Ha véges sok elemi esemény van, akkor bármely $C$-re $\P(C)=\sum_{\omega_k\in C} \P( \{\omega_k \})$.
-""",true)
-
-
-
+""",
+answer=true,
+fb=raw"{Additívitás.}"
+)
 )
