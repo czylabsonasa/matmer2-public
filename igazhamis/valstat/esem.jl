@@ -1,45 +1,85 @@
 esem=(
 
-(raw"""
+(
+body=raw"""
 Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események megegyeznek.
-""",true)
+""",
+answer=true,
+fb=raw"{de-Morgan azonosság}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események kizárják egymást.
-""",false)
+""",
+answer=false,
+fb=raw"{de-Morgan azonosság}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Az $\overline{A\cdot B}$ maga után vonja az $\overline{A} + \overline{B}$ eseményt.
-""",true)
+""",
+answer=true,
+fb=raw"{de-Morgan azonosság}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Az $\overline{A} + \overline{B}$ maga után vonja az $\overline{A\cdot B}$ eseményt.
-""",true)
+""",
+answer=true,
+fb=raw"{de-Morgan azonosság}"
+)
 ,
 
 
-(raw"""
+(
+body=raw"""
 Ha $\P(A)=1$ akkor $A$ bekövetkezhet.
-""",true)
+""",
+answer=true,
+fb=raw"{Nókoment.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\P(A)=1$ akkor $A$ mindig bekövetkezik.
-""",false)
+""",
+answer=false,
+fb=raw"{Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{x\in [0,1]:x\neq \frac{1}{2}\}$}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Az $A$ és $B$ események pontosan akkor függetlenek, ha $\P(AB)=\P(A)\P(B)$.
-""",true)
+""",
+answer=true,
+fb=raw"{Definíció.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Az $A$ és $B$ események pont akkor függetlenek, ha $\P(A+B)=\P(A)+\P(B)$.
-""",false)
+""",
+answer=false,
+fb=raw"{Definíció.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\P(A)=0$ akkor $A$ bekövetkezhet.
-""",true)
+""",
+answer=true,
+fb=raw"{Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Ha $\P(A)=0$ akkor $A$ sosem következik be.
-""",false)
+""",
+answer=false,
+fb=raw"{Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}"
+)
 
 )

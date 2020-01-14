@@ -27,7 +27,7 @@ egyforma valségűek.
 
 ,
 (raw"""
-Bármely $C$-re $\P(C)=\sum_{\omega_k\in C} \P( \{\omega_k \})$.
+Ha véges sok elemi esemény van, akkor bármely $C$-re $\P(C)=\sum_{\omega_k\in C} \P( \{\omega_k \})$.
 """,true)
 
 

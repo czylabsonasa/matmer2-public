@@ -59,166 +59,53 @@
 
 \begin{quiz}{gyakorló}
 
-\begin{multi}{esem4}
-Az $\overline{A} + \overline{B}$ maga után vonja az $\overline{A\cdot B}$ eseményt.
+\begin{multi}[feedback={de-Morgan azonosság}]{esem1}
+Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események megegyeznek.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}{esem9}
-Ha $\P(A)=0$ akkor $A$ bekövetkezhet.
+\begin{multi}[feedback={Nókoment.}]{esem5}
+Ha $\P(A)=1$ akkor $A$ bekövetkezhet.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}{dvv13}
-Egy $\xi$ valségi változó szórása mindig nemnegatív és csak akkor nulla, ha $\xi$ (lényegében) konstans.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{eofv3}
-Egy $F:\R\to [0,1]$ pontosan akkor eloszlásfüggvény, ha monoton nemcsökkenő, 
-$\lim_{x\to+\infty}F(x)=1$ és $\lim_{x\to-\infty}F(x)=0$
+\begin{multi}[feedback={Definíció.}]{esem8}
+Az $A$ és $B$ események pont akkor függetlenek, ha $\P(A+B)=\P(A)+\P(B)$.
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}{impfvv11}
-Ha $\xi\sim \Unif(a,b)$ akkor a sűrűségfüggvénye 
-$$
-f_{\xi}(x)=
-\begin{cases}
-\frac{1}{b-a} & \ \ a<x<b \\
-0 & \text{máskor} 
-\end{cases}
-$$
-\item* igaz
-\item hamis
+\begin{multi}[feedback={de-Morgan azonosság}]{esem2}
+Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események kizárják egymást.
+\item igaz
+\item* hamis
 \end{multi}
-\begin{multi}{eofv7}
-Bármely $\xi$-re és $a<b$-re $\P(a\le \xi <b)=F_{\xi}(b)-F_{\xi}(a)$.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{flenvv1}
-Azt mondjuk, hogy $\xi$ és $\eta$ diszkrét valségi változók függetlenek, ha
-$$
-\P(\xi=x,\eta=y)=\P(\xi=x)\P(\eta=y)
-$$
-bármely $x,y\in \R$-re teljesül.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{val7}
-Bármely $C$-re $\P(C)=\sum_{\omega_k\in C} \P( \{\omega_k \})$.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{dvv17}
-$\xi$ és $\eta$ $\xi$ és $\eta$ véges értékkészletű valségi változókra:
-$$
-\D^2(\xi+\eta)=\D^2(\xi)+\D^2(\eta)+2\cov(\xi,\eta)
-$$
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{eofv6}
-Diszkrét valségi változók eloszlásfüggvénye lépcsős függvény.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{esem7}
+\begin{multi}[feedback={Definíció.}]{esem7}
 Az $A$ és $B$ események pontosan akkor függetlenek, ha $\P(AB)=\P(A)\P(B)$.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}{sfv7}
-Ha $\xi$-nek $f$ asűrűségfüggvénye, akkor bármely $a<b$-re:
-$$
-\P(a<\xi<b)=f(b)-f(a)
-$$
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{impdvv1}
-Egy $\xi\sim \Binom(n,p)$ várható értéke: $np$
+\begin{multi}[feedback={de-Morgan azonosság}]{esem4}
+Az $\overline{A} + \overline{B}$ maga után vonja az $\overline{A\cdot B}$ eseményt.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}{sfv6}
-Ha van $\xi$-nek sűrűségfüggvénye, akkor bármely $a<b$-re:
-$$
-\P(a<\xi<b)=\int_{a}^{b}f(x)\d x
-$$
+\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{x\in [0,1]:x\neq \frac{1}{2}\}$}]{esem6}
+Ha $\P(A)=1$ akkor $A$ mindig bekövetkezik.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={de-Morgan azonosság}]{esem3}
+Az $\overline{A\cdot B}$ maga után vonja az $\overline{A} + \overline{B}$ eseményt.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}{felt6}
-$A_1,\ldots,A_n$ teljes eseményrendszer, ha $\sum A_k=\Omega$ és a tagok páronként függetlenek.
+\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}]{esem10}
+Ha $\P(A)=0$ akkor $A$ sosem következik be.
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}{impfvv8}
-Ha $\xi\sim \Norm(0,1)$ akkor a sűrűségfüggvénye $f_{\xi}(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{impdvv2}
-Egy $\xi\sim \Binom(n,p)$ várható értéke: $n+p$
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{dvv6}
-Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a szórása:
-$$
-\D(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
-$$
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{felt1}
-$A$-nak a $B$-re vonatkozó feltételes valsége $\P(A|B)=\frac{\P(A)}{\P(B)}$.
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{felt3}
-$A$-nak a $B$-re vonatkozó feltételes valsége $\P(A|B)=\frac{\P(A\cdot B)}{\P(B)}$.
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{val2}
-A valószínűség additív, azaz $\P(A+B)=\P(A)+\P(B)$, ha $A$ és $B$ kizáróak.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{sfv8}
-Ha van $\xi$-nek sűrűségfüggvénye, akkor bármely $b$-re:
-$$
-\P(\xi<b)=f(b)
-$$
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{impfvv12}
-Ha $\xi\sim \Unif(a,b)$ akkor a sűrűségfüggvénye 
-$$
-f_{\xi}(x)=
-\begin{cases}
-\frac{x-a}{b-a} & \ \ a<x<b \\
-0 & \text{máskor} 
-\end{cases}
-$$
-\item igaz
-\item* hamis
-\end{multi}
-\begin{multi}{dvv2}
-Egy nemnegatív tagú $p_1,\ldots, p_n$ vektor pont akkor valségeloszlás, ha $\sum_{k=1}^n p_k=1$.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}{flenvv6}
-Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
-kovarianciájuk
-$$
-\cov(\xi,\eta)=\E(\xi\eta)-\E(\xi)\E(\eta)
-$$
+\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}]{esem9}
+Ha $\P(A)=0$ akkor $A$ bekövetkezhet.
 \item* igaz
 \item hamis
 \end{multi}

@@ -77,10 +77,14 @@ quizpost=raw"""
 """
 
 
-
+# tfname-true/false name
 tfpre=raw"""
 \begin{multi}{mtfname}
 """
+tfpreFB=raw"""
+\begin{multi}[feedback=_FB]{mtfname}
+"""
+
 tfpost=raw"""
 \end{multi}
 """

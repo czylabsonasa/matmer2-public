@@ -9,10 +9,6 @@ $A$-nak a $B$-re vonatkozó feltételes valsége $\P(A|B)=\frac{\P(A)}{\P(B)}$, 
 ,
 
 (raw"""
-$A$-nak a $B$-re vonatkozó feltételes valsége $\P(A|B)=\frac{\P(A\cdot B)}{\P(B)}$.
-""",false)
-,
-(raw"""
 $A$-nak a $B$-re vonatkozó feltételes valségét $\P(A|B)=\frac{\P(A\cdot B)}{\P(B)}$ módon értelmezzük, feltéve hogy $\P(B)>0$.
 """,true)
 ,

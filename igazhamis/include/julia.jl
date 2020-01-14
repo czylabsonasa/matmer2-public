@@ -6,7 +6,8 @@ using Random
 function csere(s)
   ss=strip(s)
   if length(ss)==0 || ss[1]=='%'
-    s 
+    #s 
+    ""
   else  
     s=replace(s,r"(\\Exp)(?=\W)"=>s"\\mathrm{Exp}")
     s=replace(s,r"(\\Binom)(?=\W)"=>s"\\mathrm{Binom}")

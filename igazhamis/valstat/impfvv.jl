@@ -29,14 +29,14 @@ Ha $\xi\sim \Norm(\mu,\sigma^2)$ akkor $\frac{\xi-\mu}{\sigma}\sim \Norm(0,1)$.
 """,true)
 ,
 (raw"""
-Ha $\xi\sim \Norm(0,1)$ akkor a sűrűségfüggvénye $f_{\xi}(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$.
+Ha $\xi\sim \Norm(0,1)$ akkor a sűrűségfüggvénye $f(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$.
 """,true)
 
 ,
 (raw"""
 Ha $\xi\sim \Exp(\lambda)$ akkor a sűrűségfüggvénye 
 $$
-f_{\xi}(x)=
+f(x)=
 \begin{cases}
 \lambda e^{-\lambda x}& \ \ x>0\\
 0 & \text{máskor} 
@@ -47,7 +47,7 @@ $$
 (raw"""
 Ha $\xi\sim \Exp(\lambda)$ akkor a sűrűségfüggvénye 
 $$
-f_{\xi}(x)=
+f(x)=
 \begin{cases}
 1-e^{-\lambda x}& \ \ x>0\\
 0 & \text{máskor} 
@@ -58,7 +58,7 @@ $$
 (raw"""
 Ha $\xi\sim \Unif(a,b)$ akkor a sűrűségfüggvénye 
 $$
-f_{\xi}(x)=
+f(x)=
 \begin{cases}
 \frac{1}{b-a} & \ \ a<x<b \\
 0 & \text{máskor} 
@@ -69,7 +69,7 @@ $$
 (raw"""
 Ha $\xi\sim \Unif(a,b)$ akkor a sűrűségfüggvénye 
 $$
-f_{\xi}(x)=
+f(x)=
 \begin{cases}
 \frac{x-a}{b-a} & \ \ a<x<b \\
 0 & \text{máskor} 

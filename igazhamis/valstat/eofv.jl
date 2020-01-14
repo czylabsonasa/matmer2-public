@@ -46,7 +46,8 @@ Bármely $\xi$-re és $a$-ra $\P(\xi= a)=0$.
 """,false)
 ,
 (raw"""
-Bármely $\xi$-re és $a$-ra $\P(\xi= a)=0$, feltéve hogy $F_{\xi}$ folytonos.
+Bármely $\xi$-re és $a$-ra $\P(\xi= a)=0$, feltéve hogy $\xi$ eloszlásfüggvénye
+folytonos.
 """,true)
 
 )

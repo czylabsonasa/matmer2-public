@@ -1,45 +1,70 @@
 # véges értékkészlet
 dvv=(
-(raw"""
+(
+body=raw"""
 Egy $p_1,\ldots, p_n$ vektor pont akkor valségeloszlás, ha $\sum_{k=1}^n p_k=1$.
-""",false)
+""",
+answer=false,
+fb=raw"{Fontos a $p_k\ge 0$ is.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy nemnegatív tagú $p_1,\ldots, p_n$ vektor pont akkor valségeloszlás, ha $\sum_{k=1}^n p_k=1$.
-""",true)
+""",
+answer=true
+fb=raw"{Pedig de.}"
+)
 ,
 
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a várható értéke:
 $$
 \E(\xi)=\sum_{k=1}^n \P(\xi=x_k)x_k
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a várható értéke:
 $$
 \E(\xi)=\frac{\sum_{k=1}^n x_k}{n}
 $$
-""",false)
+""",
+answer=false,
+fb=raw"{Ez csak egyenletesre igaz.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor:
 $$
 \min_k(x_k)\le \E(\xi) \le \max_k(x_k)
 $$
-""",true)
+""",
+answer=true,
+fb=raw"{Az adott feltételek mellet a várható érték egy súlyozott közép.}"
+)
 
 ,
 
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a szórása:
 $$
 \D(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2
 $$
-""",false)
+""",
+answer=false,
+fb=raw"{Def.}"
+)
 ,
-(raw"""
+(
+body=raw"""
 Egy $\xi$ valségi változó az $x_1,\ldots, x_n$ értékeket veheti fel. Ekkor a szórásnégyzete:
 $$
 \D^2(\xi)=\sum_{k=1}^n \P(\xi=x_k)(x_k-\E(\xi))^2

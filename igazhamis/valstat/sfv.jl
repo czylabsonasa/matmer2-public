@@ -27,21 +27,21 @@ Diszkrét valségi változóknak nincs sűrűségfüggvénye.
 """,true)
 ,
 (raw"""
-Ha van $\xi$-nek sűrűségfüggvénye, akkor bármely $a<b$-re:
+Ha $\xi$ sűrűségfüggvénye $f$, akkor bármely $a<b$-re:
 $$
 \P(a<\xi<b)=\int_{a}^{b}f(x)\d x
 $$
 """,true)
 ,
 (raw"""
-Ha $\xi$-nek $f$ asűrűségfüggvénye, akkor bármely $a<b$-re:
+Ha $\xi$-nek $f$ a sűrűségfüggvénye, akkor bármely $a<b$-re:
 $$
 \P(a<\xi<b)=f(b)-f(a)
 $$
 """,false)
 ,
 (raw"""
-Ha van $\xi$-nek sűrűségfüggvénye, akkor bármely $b$-re:
+Ha van $\xi$-nek $f$ sűrűségfüggvénye, akkor bármely $b$-re:
 $$
 \P(\xi<b)=f(b)
 $$
