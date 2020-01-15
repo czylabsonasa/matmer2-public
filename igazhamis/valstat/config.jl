@@ -9,6 +9,8 @@ include("impfvv.jl") # fontos folytonos vv.
 include("impdvv.jl") # fontos diszkret vv.
 include("sfv.jl") # sűrűségfv 
 include("flenvv.jl") # függetlenség, kovarianci, korreláció 
+include("minta.jl") # minta
+include("proba.jl") # u,t 
 
 
 f(x)=1+Int(floor(0.35*length(x)))
@@ -22,17 +24,19 @@ mdict=Dict(
   # "impdvv"=>(0,impdvv),
   # "sfv"=>(0,sfv),
   # "flenvv"=>(-1,flenvv),
+  #"minta"=>(-1,minta),
+  "proba"=>(-1,proba),
 
 
-  "esem"=>(f(esem),esem),#-1 mind, 0 semmi, n>0 annyi
-  "val"=>(f(val),val),
-  "felt"=>(f(felt),felt),
-  "dvv"=>(f(dvv),dvv),
-  "eofv"=>(f(eofv),eofv),
-  "impfvv"=>(f(impfvv),impfvv),
-  "impdvv"=>(f(impdvv),impdvv),
-  "sfv"=>(f(sfv),sfv),
-  "flenvv"=>(f(flenvv),flenvv),
+  # "esem"=>(f(esem),esem),#-1 mind, 0 semmi, n>0 annyi
+  # "val"=>(f(val),val),
+  # "felt"=>(f(felt),felt),
+  # "dvv"=>(f(dvv),dvv),
+  # "eofv"=>(f(eofv),eofv),
+  # "impfvv"=>(f(impfvv),impfvv),
+  # "impdvv"=>(f(impdvv),impdvv),
+  # "sfv"=>(f(sfv),sfv),
+  # "flenvv"=>(f(flenvv),flenvv),
 
 
 

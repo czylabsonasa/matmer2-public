@@ -9,14 +9,14 @@
  
 <question type="multichoice">
   <name>
-    <text>flenvv4</text>
+    <text>proba11</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a korrelációjuk <CENTER>\[ \mathrm {corr}(\xi ,\eta )=\frac {\mathrm {cov}(\xi ,\eta )}{\mathrm {D}(\xi )\mathrm {D}(\eta )} \]</CENTER> </p>]]></text>
+    <text><![CDATA[<p>Ha egy \(16\) elemű minta normális sokaságból származik,a szórást nem ismerjük, \(s=3\) és hipotéziseink: <CENTER>\[ H_0: \mu =10 \\ \]</CENTER> <CENTER>\[ H_1: \mu \neq 10 \]</CENTER> akkor az <CENTER>\[ \frac {\overline {X}-10}{3}4 \]</CENTER> valségi változó \(15\)-szabadsági fokú Student eloszlású ha \(H_0\) igaz. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Def.</p>]]></text>
+    <text><![CDATA[<p>Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy valségi változó \(15\)-szabadsági fokú Student eloszlású, átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -32,37 +32,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>flenvv8</text>
+    <text>proba3</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha a \(\xi \) és \(\eta \) valségi változóknak létezik a kovarianciája, akkor \(-1\le \mathrm {cov}(\xi ,\eta )\le 1\). </p>]]></text>
+    <text><![CDATA[<p>Ha a minta normális sokaságból származik, nem ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről akarunk dönteni akkor \(t\)-próbát használhatunk. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Ilyesmi a \(\mathrm {corr}\)-ra igaz.</p>]]></text>
-  </generalfeedback>
-  <penalty>0.1000000</penalty>
-  <hidden>0</hidden>
-  <single>true</single>
-  <shuffleanswers>1</shuffleanswers>
-  <answernumbering>abc</answernumbering>
-  <answer fraction="0" format="html">
-    <text><![CDATA[<p>igaz</p>]]></text>
-  </answer>
-  <answer fraction="100" format="html">
-    <text><![CDATA[<p>hamis</p>]]></text>
-  </answer>
-</question>
-<question type="multichoice">
-  <name>
-    <text>flenvv1</text>
-  </name>
-  <questiontext format="html">
-    <text><![CDATA[<p>Azt mondjuk, hogy \(\xi \) és \(\eta \) diszkrét valségi változók függetlenek, ha <CENTER>\[ \mathrm {P}(\xi =x,\eta =y)=\mathrm {P}(\xi =x)\mathrm {P}(\eta =y) \]</CENTER> bármely \(x,y\in \mathbb {R}\)-re teljesül. </p>]]></text>
-  </questiontext>
-  <defaultgrade>1.0</defaultgrade>
-  <generalfeedback format="html">
-    <text><![CDATA[<p>Def.</p>]]></text>
+    <text><![CDATA[<p>Ezek az \(t\)-próba használatának előzményei.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -78,14 +55,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>flenvv3</text>
+    <text>proba5</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változók függetlenek, akkor <CENTER>\[ \mathrm {E}(\xi \eta )=\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> feltéve, hogy létezik a szórásuk. </p>]]></text>
+    <text><![CDATA[<p>Az \(u\)-próbánál a <CENTER>\[ u=\frac {\overline {X}-\mu _0}{\sigma }\sqrt {n} \]</CENTER> mennyiség segítségével döntünk a hipotéziseinkről. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Tétel.</p>]]></text>
+    <text><![CDATA[<p>A fenti formula az \(u\)-próba ún. próbastatisztikája.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -101,37 +78,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>flenvv9</text>
+    <text>proba12</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha a \(\xi \) és \(\eta \) valségi változóknak létezik a korrelációja, akkor \(-1\le \mathrm {corr}(\xi ,\eta )\le 1\). </p>]]></text>
+    <text><![CDATA[<p>Ha egy \(16\) elemű minta normális sokaságból származik, a szórás nem ismert, \(s=3\) és hipotéziseink: <CENTER>\[ H_0: \mu =10 \\ \]</CENTER> <CENTER>\[ H_1: \mu \neq 10 \]</CENTER> akkor az <CENTER>\[ \frac {\overline {X}-10}{3}4 \]</CENTER> valségi változó sztenderd normális eloszlású ha \(H_0\) igaz. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Tulajdonság,tétel.</p>]]></text>
-  </generalfeedback>
-  <penalty>0.1000000</penalty>
-  <hidden>0</hidden>
-  <single>true</single>
-  <shuffleanswers>1</shuffleanswers>
-  <answernumbering>abc</answernumbering>
-  <answer fraction="100" format="html">
-    <text><![CDATA[<p>igaz</p>]]></text>
-  </answer>
-  <answer fraction="0" format="html">
-    <text><![CDATA[<p>hamis</p>]]></text>
-  </answer>
-</question>
-<question type="multichoice">
-  <name>
-    <text>flenvv5</text>
-  </name>
-  <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a korrelációjuk <CENTER>\[ \mathrm {corr}(\xi ,\eta )=\mathrm {E}(\xi \eta )-\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> </p>]]></text>
-  </questiontext>
-  <defaultgrade>1.0</defaultgrade>
-  <generalfeedback format="html">
-    <text><![CDATA[<p>Def.</p>]]></text>
+    <text><![CDATA[<p>A feltételek mellett a fenti Student (t) eloszlású.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -147,14 +101,14 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>flenvv7</text>
+    <text>proba1</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változóknak létezik a szórása, akkor a kovarianciájuk <CENTER>\[ \mathrm {cov}(\xi ,\eta )=\mathrm {E}((\xi -\mathrm {E}(\xi ))(\eta -\mathrm {E}(\eta ))) \]</CENTER> </p>]]></text>
+    <text><![CDATA[<p>Ha a minta normális sokaságból származik, ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről akarunk dönteni akkor \(u\)-próbát használhatunk. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Def.</p>]]></text>
+    <text><![CDATA[<p>Ezek az \(u\)-próba használatának előzményei.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -170,14 +124,37 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>flenvv2</text>
+    <text>proba9</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha <CENTER>\[ \mathrm {E}(\xi \eta )=\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> akkor\(\xi \) és \(\eta \) valségi változók függetlenek. </P><P></p>]]></text>
+    <text><![CDATA[<p>Ha egy \(16\) elemű minta normális sokaságból származik, \(\sigma =3\) és hipotéziseink: <CENTER>\[ H_0: \mu =10 \]</CENTER> <CENTER>\[ H_1: \mu \neq 10 \]</CENTER> akkor az <CENTER>\[ \frac {\overline {X}-10}{3}4 \]</CENTER> valségi változó sztenderd normális eloszlású ha \(H_0\) igaz. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Fordítva igaz. Ezek a korrelálatlan (merőleges) változók.</p>]]></text>
+    <text><![CDATA[<p>Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy sztenderd normális átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>proba4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha nem ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről akarunk dönteni akkor \(t\)-próbát használhatunk. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>A normalitás fontos.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -193,14 +170,60 @@
 </question>
 <question type="multichoice">
   <name>
-    <text>flenvv6</text>
+    <text>proba10</text>
   </name>
   <questiontext format="html">
-    <text><![CDATA[<p>Ha \(\xi \) és \(\eta \) valségi változóknak létezik a szórása, akkor a kovarianciájuk <CENTER>\[ \mathrm {cov}(\xi ,\eta )=\mathrm {E}(\xi \eta )-\mathrm {E}(\xi )\mathrm {E}(\eta ) \]</CENTER> </p>]]></text>
+    <text><![CDATA[<p>Ha egy \(16\) elemű minta normális sokaságból származik, \(\sigma =3\) és hipotéziseink: <CENTER>\[ H_0: \mu =10 \]</CENTER> <CENTER>\[ H_1: \mu \neq 10 \]</CENTER> akkor az <CENTER>\[ \frac {\overline {X}-10}{3}4 \]</CENTER> valségi változó \(15\)-szabadsági fokú Student eloszlású ha \(H_0\) igaz. </p>]]></text>
   </questiontext>
   <defaultgrade>1.0</defaultgrade>
   <generalfeedback format="html">
-    <text><![CDATA[<p>Tulajdonság.</p>]]></text>
+    <text><![CDATA[<p>A feltételek mellett a fenti mennyiség sztenderd normális, ha \(H_0\) igaz.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>proba7</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(u\)-próbánál a <CENTER>\[ u=\frac {\overline {X}-\mu _0}{s}\sqrt {n} \]</CENTER> mennyiség segítségével döntünk a hipotéziseinkről. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>A fenti formula az \(t\)-próba ún. próbastatisztikája.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>proba6</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(t\)-próbánál a <CENTER>\[ u=\frac {\overline {X}-\mu _0}{s}\sqrt {n} \]</CENTER> mennyiség segítségével döntünk a hipotéziseinkről. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>A fenti formula a \(t\)-próba ún. próbastatisztikája.</p>]]></text>
   </generalfeedback>
   <penalty>0.1000000</penalty>
   <hidden>0</hidden>
@@ -211,6 +234,52 @@
     <text><![CDATA[<p>igaz</p>]]></text>
   </answer>
   <answer fraction="0" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>proba8</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(t\)-próbánál a <CENTER>\[ u=\frac {\overline {X}-\mu _0}{\sigma }\sqrt {n}. \]</CENTER> mennyiség segítségével döntünk a hipotéziseinkről. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>A fenti formula a \(u\)-próba ún. próbastatisztikája.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>hamis</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>proba2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha a minta normális sokaságból származik és a sokasági várható értékre (átlagra) vonatkozó kérdésről akarunk dönteni akkor \(u\)-próbát használhatunk. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>A szórást ismerni kell.</p>]]></text>
+  </generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>igaz</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
     <text><![CDATA[<p>hamis</p>]]></text>
   </answer>
 </question>

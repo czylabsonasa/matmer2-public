@@ -59,79 +59,129 @@
 
 \begin{quiz}{gyakorló}
 
-\begin{multi}[feedback={Def.}]{flenvv4}
-Ha $\xi$ és $\eta$ diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a 
-korrelációjuk
+\begin{multi}[feedback={Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy valségi változó $15$-szabadsági fokú Student eloszlású, átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.}]{proba11}
+Ha egy $16$ elemű minta normális sokaságból származik,a szórást nem ismerjük, $s=3$ és hipotéziseink:
 $$
-\corr(\xi,\eta)=\frac{\cov(\xi,\eta)}{\D(\xi)\D(\eta)}
+H_0: \mu=10 \\
 $$
+$$
+H_1: \mu\neq 10
+$$
+akkor az 
+$$
+\frac{\overline{X}-10}{3}4
+$$
+valségi változó $15$-szabadsági fokú Student eloszlású ha $H_0$ igaz.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={Ilyesmi a $\corr$-ra igaz.}]{flenvv8}
-Ha a $\xi$ és $\eta$ valségi változóknak létezik a kovarianciája, akkor $-1\le \cov(\xi,\eta)\le 1$.
+\begin{multi}[feedback={Ezek az $t$-próba használatának előzményei.}]{proba3}
+Ha a minta normális sokaságból származik, nem ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
+akarunk dönteni akkor $t$-próbát használhatunk.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={A fenti formula az $u$-próba ún. próbastatisztikája.}]{proba5}
+Az $u$-próbánál a 
+$$
+u=\frac{\overline{X}-\mu_0}{\sigma}\sqrt{n}
+$$
+mennyiség segítségével döntünk a hipotéziseinkről.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={A feltételek mellett a fenti Student (t) eloszlású.}]{proba12}
+Ha egy $16$ elemű minta normális sokaságból származik, a szórás nem ismert, $s=3$ és hipotéziseink:
+$$
+H_0: \mu=10 \\
+$$
+$$
+H_1: \mu\neq 10
+$$
+akkor az 
+$$
+\frac{\overline{X}-10}{3}4
+$$
+valségi változó sztenderd normális eloszlású ha $H_0$ igaz.
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}[feedback={Def.}]{flenvv1}
-Azt mondjuk, hogy $\xi$ és $\eta$ diszkrét valségi változók függetlenek, ha
-$$
-\P(\xi=x,\eta=y)=\P(\xi=x)\P(\eta=y)
-$$
-bármely $x,y\in \R$-re teljesül.
+\begin{multi}[feedback={Ezek az $u$-próba használatának előzményei.}]{proba1}
+Ha a minta normális sokaságból származik, ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
+akarunk dönteni akkor $u$-próbát használhatunk.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={Tétel.}]{flenvv3}
-Ha $\xi$ és $\eta$ valségi változók függetlenek, akkor
+\begin{multi}[feedback={Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy sztenderd normális átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.}]{proba9}
+Ha egy $16$ elemű minta normális sokaságból származik, $\sigma=3$ és hipotéziseink:
 $$
-\E(\xi \eta)=\E(\xi)\E(\eta)
+H_0: \mu=10
 $$
-feltéve, hogy létezik a szórásuk.
+$$
+H_1: \mu\neq 10
+$$
+akkor az 
+$$
+\frac{\overline{X}-10}{3}4
+$$
+valségi változó sztenderd normális eloszlású ha $H_0$ igaz.
 \item* igaz
 \item hamis
 \end{multi}
-\begin{multi}[feedback={Tulajdonság,tétel.}]{flenvv9}
-Ha a $\xi$ és $\eta$ valségi változóknak létezik a korrelációja, akkor $-1\le \corr(\xi,\eta)\le 1$.
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}[feedback={Def.}]{flenvv5}
-Ha $\xi$ és $\eta$ diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a 
-korrelációjuk
-$$
-\corr(\xi,\eta)=\E(\xi\eta)-\E(\xi)\E(\eta)
-$$
+\begin{multi}[feedback={A normalitás fontos.}]{proba4}
+Ha nem ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
+akarunk dönteni akkor $t$-próbát használhatunk.
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}[feedback={Def.}]{flenvv7}
-Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
-kovarianciájuk
+\begin{multi}[feedback={A feltételek mellett a fenti mennyiség sztenderd normális, ha $H_0$ igaz.}]{proba10}
+Ha egy $16$ elemű minta normális sokaságból származik, $\sigma=3$ és hipotéziseink:
 $$
-\cov(\xi,\eta)=\E((\xi-\E(\xi))(\eta-\E(\eta)))
+H_0: \mu=10
 $$
-\item* igaz
-\item hamis
-\end{multi}
-\begin{multi}[feedback={Fordítva igaz. Ezek a korrelálatlan (merőleges) változók. }]{flenvv2}
-Ha
 $$
-\E(\xi \eta)=\E(\xi)\E(\eta)
+H_1: \mu\neq 10
 $$
-akkor$\xi$ és $\eta$ valségi változók függetlenek.
-
+akkor az 
+$$
+\frac{\overline{X}-10}{3}4
+$$
+valségi változó $15$-szabadsági fokú Student eloszlású ha $H_0$ igaz.
 \item igaz
 \item* hamis
 \end{multi}
-\begin{multi}[feedback={Tulajdonság.}]{flenvv6}
-Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
-kovarianciájuk
+\begin{multi}[feedback={A fenti formula az $t$-próba ún. próbastatisztikája.}]{proba7}
+Az $u$-próbánál a 
 $$
-\cov(\xi,\eta)=\E(\xi\eta)-\E(\xi)\E(\eta)
+u=\frac{\overline{X}-\mu_0}{s}\sqrt{n}
 $$
+mennyiség segítségével döntünk a hipotéziseinkről.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={A fenti formula a $t$-próba ún. próbastatisztikája.}]{proba6}
+Az $t$-próbánál a 
+$$
+u=\frac{\overline{X}-\mu_0}{s}\sqrt{n}
+$$
+mennyiség segítségével döntünk a hipotéziseinkről.
 \item* igaz
 \item hamis
+\end{multi}
+\begin{multi}[feedback={A fenti formula a $u$-próba ún. próbastatisztikája.}]{proba8}
+Az $t$-próbánál a 
+$$
+u=\frac{\overline{X}-\mu_0}{\sigma}\sqrt{n}.
+$$
+mennyiség segítségével döntünk a hipotéziseinkről.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={A szórást ismerni kell.}]{proba2}
+Ha a minta normális sokaságból származik és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
+akarunk dönteni akkor $u$-próbát használhatunk.
+\item igaz
+\item* hamis
 \end{multi}
 \end{quiz}
 
