@@ -23,12 +23,12 @@ for (mkey,mval) in mdict
    for i in sample(1:n,nsamp,replace=false)
       akt=marr[i]
       tmp=""
-      if hasfield(typeof(akt),:fb)
+#      if hasfield(typeof(akt),:fb)
          tmp=replace(tfpreFB,"mtfname"=>mkey*string(i)) 
          tmp=replace(tmp,"_FB"=>akt.fb) 
-      else         
-         tmp=replace(tfpre,"mtfname"=>mkey*string(i)) 
-      end
+#      else         
+#         tmp=replace(tfpre,"mtfname"=>mkey*string(i)) 
+#      end
       tmp*=akt.body*tfdict[akt.answer]
       
       tmp*=tfpost
