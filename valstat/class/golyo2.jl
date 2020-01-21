@@ -32,7 +32,7 @@ let
 qText=raw"""
 \begin{multi}{__QNAME}
 Egy dobozban van $__K$ kék, $__P$ piros és $__S$ sárga golyó. Visszatevés nélkül húzunk
-$__HSZ$ golyót. Mi a valsége, hogy sorban: __HUZ golyót kapunk?
+$__HSZ$ golyót. Mi a valsége, hogy sorban: $__HUZ$ golyót kapunk?
 \item* $__JV$
 \item $__RV1$
 \item $__RV2$

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$module$/próba</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name>
+    <text>egyenes</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy elsőfokú \(f\) függvényről tudjuk, hogy \(f(-6)=14,\ f(2)=-10\). Mennyi \(f(-11)\) ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(29\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(30\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(31\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(27\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>munkas</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Ha \(5\) munkás \(5\) óra alatt \(33\) köbméter földet hord el, akkor \(5\) munkás \(10\) óra alatt mennyit? </P><P></p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(66\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(67\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(68\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(65\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>haromszog</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Hány olyan háromszög van, melyeknek oldalhosszúságai az \([1,4]\) intervallumbeli pozitív egészek? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(13\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(14\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(15\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(12\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>vektor</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(\left [4, -20\right ]\), \(\left [-4, 6\right ]\), \(\left [17, 14\right ]\) pontok által alkotott háromszög súlypontja és a \(\left [-17, -12\right ]\) pont által alkotott szakasz \(F\) felezőpontja: </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(\left [-\frac {17}{3}, -6\right ]\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\left [-\frac {31}{6}, -\frac {11}{2}\right ]\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\left [-5, -\frac {16}{3}\right ]\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\left [-6, -\frac {19}{3}\right ]\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>lnko</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Az \(81\) és \(78\) számok legnagyobb közös osztója: </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(3\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(4\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(5\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(6\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>szamtani</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Egy számtani sorozatról tudjuk, hogy \(a_{7}=76\) és \(a_{15}=91\). Mennyi a <CENTER>\[ a_{7}+{...\:} +a_{15}? \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(\frac {1503}{2}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {1505}{2}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {1501}{2}\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(\frac {1509}{2}\)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>trig</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Tudjuk, hogy \( \sin (\alpha ) =\frac {40}{41}\) és \( \cos (\alpha ) = \frac {9}{41} \). Ekkor \( \sin (2\alpha ),\ \cos (2\alpha ) \)= </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( \frac {720}{1681}, -\frac {1519}{1681} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {360}{1681}, -\frac {1519}{1681} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {360}{1681}, -\frac {3038}{1681} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( \frac {1440}{1681}, -\frac {3038}{1681} \)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>logeq</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A \( \log (x-4)+\log (x+4)=2\log (6) \) egyenlet megoldása: </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( 52 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 16 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( -36 \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( 104 \)</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>

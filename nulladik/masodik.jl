@@ -7,6 +7,10 @@ _db=Dict(
    "logeq",
    "parity",
    "trigform",
-   "hanyados"
+   "hanyados",
+    "eval",
+    "geom1",
+    "gyok1"
+
    ]
 )

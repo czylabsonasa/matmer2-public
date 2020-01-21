@@ -34,8 +34,8 @@ let
 qText=raw"""
 \begin{multi}{__QNAME}
 Két gépen azonos típusú alkatrészeket gyártanak. Az első gép
-a termelés __G1%-át adja, melynek selejtaránya __S1%.
-A második __S2% selejtet ad. Kiválasztunk véletlenszerűen egy terméket.
+a termelés __G1\%-át adja, melynek selejtaránya __S1\%.
+A második __S2\% selejtet ad. Kiválasztunk véletlenszerűen egy terméket.
 Mennyi a valsége hogy selejtes? Ha tudjuk hogy ez a termék selejtes,
 mennyi az esélye hogy a __Q. gép gyártotta? (A megadott válaszok a kérdéseknek megfelelő
 sorrendben vannak.)

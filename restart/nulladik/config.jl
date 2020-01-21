@@ -1,0 +1,11 @@
+mquizname="próba"
+mdict=[
+  "egyenes",
+  "munkas",
+  "haromszog",
+  "vektor",
+  "lnko",
+  "szamtani",
+  "trig",
+  "logeq"
+]

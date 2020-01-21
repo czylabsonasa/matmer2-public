@@ -15,7 +15,6 @@ qText=raw"""
 Hányféleképpen végződhet egy futóverseny, ha $__A1$
 résztvevő van, az első $__A2$ helyezett érdekel
 és nincs holtverseny?
-
 \item* $__JV$
 \item  $__RV1$
 \item  $__RV2$

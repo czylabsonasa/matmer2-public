@@ -1,0 +1,373 @@
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+
+
+
+
+\usepackage{amsmath}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\usepackage{moodle}
+
+
+\begin{document}
+
+\begin{quiz}{gyakorló}
+
+\begin{multi}[feedback={Például: legyen a kísérlet random húzás a $[0,1]$-ből és $A=\{\frac{1}{2}\}$}]{esem10}
+Ha $\mathrm{P}(A)=0$ akkor $A$ sosem következik be.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={A fenti formula a $u$-próba ún. próbastatisztikája.}]{proba8}
+Az $t$-próbánál a 
+$$
+u=\frac{\overline{X}-\mu_0}{\sigma}\sqrt{n}.
+$$
+mennyiség segítségével döntünk a hipotéziseinkről.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={$B=A\cup (B\setminus A)$+additívitás}]{val4}
+A valószínűség monoton, azaz $\mathrm{P}(A)\le \mathrm{P}(B)$, ha $A\subseteq B$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Definíció.}]{esem7}
+Az $A$ és $B$ események pontosan akkor függetlenek, ha $\mathrm{P}(AB)=\mathrm{P}(A)\mathrm{P}(B)$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy sztenderd normális átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.}]{proba9}
+Ha egy $16$ elemű minta normális sokaságból származik, $\sigma=3$ és hipotéziseink:
+$$
+H_0: \mu=10
+$$
+$$
+H_1: \mu\neq 10
+$$
+akkor az 
+$$
+\frac{\overline{X}-10}{3}4
+$$
+valségi változó sztenderd normális eloszlású ha $H_0$ igaz.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{felt2}
+$A$-nak a $B$-re vonatkozó feltételes valségét $\mathrm{P}(A|B)=\frac{\mathrm{P}(A\cdot B)}{\mathrm{P}(B)}$ módon értelmezzük, feltéve hogy $\mathrm{P}(B)>0$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Az $s^2$ torzítatlan becslése a sokasági (elméleti) szórásnégyzetnek}]{minta8}
+Az $s^2$ korrigált empirikus szórásnégyzetre $\mathrm{E}(s^2)=\mathrm{E}(X)$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Definíció}]{minta3}
+Egy $X_1,{...\:},X_n\sim X$ minta esetén a mintaátlag $\overline{X}=\frac{X_1+{...\:}+X_n}{n-1}$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{sfv1}
+Azt mondjuk, hogy egy $f:\mathbb{R}\to \mathbb{R}$ sűrűségfüggvény, ha 
+$$
+f\ge 0 \ \ \text{és}\ \ \int_{-\infty}^{+\infty}f(x)\mathrm{d } x=1
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{impfvv10}
+Ha $\xi\sim \mathrm{Exp}(\lambda)$ akkor a sűrűségfüggvénye 
+$$
+f(x)=
+\begin{cases}
+1-e^{-\lambda x}& \ \ x>0\\
+0 & \text{máskor} 
+\end{cases}
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{impdvv6}
+Azt mondjuk, hogy $\xi\sim \mathrm{Binom}(n,p)$, ha 
+$$
+\mathrm{P}(\xi=k)=\binom{n}{k}p^k(1-p)\ \ \ (k=0,1{...\:} n)
+$$
+valamilyen $n>0$ és $p\in[0,1]$ esetén.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Páronként független valségi változókra a szórásnégyzet additív, általában nem.}]{dvv14}
+A $\xi$ és $\eta$ valségi változókra:
+$$
+\mathrm{D}^2(\xi+\eta)=\mathrm{D}^2(\xi)+\mathrm{D}^2(\eta)
+$$
+feltéve, hogy létezik a szórásuk.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Tulajdonság.}]{flenvv6}
+Ha $\xi$ és $\eta$ valségi változóknak létezik a szórása, akkor a 
+kovarianciájuk
+$$
+\mathrm{cov}(\xi,\eta)=\mathrm{E}(\xi\eta)-\mathrm{E}(\xi)\mathrm{E}(\eta)
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{dvv9}
+Egy $\xi$ valségi változó az $x_1,{...\:}, x_n$ értékeket veheti fel és $p_k=\mathrm{P}(\xi=x_k)$. 
+Ekkor a második momentuma:
+$$
+\mathrm{E}(\xi^2)=\sum_{k=1}^n x_k p_k^2
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Fontos a $p_k\ge 0$ is.}]{dvv1}
+Egy $p_1,{...\:}, p_n$ vektor pont akkor valségeloszlás, ha $\sum_{k=1}^n p_k=1$.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Az $s^2$ torzítatlan becslése a sokasági (elméleti) szórásnégyzetnek}]{minta7}
+Az $s^2$ korrigált empirikus szórásnégyzetre $\mathrm{E}(s^2)=\mathrm{D}^2(X)$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Komplementer események.}]{eofv9}
+Bármely $\xi$-re és $a$-ra $F_{\xi}(a)+\mathrm{P}(\xi\ge a)=1$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{eofv1}
+Egy $F:\mathbb{R}\to \mathbb{R}$ pontosan akkor eloszlásfüggvény, ha monoton nemcsökkenő, 
+balról folytonos, $\lim_{x\to+\infty}F(x)=1$ és $\lim_{x\to-\infty}F(x)=0$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={$\xi=\xi_1+{...\:}+\xi_n$, ahol $\xi_k$ Bernoulli és $\mathrm{E}(\xi_k)=p$+$\mathrm{E}$-additívitása}]{impdvv3}
+Egy $\xi\sim \mathrm{Binom}(n,p)$ szórásnégyzete: $np(1-p)$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={A szórást ismerni kell.}]{proba2}
+Ha a minta normális sokaságból származik és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
+akarunk dönteni akkor $u$-próbát használhatunk.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def.+$P(AB)=P(A)$ a feltételekből.}]{felt1}
+$A$-nak a $B$-re ($\mathrm{P}(B)>0$) vonatkozó feltételes valsége $\mathrm{P}(A|B)=\frac{\mathrm{P}(A)}{\mathrm{P}(B)}$, ha $A$ maga után vonja $B$-t.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{sfv8}
+Ha van $\xi$-nek $f$ sűrűségfüggvénye, akkor bármely $b$-re:
+$$
+\mathrm{P}(\xi<b)=f(b)
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Ezek az $u$-próba használatának előzményei.}]{proba1}
+Ha a minta normális sokaságból származik, ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
+akarunk dönteni akkor $u$-próbát használhatunk.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={A fenti formula az $u$-próba ún. próbastatisztikája.}]{proba5}
+Az $u$-próbánál a 
+$$
+u=\frac{\overline{X}-\mu_0}{\sigma}\sqrt{n}
+$$
+mennyiség segítségével döntünk a hipotéziseinkről.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Additívitás.}]{val6}
+Bármely esemény valsége kiszámolható a $\frac{\text{kedvező}}{\text{összes}}$ képlettel, ha az elemi események 
+egyforma valségűek.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={$\xi=\xi_1+{...\:}+\xi_n$, ahol $\xi_k$ Bernoulli és $\mathrm{E}(\xi)=p$+additívitás}]{impdvv1}
+Egy $\xi\sim \mathrm{Binom}(n,p)$ várható értéke: $np$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={$f\ge 0$ fontos (monoton nemcsökkenő $F$-nek a deriváltja)}]{sfv3}
+Azt mondjuk, hogy egy $f:\mathbb{R}\to \mathbb{R}$ sűrűségfüggvény 
+$$
+\int_{-\infty}^{+\infty}f(x)\mathrm{d } x\ge 0
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{felt3}
+$A_1,{...\:},A_n$ teljes eseményrendszer, ha $\sum A_k=\Omega$ és a tagok páronként kizáróak.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Nókoment.}]{esem5}
+Ha $\mathrm{P}(A)=1$ akkor $A$ bekövetkezhet.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{sfv11}
+Ha $\xi$-nek $F$ illetve $f$ az eloszlásfüggvény illetve sűrűségfüggvénye, akkor bármely $a<b$-re:
+$$
+F(b)-F(a)=\int_{a}^{b}f(x)\mathrm{d } x
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={wiki}]{impfvv3}
+Egy $\xi\sim {\cal U}(a,b)$ szórásnégyzete: $\frac{(b-a)^2}{12}$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={de-Morgan azonosság}]{esem2}
+Az $\overline{A+B}$ és $\overline{A} \cdot \overline{B}$ események kizárják egymást.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Egy konstans v.v-nak 0 a szórása.}]{dvv12}
+Egy $\xi$ valségi változó szórása mindig pozitív.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{impfvv8}
+Ha $\xi\sim {\cal N}(0,1)$ akkor a sűrűségfüggvénye $f(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{flenvv5}
+Ha $\xi$ és $\eta$ diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a 
+korrelációjuk
+$$
+\mathrm{corr}(\xi,\eta)=\mathrm{E}(\xi\eta)-\mathrm{E}(\xi)\mathrm{E}(\eta)
+$$
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{impfvv11}
+Ha $\xi\sim {\cal U}(a,b)$ akkor a sűrűségfüggvénye 
+$$
+f(x)=
+\begin{cases}
+\frac{1}{b-a} & \ \ a<x<b \\
+0 & \text{máskor} 
+\end{cases}
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{dvv8}
+Egy $\xi$ valségi változó az $x_1,{...\:}, x_n$ értékeket veheti fel és $p_k=\mathrm{P}(\xi=x_k)$. 
+Ekkor a második momentuma:
+$$
+\mathrm{E}(\xi^2)=\sum_{k=1}^n x_k^2 p_k
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{impfvv9}
+Ha $\xi\sim \mathrm{Exp}(\lambda)$ akkor a sűrűségfüggvénye 
+$$
+f(x)=
+\begin{cases}
+\lambda e^{-\lambda x}& \ \ x>0\\
+0 & \text{máskor} 
+\end{cases}
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Def.}]{flenvv4}
+Ha $\xi$ és $\eta$ diszkrét valségi változóknak létezik a szórása és nemnulla, akkor a 
+korrelációjuk
+$$
+\mathrm{corr}(\xi,\eta)=\frac{\mathrm{cov}(\xi,\eta)}{\mathrm{D}(\xi)\mathrm{D}(\eta)}
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Csak ha az elemi események egyforma valségűek.}]{val5}
+Bármely esemény valsége kiszámolható a $\frac{\text{kedvező}}{\text{összes}}$ képlettel.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Def./tulajdonság}]{dvv10}
+Egy $\xi$ valségi változó az $x_1,{...\:}, x_n$ értékeket veheti fel. 
+Ekkor a szórásnégyzete:
+$$
+\mathrm{D}^2(\xi)=\mathrm{E}(\xi^2)-\mathrm{E}(\xi)^2
+$$
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Az $F(x)=\mathrm{P}(\xi<x)$ konstans az $(a,b)$-n ha $a$ és $b$ két szomszédos eleme az értékkészletnek.}]{eofv6}
+Véges értékkészletű valségi változók eloszlásfüggvénye lépcsős függvény.
+\item* igaz
+\item hamis
+\end{multi}
+\begin{multi}[feedback={Mindegyiknek van, definíció szerint.}]{eofv5}
+A diszkrét valségi változóknak nincsen eloszlásfüggvénye.
+\item igaz
+\item* hamis
+\end{multi}
+\begin{multi}[feedback={Tulajdonság,tétel.}]{flenvv9}
+Ha a $\xi$ és $\eta$ valségi változóknak létezik a korrelációja, akkor $-1\le \mathrm{corr}(\xi,\eta)\le 1$.
+\item* igaz
+\item hamis
+\end{multi}
+\end{quiz}
+
+\end{document}
+
