@@ -41,7 +41,7 @@ s,c=tstring.([s,c])
 body=raw"""
 \begin{multi}{__EXNAME}
 Tudjuk, hogy $ \sin(\alpha) =__S$ és $ \cos(\alpha) = __C $. 
-Ekkor $ \sin(2\alpha),\ \cos(2\alpha) $=
+Ekkor $$ \sin(2\alpha),\ \cos(2\alpha)=$$
 \item* $ __JV $
 \item  $ __RV1 $
 \item  $ __RV2 $

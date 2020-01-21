@@ -15,9 +15,9 @@ m,n,am,an=string.([m,n,am,an])
 
 body=raw"""
 \begin{multi}{__EXNAME}
-Egy számtani sorozatról tudjuk, hogy $a_{__m}=__am$ és $a_{__n}=__an$. Mennyi a 
+Egy számtani sorozatról tudjuk, hogy $a_{__m}=__am$ és $a_{__n}=__an$. Ekkor 
 $$
-a_{__m}+\ldots +a_{__n}?
+a_{__m}+\ldots +a_{__n}=
 $$
 \item* $__JV$
 \item  $__RV1$
