@@ -1,5 +1,5 @@
 # használat:
-# julia mulchoice.jl gyűjtemény outname
+# julia MULTI.jl gyűjtemény outname
 # gyűjtemény/config.jl -> mdict=[f1,f2,...]
 # legenerálja az f1.tex,f2.tex... -> tex
 # a tex alkonyvtarbol osszeallitja az output/outname.tex

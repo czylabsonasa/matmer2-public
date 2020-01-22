@@ -15,7 +15,7 @@ jv,rv1,rv2,rv3=string.([jv,rv1,rv2,rv3])
 body=raw"""
 \begin{multi}{__EXNAME}
 Egy kikötőben $4$ hajót rakodnak, melyek rendre $__D1,__D2,__D3,__D4$ naponta térnek 
-vissza ugyanide. Hány nap múlva találkozhatnak legközelebb a kapitányok?
+vissza ugyanebbe a kikötőbe. Hány nap múlva találkozhatnak itt legközelebb a kapitányok?
 \item* $ __JV  $
 \item  $ __RV1 $
 \item  $ __RV2 $

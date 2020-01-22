@@ -1,7 +1,7 @@
 # más mint a quiz.jl
 # csak igaz hamis tesztek
 # használat: 
-# julia igazhamis.jl gyujtemény outputnév
+# julia IH.jl gyujtemény outputnév
 # a gyújtemény könyvtárban levő config.jl-ben van
 # egy mdict mely a kiválasztandó feladatokról tartamaz infót
 # a kiválasztandó feladatok a xxx.jl fájlokban vannak, mind egy xxx nevű
