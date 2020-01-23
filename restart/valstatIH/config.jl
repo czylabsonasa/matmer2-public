@@ -11,6 +11,7 @@ include("sfv.jl") # sűrűségfv
 include("flenvv.jl") # függetlenség, kovarianci, korreláció 
 include("minta.jl") # minta
 include("proba.jl") # u,t 
+include("covcorr.jl") # néhány cov/corr tulajdonság 
 
 
 f(x)=1+Int(floor(0.35*length(x)))
@@ -39,7 +40,7 @@ mdict=Dict(
    "flenvv"=>(f(flenvv),flenvv),
    "minta"=>(f(minta),minta),
    "proba"=>(f(proba),proba),
-
+   "covcorr"=>(f(covcorr),covcorr),
 
 
 )
