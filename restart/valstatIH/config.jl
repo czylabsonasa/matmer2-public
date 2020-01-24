@@ -1,4 +1,4 @@
-mquizname="gyakorló"
+mquizname="0123elm"
 
 include("esem.jl") # események
 include("val.jl")  # valség tul.
