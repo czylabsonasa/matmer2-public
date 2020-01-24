@@ -6,7 +6,7 @@ _out=open("_output/out.tex","w")
 include("_include/quiz/pre.tex")
 
 print(_out, raw"""
-\begin{quiz}{gyakorló feladatok}
+\begin{quiz}{gyak0122}
 """)
 
 

@@ -46,6 +46,29 @@ function tstring(v::Array{Rational{Int},1};delim::String=", ",brac::Bool=true)
   return ret
 end
 
+# ketdim string matrix -> tex matrix
+function tstring(A::Array{String,2}; delim::String="",brac::Bool=true)
+  r,c=size(A)
+  ret="{\\begin{array}{"*repeat('c',c)*"}"
+  for i in 1:r
+     if i>1
+        ret=ret*"\\\\ "
+     end
+     for j in 1:c
+        if j>1
+           ret=ret*delim*"& "
+        end
+        ret=ret*A[i,j]
+     end
+  end
+  ret=ret*"\\end{array}}"
+  if brac==true
+     ret="\\left["*ret*"\\right]"
+  end
+  return ret
+end
+
+
 
 # ketvaltozos polinom: generalas, kiertekeles, tex-alak
 function ranPoly(xh,yh,pz=0.1)  #xh,yh max kitevok, pz:kihagyas valsege

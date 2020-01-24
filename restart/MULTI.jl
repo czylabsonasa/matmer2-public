@@ -1,5 +1,5 @@
 # használat:
-# julia MULTI.jl gyűjtemény outname
+# julia MULTI.jl gyűjtemény outname [config.jl]
 # gyűjtemény/config.jl -> mdict=[f1,f2,...]
 # legenerálja az f1.tex,f2.tex... -> tex
 # a tex alkonyvtarbol osszeallitja az output/outname.tex
@@ -9,7 +9,12 @@ include("include/lib.jl")
 include("include/makro.jl")
 
 mdir=split(ARGS[1],"/")[1]
-include(mdir*"/config.jl")
+
+mconfig="config.jl"
+(length(ARGS)>2)&&((mconfig=strip(ARGS[3])*".jl"))
+
+include(mdir*"/"*mconfig)
+
 moutname=strip(ARGS[2])
 
 include("include/tex.jl")
@@ -19,9 +24,17 @@ fout=open("output/"*"_"*moutname*".tex","w")
 print(fout,docpre)
 print(fout,replace(quizpre,"mquizname"=>mquizname)) # quizname -> config.jl
 
+kiir(mex)=print(fout,include(join([mdir,mex,"prob.jl"],"/")))
 for ex in mdict
-  xxx=include(join([mdir,ex,"prob.jl"],"/"))
-  print(fout,xxx)
+  if typeof(ex)==String
+    kiir(ex)
+  else
+    nex=ex[1] #it is a must
+    (nex==0)&&continue
+    sel=ex[2:end]
+    if nex>0 sel=sample(sel,nex,replace=false) end
+    kiir.(sel)
+  end
 end
 
 print(fout,quizpost)

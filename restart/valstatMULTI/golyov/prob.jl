@@ -19,6 +19,7 @@ rv1=(kedvezo+1)//(osszes+1)
 rv2=kedvezo//(osszes+1)
 rv3=(kedvezo-1)//osszes
 
+jv,rv1,rv2,rv3=tstring.([jv,rv1,rv2,rv3])
 huzas=join(huzas,",")
 
 body=mreplace(
