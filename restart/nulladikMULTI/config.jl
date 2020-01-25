@@ -1,6 +1,6 @@
 mquizname="próba"
 mdict=[
-  "egyenes",    # harmadik helyen érték kiszámilása
+  # "egyenes",    # harmadik helyen érték kiszámítása
   # "munkas",     # egyenes arányosság
   # "haromszog",  # egész oldalhosszúságú hszögek, leszámolás
   # "vektor",     # vektorok összeadása, felező-súlypont
@@ -20,5 +20,6 @@ mdict=[
   # 2.
   "szam",         # kombinatorika,kombináció
   "atlo",         # kombinatorika, átlók száma
-  "lepcso"        # fibonacci kis szamokra
-]
+  "lepcso",        # fibonacci kis szamokra
+  "gyokos"         # gyokos kifejezes atalakitasa
+  ]

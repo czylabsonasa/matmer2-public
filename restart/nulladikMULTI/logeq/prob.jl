@@ -11,12 +11,12 @@ eq=reduce(
 
 
 jv=A^2+B^2
-rv1=A^2
-rv2=-B^2
+rv1=A^2+1
+rv2=-B^2-3
 rv3=2*(A^2+B^2)
 
 A,B=string.([A,B])
-jv,rv1,rv2,rv3=string.([jv,rv1,rv2,rv3])
+jv,rv1,rv2,rv3="\\sqrt{".*string.([jv,rv1,rv2,rv3]).*"}"
 
 
 body=raw"""
