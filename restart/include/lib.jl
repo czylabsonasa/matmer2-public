@@ -1,14 +1,20 @@
-using StatsBase, Random
+using StatsBase, Random, Distributions
+
 # reduce-szal megoldva inline (mreplace)
 # bulk replace
 # import Base.replace
 # function replace(s::String,d::Dict{String,String})
-#    for (k,dk) in d
+#    for (k,dk) in dmrep
 #       s=replace(s,k=>dk)
 #    end
 #    return s
 # end
 mreplace(s,arr)=reduce(replace,arr,init=s)
+
+
+tstring(r::Int)=string(r)
+tstring(r::Float64)=string(round(r; digits=4))
+
 
 
 # racionalis tex-alakja
@@ -69,26 +75,6 @@ function tstring(A::Array{String,2}; delim::String="",brac::Bool=true)
 end
 
 
-
-# ketvaltozos polinom: generalas, kiertekeles, tex-alak
-function ranPoly(xh,yh,pz=0.1)  #xh,yh max kitevok, pz:kihagyas valsege
-  poli=Dict{Tuple{Int,Int},Rational{Int}}()
-  for x=0:xh,y=0:yh
-    (rand()<pz)&&continue
-    eh=rand(-3:3)//rand(1:5)
-    (eh==0)&&continue
-    poli[(x,y)]=eh
-  end
-  poli
-end
-function evalPoly(p::Dict{Tuple{Int,Int},Rational{Int}},x,y)
-  ret=0//1
-  for (k,v) in p
-    ret+=v*x^k[1]*y^k[2]
-  end
-  ret
-end
-
 function tstring(p::Dict{Tuple{Int,Int},Rational{Int}})
   alak=""
   for (k,coeff) in p
@@ -108,3 +94,66 @@ function tstring(p::Dict{Tuple{Int,Int},Rational{Int}})
   alak[1]=='+' ? alak[2:end] : alak
 end
 
+
+function ttable(A::Array{String,2})
+  r,c=size(A)
+  ret=raw"{\begin{array}{l|"*repeat("|c",c-1)*"}"
+  for i in 1:r
+     for j in 1:c
+        if j>1
+           ret=ret*"& "
+        end
+        ret*=A[i,j]
+     end
+     ret*=raw"\\ "
+     if i<r
+        ret*=raw"\hline "
+     end
+  end
+  ret=ret*raw"\end{array}}"
+
+  ret
+end
+
+function ttable(x::Array{T,1},sx::String,y::Array{S,1},sy::String) where {T,S}
+  n=length(x)
+  ret=raw"\begin{array}{l ||"*repeat("c|",n-1)*"c}"
+  ret=ret*sx*"&"
+  for i in 1:n
+     if i>1
+        ret=ret*"&"
+     end
+     ret=ret*tstring(x[i])
+  end
+  ret=ret*raw"\\ \hline "
+  ret=ret*sy*"&"
+  for i in 1:n
+     if i>1
+        ret=ret*"&"
+     end
+     ret=ret*tstring(y[i])
+  end
+  ret=ret*raw" \\ "
+  ret=ret*raw"\end{array}"
+end
+
+
+
+# ketvaltozos polinom: generalas, kiertekeles, tex-alak
+function ranPoly(xh,yh,pz=0.1)  #xh,yh max kitevok, pz:kihagyas valsege
+  poli=Dict{Tuple{Int,Int},Rational{Int}}()
+  for x=0:xh,y=0:yh
+    (rand()<pz)&&continue
+    eh=rand(-3:3)//rand(1:5)
+    (eh==0)&&continue
+    poli[(x,y)]=eh
+  end
+  poli
+end
+function evalPoly(p::Dict{Tuple{Int,Int},Rational{Int}},x,y)
+  ret=0//1
+  for (k,v) in p
+    ret+=v*x^k[1]*y^k[2]
+  end
+  ret
+end
