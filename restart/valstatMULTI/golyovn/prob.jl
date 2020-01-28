@@ -17,7 +17,7 @@ function golyovn()
 
   sg=sum(golyok)
   osszes=binomial(sum(golyok),hsz)
-  aK,aP,aS=[count(x->x==y,urna) for y=1:3]
+  aK,aP,aS=[count(x->x==y,most) for y=1:3] # 0126 vizsgan a most helyett urna volt (rossz!!!)
   kedvezo=prod([binomial(K,aK),binomial(P,aP),binomial(S,aS)])
 
 

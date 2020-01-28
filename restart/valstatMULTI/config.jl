@@ -3,10 +3,10 @@ mdict=[
   [
     1,
     "benzinexp",       # benznikút, exponenciális
-    "buszunif",        # buszmegálló, egyenletes
+    "buszunif",        # buszmegálló, egyenletes (hibas volt 0126-javitva)
   ],  
   [
-    0,
+    1,
     "cernamineo",          # kettévágjuk a cérnát, eloszlásfv
     "cernaminval",          # kettévágjuk a cérnát, intervallum valsége
     "cernaminvarhato",          # kettévágjuk a cérnát, várható érték
@@ -19,7 +19,7 @@ mdict=[
   [
     1,
     "golyov",               # adott sorozatok kapunk visszatevéssel
-    "golyovn",               # adott sorozatok kapunk visszatevés nélkül
+    "golyovn",               # adott sorozatok kapunk visszatevés nélkül (hibas volt 0126, jav)
   ],
   [
     1,
@@ -27,7 +27,7 @@ mdict=[
     "osszeg",              # A,B-ből számokat választva mekkora esállyel lesz az osszeg negatív? (kfokú. érettségi)
   ],
   [
-    0,
+    1,
     "monjegyek",                  # kombinatorika,klassz valség, kombináció (szigorú monoton jegyek)
     "monjegyek2",                  # kombinatorika,klassz valség, kombináció (szigorú monoton jegyek)
   ],

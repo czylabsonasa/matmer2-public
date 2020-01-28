@@ -12,6 +12,7 @@ include("flenvv.jl") # függetlenség, kovarianci, korreláció
 include("minta.jl") # minta
 include("proba.jl") # u,t 
 include("covcorr.jl") # néhány cov/corr tulajdonság 
+include("markcseb.jl") # Csebisev-Markov egyenlotlenseg
 
 
 f(x)=1+Int(floor(0.35*length(x)))
@@ -27,7 +28,7 @@ mdict=Dict(
   # "flenvv"=>(-1,flenvv),
   # "minta"=>(-1,minta),
   # "proba"=>(-1,proba),
-
+  # "markcseb"=>(-1,markcseb)
 
    "esem"=>(f(esem),esem),#-1 mind, 0 semmi, n>0 annyi
    "val"=>(f(val),val),
@@ -41,6 +42,7 @@ mdict=Dict(
    "minta"=>(f(minta),minta),
    "proba"=>(f(proba),proba),
    "covcorr"=>(f(covcorr),covcorr),
+   "markcseb"=>(f(markcseb),markcseb),
 
 
 )

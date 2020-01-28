@@ -3,17 +3,20 @@ function buszunif()
    exname="buszunif"
    h=rand(5:7)
    mA=rand(0:5:15)
-   mB=rand(mA+5:5:mA+25)
-   d=mB-mA
-   mC=rand(mA+1:mA+d÷2)
-   mD=(mB-mC)÷2
+   mB=rand(mA+10:5:mA+25)
+   
+   mC,mD=sample(mA+1:mB-1,2,replace=false)
+   if mC>mD 
+      mC,mD=mD,mC
+   end
+   d=mD-mC
 
-   jv=(mD-mC)//(mB-mC)
+   jv=d//(mB-mC)
 
    A="$(h):$(mA)"
    B="$(h):$(mB)"
    C="$(h):$(mC)"
-   D="$(mD)"
+   D="$(d)"
 
    rv1=jv//2
    rv2=(mD-mC)//(mB-mA)
