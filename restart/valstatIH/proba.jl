@@ -2,8 +2,8 @@
 proba=(
 (
 body=raw"""
-Ha a minta normális sokaságból származik, ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
-akarunk dönteni akkor $u$-próbát használhatunk.
+Ha a minta normális sokaságból származik, ismert a szórás és a sokasági várható értékre (átlagra) 
+vonatkozó kérdésről akarunk dönteni akkor $u$-próbát használhatunk.
 """,
 answer=true,
 fb=raw"{Ezek az $u$-próba használatának előzményei.}"
@@ -12,7 +12,7 @@ fb=raw"{Ezek az $u$-próba használatának előzményei.}"
 (
 body=raw"""
 Ha a minta normális sokaságból származik és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
-akarunk dönteni akkor $u$-próbát használhatunk.
+akarunk dönteni akkor mindig az $u$-próbát használjuk.
 """,
 answer=false,
 fb=raw"{A szórást ismerni kell.}"
@@ -20,8 +20,8 @@ fb=raw"{A szórást ismerni kell.}"
 ,
 (
 body=raw"""
-Ha a minta normális sokaságból származik, nem ismert a szórás és a sokasági várható értékre (átlagra) vonatkozó kérdésről 
-akarunk dönteni akkor $t$-próbát használhatunk.
+Ha a minta normális sokaságból származik, nem ismert a szórás és a sokasági várható értékre 
+(átlagra) vonatkozó kérdésről akarunk dönteni akkor $t$-próbát használhatunk.
 """,
 answer=true,
 fb=raw"{Ezek az $t$-próba használatának előzményei.}"
@@ -97,7 +97,7 @@ akkor az
 $$
 \frac{\overline{X}-10}{3}4
 $$
-valségi változó sztenderd normális eloszlású ha $H_0$ igaz.
+értékre úgy gondolunk, mint  egy sztenderd normális valségi változó megfigyelésére, ha $H_0$ igaz.
 """,
 answer=true,
 fb=raw"{Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy sztenderd normális átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.}"
@@ -116,10 +116,10 @@ akkor az
 $$
 \frac{\overline{X}-10}{3}4
 $$
-valségi változó $15$-szabadsági fokú Student eloszlású ha $H_0$ igaz.
+értékre úgy gondolunk, mint  egy $15$-szabadsági fokú Student valségi változó megfigyelésére, ha $H_0$ igaz.
 """,
 answer=false,
-fb=raw"{A feltételek mellett a fenti mennyiség sztenderd normális, ha $H_0$ igaz.}"
+fb=raw"{A feltételek mellett a fenti mennyiség egy sztenderd normális megfigyelése, ha $H_0$ igaz.}"
 )
 ,
 
@@ -136,7 +136,7 @@ akkor az
 $$
 \frac{\overline{X}-10}{3}4
 $$
-valségi változó $15$-szabadsági fokú Student eloszlású ha $H_0$ igaz.
+értéke egy $15$-szabadsági fokú Student valségi változó megfigyelése, ha $H_0$ igaz.
 """,
 answer=true,
 fb=raw"{Igen, éppen ez alapján tudunk dönteni. Ahhoz képest hogy valségi változó $15$-szabadsági fokú Student eloszlású, átlagos, tipikus értéket, vagy kiugró, extrém értéket látunk.}"
@@ -155,10 +155,10 @@ akkor az
 $$
 \frac{\overline{X}-10}{3}4
 $$
-valségi változó sztenderd normális eloszlású ha $H_0$ igaz.
+érték egy sztenderd normális változó megfigyelése, ha $H_0$ igaz.
 """,
 answer=false,
-fb=raw"{A feltételek mellett a fenti Student (t) eloszlású.}"
+fb=raw"{A szórás nem ismert.}"
 )
 ,
 
