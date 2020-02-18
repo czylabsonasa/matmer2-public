@@ -12,6 +12,18 @@ docpre=raw"""
 
 """
 
+docpre0=raw"""
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+\usepackage{amsmath}
+
+\begin{document}
+
+"""
+
 
 docpost=raw"""
 \end{document}

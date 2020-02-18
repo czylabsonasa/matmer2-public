@@ -74,6 +74,24 @@ function tstring(A::Array{String,2}; delim::String="",brac::Bool=true)
   return ret
 end
 
+# ketdim string matrix -> tex matrix
+function tstring(A::Array{String}; delim::String="",brac::Bool=true)
+  c=length(A)
+  ret="{\\begin{array}{"*repeat('c',c)*"}"
+  for j in 1:c
+    if j>1
+        ret=ret*delim*"& "
+    end
+    ret=ret*A[j]
+  end
+  ret=ret*"\\end{array}}"
+  if brac==true
+     ret="\\left["*ret*"\\right]"
+  end
+  return ret
+end
+
+
 
 function tstring(p::Dict{Tuple{Int,Int},Rational{Int}})
   alak=""
