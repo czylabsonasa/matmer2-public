@@ -2,7 +2,7 @@
 # csak igaz hamis tesztek
 # használat: 
 # julia IH.jl gyujtemény outputnév
-# a gyújtemény könyvtárban levő config.jl-ben van
+# a gyűjtemény könyvtárban levő config.jl-ben van
 # egy mdict mely a kiválasztandó feladatokról tartamaz infót
 # a kiválasztandó feladatok a xxx.jl fájlokban vannak, mind egy xxx nevű
 # vektort tartalmaz a leírással, megoldással.
