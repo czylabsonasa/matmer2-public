@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+\usepackage{amsmath}
+
+\begin{document}
+
+
+Inverse computing
+$$ A=\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 2& 0& 2& 0\\ -6& 1& -4& 6\\ 4& 2& 5& -1\end{array}}\right]$$
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 2& 0& 2& 0\\ -6& 1& -4& 6\\ 4& 2& 5& -1\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 0& 1& 0& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]$$
+\par\noindent 1. phase
+
+subtract $-1$ times the 1. row from the 2. row
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ -6& 1& -4& 6\\ 4& 2& 5& -1\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]$$
+subtract $3$ times the 1. row from the 3. row
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ 0& -2& -1& 0\\ 4& 2& 5& -1\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ -3& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]$$
+subtract $-2$ times the 1. row from the 4. row
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ 0& -2& -1& 0\\ 0& 4& 3& 3\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ -3& 0& 1& 0\\ 2& 0& 0& 1\end{array}}\right]$$
+\par\noindent done...
+
+
+\par\noindent 2. phase
+
+subtract $-2$ times the 2. row from the 3. row
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ 0& 0& 1& 4\\ 0& 4& 3& 3\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ -1& 2& 1& 0\\ 2& 0& 0& 1\end{array}}\right]$$
+subtract $4$ times the 2. row from the 4. row
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ 0& 0& 1& 4\\ 0& 0& -1& -5\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ -1& 2& 1& 0\\ -2& -4& 0& 1\end{array}}\right]$$
+\par\noindent done...
+
+
+\par\noindent 3. phase
+
+subtract $-1$ times the 3. row from the 4. row
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ 0& 0& 1& 4\\ 0& 0& 0& -1\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ -1& 2& 1& 0\\ -3& -2& 1& 1\end{array}}\right]$$
+\par\noindent done...
+
+
+\par\noindent 4. phase
+
+\par\noindent done...
+
+
+\par\noindent Backward elimination
+
+
+normalize and eliminate with the (4,4)-element
+$$\left[{\begin{array}{cccc}-2& 1& -1& 2\\ 0& 1& 1& 2\\ 0& 0& 1& 4\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}1& 0& 0& 0\\ 1& 1& 0& 0\\ -1& 2& 1& 0\\ 3& 2& -1& -1\end{array}}\right]$$
+$$\left[{\begin{array}{cccc}-2& 1& -1& 0\\ 0& 1& 1& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}-5& -4& 2& 2\\ -5& -3& 2& 2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+\par\noindent done...
+
+
+normalize and eliminate with the (3,3)-element
+$$\left[{\begin{array}{cccc}-2& 1& -1& 0\\ 0& 1& 1& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}-5& -4& 2& 2\\ -5& -3& 2& 2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+$$\left[{\begin{array}{cccc}-2& 1& 0& 0\\ 0& 1& 0& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}-18& -10& 7& 6\\ 8& 3& -3& -2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+\par\noindent done...
+
+
+normalize and eliminate with the (2,2)-element
+$$\left[{\begin{array}{cccc}-2& 1& 0& 0\\ 0& 1& 0& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}-18& -10& 7& 6\\ 8& 3& -3& -2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+$$\left[{\begin{array}{cccc}-2& 0& 0& 0\\ 0& 1& 0& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}-26& -13& 10& 8\\ 8& 3& -3& -2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+\par\noindent done...
+
+
+normalize and eliminate with the (1,1)-element
+$$\left[{\begin{array}{cccc}1& 0& 0& 0\\ 0& 1& 0& 0\\ 0& 0& 1& 0\\ 0& 0& 0& 1\end{array}}\right]\left[{\begin{array}{cccc}13& \frac{13}{2}& -5& -4\\ 8& 3& -3& -2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+\par\noindent done...
+
+
+$$ A^{-1}=\left[{\begin{array}{cccc}13& \frac{13}{2}& -5& -4\\ 8& 3& -3& -2\\ -13& -6& 5& 4\\ 3& 2& -1& -1\end{array}}\right]$$
+\end{document}
+
+

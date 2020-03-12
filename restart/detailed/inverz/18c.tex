@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\onehalfspace
+
+\usepackage{amsmath}
+
+\begin{document}
+
+
+Inverzmátrix számítása
+$$\left[{\begin{array}{ccc}3& -1& 2\\ 6& -1& 6\\ -9& 1& -11\end{array}}\right]$$
+$$\left[{\begin{array}{ccc}3& -1& 2\\ 6& -1& 6\\ -9& 1& -11\end{array}}\right]\left[{\begin{array}{ccc}1& 0& 0\\ 0& 1& 0\\ 0& 0& 1\end{array}}\right]$$
+1. fázis
+
+levonom a(z) 1. sor $2$ -szeresét a(z) 2. sorból
+$$\left[{\begin{array}{ccc}3& -1& 2\\ 0& 1& 2\\ -9& 1& -11\end{array}}\right]\left[{\begin{array}{ccc}1& 0& 0\\ -2& 1& 0\\ 0& 0& 1\end{array}}\right]$$
+levonom a(z) 1. sor $-3$ -szeresét a(z) 3. sorból
+$$\left[{\begin{array}{ccc}3& -1& 2\\ 0& 1& 2\\ 0& -2& -5\end{array}}\right]\left[{\begin{array}{ccc}1& 0& 0\\ -2& 1& 0\\ 3& 0& 1\end{array}}\right]$$
+2. fázis
+
+levonom a(z) 2. sor $-2$ -szeresét a(z) 3. sorból
+$$\left[{\begin{array}{ccc}3& -1& 2\\ 0& 1& 2\\ 0& 0& -1\end{array}}\right]\left[{\begin{array}{ccc}1& 0& 0\\ -2& 1& 0\\ -1& 2& 1\end{array}}\right]$$
+3. fázis
+
+visszafelé is eliminálok
+
+$$\left[{\begin{array}{ccc}3& -1& 0\\ 0& 1& 0\\ 0& 0& -1\end{array}}\right]\left[{\begin{array}{ccc}-1& 4& 2\\ -4& 5& 2\\ -1& 2& 1\end{array}}\right]$$
+$$\left[{\begin{array}{ccc}3& 0& 0\\ 0& 1& 0\\ 0& 0& -1\end{array}}\right]\left[{\begin{array}{ccc}-5& 9& 4\\ -4& 5& 2\\ -1& 2& 1\end{array}}\right]$$
+normálok, ha szükséges
+
+$$\left[{\begin{array}{ccc}1& 0& 0\\ 0& 1& 0\\ 0& 0& 1\end{array}}\right]\left[{\begin{array}{ccc}-\frac{5}{3}& 3& \frac{4}{3}\\ -4& 5& 2\\ 1& -2& -1\end{array}}\right]$$
+\end{document}
+
+

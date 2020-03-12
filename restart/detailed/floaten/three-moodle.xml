@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$module$/mquizname</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name>
+    <text>float</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>In the floating point number system <CENTER>\[ F=\left [ a=2, k_{-}=-5, k_{+}=4, t=5 \right ] \]</CENTER> the values for the quantities \( {\begin {array}{ccc}M_{\infty }& 1_{+}& \varepsilon _{1}\end {array}} \): </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\( \frac {31}{2}, \frac {17}{16}, \frac {1}{16} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( {\begin {array}{ccc}\frac {31}{2}& \frac {17}{32}& \frac {1}{32}\end {array}} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( {\begin {array}{ccc}\frac {31}{4}& \frac {17}{8}& \frac {1}{16}\end {array}} \)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\( {\begin {array}{ccc}\frac {31}{2}& \frac {17}{32}& \frac {1}{8}\end {array}} \)</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>
