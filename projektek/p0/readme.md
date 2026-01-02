@@ -1,0 +1,1 @@
+../../../orak/mm2-projekt-full/p0/p0_feladatok_tmp.md
