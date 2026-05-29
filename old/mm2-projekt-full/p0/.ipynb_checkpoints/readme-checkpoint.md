@@ -1,0 +1,1 @@
+kézi megoldás + dsolve + rajz

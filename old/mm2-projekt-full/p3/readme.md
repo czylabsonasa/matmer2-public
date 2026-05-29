@@ -1,0 +1,1 @@
+javított Euler + ode23 + rajz
